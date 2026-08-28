@@ -37,6 +37,7 @@ from rich import print as rprint
 logger = logging.getLogger(__name__)
 
 MODELS_URL = "https://sys.tensorx.ai/api/models"
+BIFROST_DATASHEET_URL = "https://getbifrost.ai/datasheet"
 
 # ---------------------------------------------------------------------------
 # Typed models (external payloads → TypedDict; internal data → dataclass)
@@ -101,6 +102,13 @@ def fetch_models(client: httpx.Client) -> list[TensorXModel]:
     response.raise_for_status()
     payload: TensorXPayload = response.json()
     return payload["data"]
+
+
+def fetch_bifrost_datasheet(client: httpx.Client) -> dict[str, dict[str, Any]]:
+    """Fetch the Bifrost datasheet: a map of model id -> entry."""
+    response = client.get(BIFROST_DATASHEET_URL)
+    response.raise_for_status()
+    return response.json()
 
 
 # ---------------------------------------------------------------------------
@@ -177,6 +185,25 @@ def build_datasheet(raw_models: list[TensorXModel]) -> dict[str, dict[str, Any]]
     }
 
 
+def merge_datasheets(
+    bifrost: dict[str, dict[str, Any]], tensorx: dict[str, dict[str, Any]]
+) -> dict[str, dict[str, Any]]:
+    """Merge the Bifrost datasheet with the TensorX one; on clashing keys TensorX wins."""
+    merged = dict(bifrost)
+    for model_id, tx_entry in tensorx.items():
+        if model_id not in merged:
+            merged[model_id] = tx_entry
+            continue
+        entry = {**merged[model_id], **tx_entry}
+        metadata = {**merged[model_id].get("metadata", {}), **tx_entry.get("metadata", {})}
+        if metadata:
+            entry["metadata"] = metadata
+        else:
+            entry.pop("metadata", None)
+        merged[model_id] = entry
+    return merged
+
+
 # ---------------------------------------------------------------------------
 # CLI
 # ---------------------------------------------------------------------------
@@ -206,12 +233,18 @@ def main(
     try:
         with httpx.Client(timeout=30.0) as client:
             raw_models = fetch_models(client)
+            rprint(f"[bold cyan]Fetching[/] datasheet from {BIFROST_DATASHEET_URL}")
+            bifrost = fetch_bifrost_datasheet(client)
     except httpx.HTTPError as exc:
-        rprint(f"[bold red]Error:[/] failed to fetch models: {exc}")
+        rprint(f"[bold red]Error:[/] failed to fetch: {exc}")
         raise typer.Exit(code=1) from exc
 
-    datasheet = build_datasheet(raw_models)
-    rprint(f"[bold green]Converted[/] {len(datasheet)} models")
+    tensorx_sheet = build_datasheet(raw_models)
+    datasheet = merge_datasheets(bifrost, tensorx_sheet)
+    rprint(
+        f"[bold green]Converted[/] {len(tensorx_sheet)} TensorX models, "
+        f"merged with {len(bifrost)} Bifrost entries -> {len(datasheet)} models"
+    )
 
     try:
         output.parent.mkdir(parents=True, exist_ok=True)
