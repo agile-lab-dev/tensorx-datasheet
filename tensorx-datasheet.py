@@ -21,8 +21,8 @@ models are kept, and for models present in both the TensorX entry wins (fields
 are merged per-model, with TensorX values taking precedence).
 
 Usage:
-    uv run tensorx-datasheet.py --output data.json
-    uv run tensorx-datasheet.py --output data.json --verbose
+    uv run tensorx-datasheet.py --output data.json --provider tensorx
+    uv run tensorx-datasheet.py --output data.json --provider none --verbose
 """
 
 from __future__ import annotations
@@ -148,11 +148,17 @@ def base_model_of(model_id: str) -> str:
     return model_id.split("/", 1)[1] if "/" in model_id else model_id
 
 
-def to_datasheet_entry(model: NormalizedModel) -> dict[str, Any]:
-    """Map a normalized model into a Bifrost datasheet entry."""
+def to_datasheet_entry(
+    model: NormalizedModel, provider: str = "tensorx"
+) -> dict[str, Any]:
+    """Map a normalized model into a Bifrost datasheet entry.
+
+    ``provider`` overrides the API-provided provider unless it is exactly
+    ``"none"``, in which case the fetched provider is kept.
+    """
     entry: dict[str, Any] = {
         "mode": "chat",
-        "provider": model.provider,
+        "provider": model.provider if provider == "none" else provider,
         "base_model": base_model_of(model.model_id),
     }
     if model.max_input_tokens is not None:
@@ -181,17 +187,20 @@ def to_datasheet_entry(model: NormalizedModel) -> dict[str, Any]:
 
 
 def build_datasheet(
-    raw_models: list[TensorXModel], prefix: str = "tensorx"
+    raw_models: list[TensorXModel],
+    prefix: str = "tensorx",
+    provider: str = "tensorx",
 ) -> dict[str, dict[str, Any]]:
     """Build the Bifrost datasheet map from raw TensorX models.
 
     Each model id is namespaced with ``prefix`` (e.g. ``tensorx/gpt-4o``);
-    an empty prefix keeps the raw model id.
+    an empty prefix keeps the raw model id. ``provider`` overrides each
+    entry's provider unless it is exactly ``"none"``.
     """
     prefix = prefix.strip("/")
     return {
         f"{prefix}/{model['model_id']}" if prefix else model["model_id"]: to_datasheet_entry(
-            normalize_model(model)
+            normalize_model(model), provider
         )
         for model in raw_models
     }
@@ -251,6 +260,14 @@ def main(
             "Pass an empty string to disable prefixing.",
         ),
     ] = "tensorx",
+    provider: Annotated[
+        str,
+        typer.Option(
+            "--provider",
+            help='Provider written into TensorX entries; pass exactly "none" '
+            "to keep the provider from the TensorX API.",
+        ),
+    ] = "tensorx",
     verbose: Annotated[
         bool,
         typer.Option("--verbose", "-v", help="Enable verbose logging."),
@@ -272,7 +289,7 @@ def main(
         rprint(f"[bold red]Error:[/] failed to fetch: {exc}")
         raise typer.Exit(code=1) from exc
 
-    tensorx_sheet = build_datasheet(raw_models, prefix=prefix)
+    tensorx_sheet = build_datasheet(raw_models, prefix=prefix, provider=provider)
     datasheet, clashed = merge_datasheets(bifrost, tensorx_sheet)
     rprint(
         f"[bold green]Converted[/] {len(tensorx_sheet)} TensorX models, "
