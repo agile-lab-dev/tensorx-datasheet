@@ -180,10 +180,19 @@ def to_datasheet_entry(model: NormalizedModel) -> dict[str, Any]:
     return entry
 
 
-def build_datasheet(raw_models: list[TensorXModel]) -> dict[str, dict[str, Any]]:
-    """Build the Bifrost datasheet map from raw TensorX models."""
+def build_datasheet(
+    raw_models: list[TensorXModel], prefix: str = "tensorx"
+) -> dict[str, dict[str, Any]]:
+    """Build the Bifrost datasheet map from raw TensorX models.
+
+    Each model id is namespaced with ``prefix`` (e.g. ``tensorx/gpt-4o``);
+    an empty prefix keeps the raw model id.
+    """
+    prefix = prefix.strip("/")
     return {
-        model["model_id"]: to_datasheet_entry(normalize_model(model))
+        f"{prefix}/{model['model_id']}" if prefix else model["model_id"]: to_datasheet_entry(
+            normalize_model(model)
+        )
         for model in raw_models
     }
 
@@ -233,6 +242,15 @@ def main(
             help="Path of the JSON datasheet file to write.",
         ),
     ],
+    prefix: Annotated[
+        str,
+        typer.Option(
+            "--prefix",
+            "-p",
+            help="Prefix added to TensorX model ids, e.g. PREFIX/<model-id>. "
+            "Pass an empty string to disable prefixing.",
+        ),
+    ] = "tensorx",
     verbose: Annotated[
         bool,
         typer.Option("--verbose", "-v", help="Enable verbose logging."),
@@ -254,7 +272,7 @@ def main(
         rprint(f"[bold red]Error:[/] failed to fetch: {exc}")
         raise typer.Exit(code=1) from exc
 
-    tensorx_sheet = build_datasheet(raw_models)
+    tensorx_sheet = build_datasheet(raw_models, prefix=prefix)
     datasheet, clashed = merge_datasheets(bifrost, tensorx_sheet)
     rprint(
         f"[bold green]Converted[/] {len(tensorx_sheet)} TensorX models, "

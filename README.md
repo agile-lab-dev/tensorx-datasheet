@@ -46,3 +46,12 @@ per-model, with TensorX values taking precedence). A daily job regenerates and c
 ```fish
 uv run tensorx-datasheet.py --output data.json
 ```
+
+TensorX model ids are namespaced with a `tensorx/` prefix by default
+(e.g. `tensorx/deepseek-v3.2`). Use `--prefix` to change it, or pass an empty
+string to keep the raw model ids:
+
+```fish
+uv run tensorx-datasheet.py --output data.json --prefix mylab
+uv run tensorx-datasheet.py --output data.json --prefix ""
+```

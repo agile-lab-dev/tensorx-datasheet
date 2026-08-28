@@ -17332,24 +17332,20 @@
     "base_model": "deepseek-v3"
   },
   "deepseek/deepseek-v3.2": {
-    "input_cost_per_token": 3e-07,
+    "input_cost_per_token": 2.8e-07,
     "input_cost_per_token_cache_hit": 2.8e-08,
     "max_input_tokens": 163840,
     "max_output_tokens": 163840,
     "max_tokens": 163840,
     "mode": "chat",
-    "output_cost_per_token": 5e-07,
+    "output_cost_per_token": 4e-07,
     "supports_assistant_prefill": true,
     "supports_function_calling": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
     "supports_tool_choice": true,
     "provider": "deepseek",
-    "base_model": "deepseek-v3.2",
-    "cache_read_input_token_cost": 7.5e-08,
-    "metadata": {
-      "notes": "Well-rounded DeepSeek model for everyday reasoning, coding, and chat."
-    }
+    "base_model": "deepseek"
   },
   "deepseek.v3-v1:0": {
     "input_cost_per_token": 5.8e-07,
@@ -51828,14 +51824,14 @@
   },
   "deepseek/deepseek-v4-pro": {
     "cache_creation_input_token_cost": 0,
-    "cache_read_input_token_cost": 4.375e-07,
-    "input_cost_per_token": 1.75e-06,
+    "cache_read_input_token_cost": 4.4e-08,
+    "input_cost_per_token": 1.32e-06,
     "input_cost_per_token_cache_hit": 4.4e-08,
-    "max_input_tokens": 1048576,
-    "max_output_tokens": 64000,
-    "max_tokens": 1048576,
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 393216,
+    "max_tokens": 393216,
     "mode": "chat",
-    "output_cost_per_token": 3.5e-06,
+    "output_cost_per_token": 3.96e-06,
     "source": "https://api-docs.deepseek.com/quick_start/pricing",
     "supported_endpoints": [
       "/v1/chat/completions"
@@ -51879,10 +51875,7 @@
         }
       ]
     },
-    "off_peak_cost_multiplier": 0.5,
-    "metadata": {
-      "notes": "DeepSeek's most capable model for complex reasoning, coding, and agentic workflows."
-    }
+    "off_peak_cost_multiplier": 0.5
   },
   "tencent/deepseek-v4-pro": {
     "cache_creation_input_token_cost": 0,
@@ -67429,7 +67422,24 @@
     "provider": "bedrock_mantle",
     "base_model": "grok-4.6"
   },
-  "deepseek/deepseek-v4-flash-0731": {
+  "tensorx/deepseek/deepseek-v3.2": {
+    "mode": "chat",
+    "provider": "deepseek",
+    "base_model": "deepseek-v3.2",
+    "max_input_tokens": 163840,
+    "max_output_tokens": 163840,
+    "max_tokens": 163840,
+    "input_cost_per_token": 3e-07,
+    "output_cost_per_token": 5e-07,
+    "cache_read_input_token_cost": 7.5e-08,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "metadata": {
+      "notes": "Well-rounded DeepSeek model for everyday reasoning, coding, and chat."
+    }
+  },
+  "tensorx/deepseek/deepseek-v4-flash-0731": {
     "mode": "chat",
     "provider": "deepseek",
     "base_model": "deepseek-v4-flash-0731",
@@ -67446,7 +67456,24 @@
       "notes": "Top-3 open model: frontier reasoning at flash speed and price."
     }
   },
-  "minimax/minimax-m2.5": {
+  "tensorx/deepseek/deepseek-v4-pro": {
+    "mode": "chat",
+    "provider": "deepseek",
+    "base_model": "deepseek-v4-pro",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 64000,
+    "max_tokens": 1048576,
+    "input_cost_per_token": 1.75e-06,
+    "output_cost_per_token": 3.5e-06,
+    "cache_read_input_token_cost": 4.375e-07,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "metadata": {
+      "notes": "DeepSeek's most capable model for complex reasoning, coding, and agentic workflows."
+    }
+  },
+  "tensorx/minimax/minimax-m2.5": {
     "mode": "chat",
     "provider": "minimax",
     "base_model": "minimax-m2.5",
@@ -67463,7 +67490,7 @@
       "notes": "Strong general-purpose model from MiniMax, well suited to reasoning and long-context chat."
     }
   },
-  "minimax/minimax-m3": {
+  "tensorx/minimax/minimax-m3": {
     "mode": "chat",
     "provider": "minimax",
     "base_model": "minimax-m3",
@@ -67481,7 +67508,7 @@
       "notes": "Open-weight model built for coding, long-context agent work and multimodal input."
     }
   },
-  "moonshotai/kimi-k2.5": {
+  "tensorx/moonshotai/kimi-k2.5": {
     "mode": "chat",
     "provider": "moonshotai",
     "base_model": "kimi-k2.5",
@@ -67498,7 +67525,7 @@
       "notes": "Capable Moonshot Kimi model for general assistant, reasoning, and long-context tasks."
     }
   },
-  "moonshotai/kimi-k2.6": {
+  "tensorx/moonshotai/kimi-k2.6": {
     "mode": "chat",
     "provider": "moonshotai",
     "base_model": "kimi-k2.6",
@@ -67516,7 +67543,7 @@
       "notes": "Latest Moonshot Kimi model with strong reasoning and agentic tool use."
     }
   },
-  "moonshotai/kimi-k2.7-code": {
+  "tensorx/moonshotai/kimi-k2.7-code": {
     "mode": "chat",
     "provider": "moonshotai",
     "base_model": "kimi-k2.7-code",
@@ -67534,7 +67561,7 @@
       "notes": "Open-weight model built for end-to-end coding and multi-step agent workflows."
     }
   },
-  "moonshotai/kimi-k3": {
+  "tensorx/moonshotai/kimi-k3": {
     "mode": "chat",
     "provider": "moonshotai",
     "base_model": "kimi-k3",
@@ -67552,7 +67579,7 @@
       "notes": "Moonshot's flagship open model: frontier coding, agents, multimodal, 1M context."
     }
   },
-  "qwen/qwen3-235b-a22b-2507": {
+  "tensorx/qwen/qwen3-235b-a22b-2507": {
     "mode": "chat",
     "provider": "qwen",
     "base_model": "qwen3-235b-a22b-2507",
@@ -67568,7 +67595,7 @@
       "notes": "Large Qwen mixture-of-experts model for advanced reasoning, coding, and multilingual tasks."
     }
   },
-  "qwen/qwen3.5-122b-a10b": {
+  "tensorx/qwen/qwen3.5-122b-a10b": {
     "mode": "chat",
     "provider": "qwen",
     "base_model": "qwen3.5-122b-a10b",
@@ -67586,7 +67613,7 @@
       "notes": "Large Qwen mixture-of-experts model for demanding reasoning, coding, and multilingual work."
     }
   },
-  "qwen/qwen3.5-9b": {
+  "tensorx/qwen/qwen3.5-9b": {
     "mode": "chat",
     "provider": "qwen",
     "base_model": "qwen3.5-9b",
@@ -67603,7 +67630,7 @@
       "notes": "Compact, cost-effective Qwen model for fast, high-volume general tasks."
     }
   },
-  "qwen/qwen3.8-2.4t-a95b": {
+  "tensorx/qwen/qwen3.8-2.4t-a95b": {
     "mode": "chat",
     "provider": "qwen",
     "base_model": "qwen3.8-2.4t-a95b",
@@ -67620,7 +67647,7 @@
       "notes": "World's second-strongest open model: 2.4T Alibaba flagship, frontier reasoning, EU-sovereign."
     }
   },
-  "qwen/qwen3.8-27b": {
+  "tensorx/qwen/qwen3.8-27b": {
     "mode": "chat",
     "provider": "qwen",
     "base_model": "qwen3.8-27b",
@@ -67638,7 +67665,7 @@
       "notes": "Compact 27B open sibling of Qwen3.8 Max: efficient reasoning, EU-sovereign."
     }
   },
-  "qwen/qwen3.8-flash-next": {
+  "tensorx/qwen/qwen3.8-flash-next": {
     "mode": "chat",
     "provider": "qwen",
     "base_model": "qwen3.8-flash-next",
@@ -67656,7 +67683,7 @@
       "notes": "Ultra-efficient multimodal model with elite coding from 6B active parameters."
     }
   },
-  "qwen/qwen3-embedding-8b": {
+  "tensorx/qwen/qwen3-embedding-8b": {
     "mode": "chat",
     "provider": "qwen",
     "base_model": "qwen3-embedding-8b",
@@ -67667,7 +67694,7 @@
       "notes": "Qwen embedding model for semantic search, retrieval, and RAG pipelines."
     }
   },
-  "z-ai/glm-5": {
+  "tensorx/z-ai/glm-5": {
     "mode": "chat",
     "provider": "z-ai",
     "base_model": "glm-5",
@@ -67684,7 +67711,7 @@
       "notes": "Z.ai's flagship GLM model for advanced reasoning, coding, and agentic applications."
     }
   },
-  "z-ai/glm-5.1": {
+  "tensorx/z-ai/glm-5.1": {
     "mode": "chat",
     "provider": "z-ai",
     "base_model": "glm-5.1",
@@ -67701,7 +67728,7 @@
       "notes": "Enhanced GLM-5 release with improved reasoning and tool-use performance."
     }
   },
-  "z-ai/glm-5.2": {
+  "tensorx/z-ai/glm-5.2": {
     "mode": "chat",
     "provider": "z-ai",
     "base_model": "glm-5.2",
@@ -67718,7 +67745,7 @@
       "notes": "Open-weight frontier model with strong coding, agentic performance and a 1M context window."
     }
   },
-  "z-ai/glm-5.3-flash": {
+  "tensorx/z-ai/glm-5.3-flash": {
     "mode": "chat",
     "provider": "z-ai",
     "base_model": "glm-5.3-flash",
@@ -67736,7 +67763,7 @@
       "notes": "Fast, low-cost multimodal model with 1M context and frontier reasoning."
     }
   },
-  "z-ai/glm-5-turbo": {
+  "tensorx/z-ai/glm-5-turbo": {
     "mode": "chat",
     "provider": "z-ai",
     "base_model": "glm-5-turbo",
@@ -67753,7 +67780,7 @@
       "notes": "Faster, lower-cost GLM-5 variant tuned for real-time, high-throughput workloads."
     }
   },
-  "z-ai/glm-5v-turbo": {
+  "tensorx/z-ai/glm-5v-turbo": {
     "mode": "chat",
     "provider": "z-ai",
     "base_model": "glm-5v-turbo",
@@ -67771,7 +67798,7 @@
       "notes": "Multimodal GLM model that handles vision and text for fast, image-aware tasks."
     }
   },
-  "deepseek/deepseek-r1-0528": {
+  "tensorx/deepseek/deepseek-r1-0528": {
     "mode": "chat",
     "provider": "deepseek",
     "base_model": "deepseek-r1-0528",
