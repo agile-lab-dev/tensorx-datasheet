@@ -10,16 +10,19 @@
 #     "rich>=13",
 # ]
 # ///
-"""tensorx-datasheet.py — Convert the TensorX models API into a Bifrost pricing datasheet.
+"""tensorx-datasheet.py — Build a Bifrost pricing datasheet from TensorX + Bifrost.
 
-Fetches the live model catalogue from ``https://sys.tensorx.ai/api/models`` and
-rewrites each entry into the schema used by ``https://getbifrost.ai/datasheet``:
-a flat JSON object keyed by model id, with numeric token costs, ``mode``,
-``provider``, ``base_model``, token limits, capability flags, and metadata notes.
+Fetches the live model catalogue from ``https://sys.tensorx.ai/api/models``,
+rewrites each entry into the schema used by ``https://getbifrost.ai/datasheet``
+(a flat JSON object keyed by model id, with numeric token costs, ``mode``,
+``provider``, ``base_model``, token limits, capability flags, and metadata
+notes), then concats it on top of the official Bifrost datasheet: all Bifrost
+models are kept, and for models present in both the TensorX entry wins (fields
+are merged per-model, with TensorX values taking precedence).
 
 Usage:
-    uv run tensorx-datasheet.py convert --output datasheet.json
-    uv run tensorx-datasheet.py convert --output datasheet.json --verbose
+    uv run tensorx-datasheet.py --output data.json
+    uv run tensorx-datasheet.py --output data.json --verbose
 """
 
 from __future__ import annotations
@@ -187,21 +190,33 @@ def build_datasheet(raw_models: list[TensorXModel]) -> dict[str, dict[str, Any]]
 
 def merge_datasheets(
     bifrost: dict[str, dict[str, Any]], tensorx: dict[str, dict[str, Any]]
-) -> dict[str, dict[str, Any]]:
-    """Merge the Bifrost datasheet with the TensorX one; on clashing keys TensorX wins."""
+) -> tuple[dict[str, dict[str, Any]], list[str]]:
+    """Merge the Bifrost datasheet with the TensorX one; on clashing keys TensorX wins.
+
+    Returns the merged datasheet and the list of clashing model ids (in
+    definition order), i.e. the models where a TensorX entry won over a
+    Bifrost one.
+    """
     merged = dict(bifrost)
+    clashed: list[str] = []
     for model_id, tx_entry in tensorx.items():
         if model_id not in merged:
             merged[model_id] = tx_entry
             continue
+        clashed.append(model_id)
         entry = {**merged[model_id], **tx_entry}
         metadata = {**merged[model_id].get("metadata", {}), **tx_entry.get("metadata", {})}
         if metadata:
             entry["metadata"] = metadata
         else:
             entry.pop("metadata", None)
+        for field in tx_entry:
+            old = merged[model_id].get(field)
+            new = entry[field]
+            if old != new:
+                logger.debug("%s: TensorX wins %s: %r -> %r", model_id, field, old, new)
         merged[model_id] = entry
-    return merged
+    return merged, clashed
 
 
 # ---------------------------------------------------------------------------
@@ -223,7 +238,7 @@ def main(
         typer.Option("--verbose", "-v", help="Enable verbose logging."),
     ] = False,
 ) -> None:
-    """Fetch TensorX models and write a Bifrost pricing datasheet to OUTPUT."""
+    """Fetch TensorX + Bifrost data and write the merged datasheet to OUTPUT."""
     if verbose:
         logging.basicConfig(level=logging.DEBUG)
     else:
@@ -240,11 +255,16 @@ def main(
         raise typer.Exit(code=1) from exc
 
     tensorx_sheet = build_datasheet(raw_models)
-    datasheet = merge_datasheets(bifrost, tensorx_sheet)
+    datasheet, clashed = merge_datasheets(bifrost, tensorx_sheet)
     rprint(
         f"[bold green]Converted[/] {len(tensorx_sheet)} TensorX models, "
         f"merged with {len(bifrost)} Bifrost entries -> {len(datasheet)} models"
     )
+    if clashed:
+        rprint(
+            f"[bold yellow]Overridden[/] {len(clashed)} Bifrost entries "
+            "(TensorX wins): " + ", ".join(clashed)
+        )
 
     try:
         output.parent.mkdir(parents=True, exist_ok=True)

@@ -1,37 +1,18 @@
 # tensorx-datasheet
 
-[Point your bifrost data sheet url](https://docs.getbifrost.ai/providers/custom-pricing) here:
+An always-up-to-date [Bifrost](https://getbifrost.ai) model datasheet that
+includes [TensorX](https://tensorx.ai) pricing and model information, refreshed
+daily and available as a raw file directly from GitHub:
 
 ```
 https://raw.githubusercontent.com/agile-lab-dev/tensorx-datasheet/refs/heads/main/data.json
 ```
 
-Convert the [TensorX](https://sys.tensorx.ai) models API into a
-[Bifrost](https://getbifrost.ai/datasheet) pricing datasheet.
+[Point your Bifrost data sheet URL](https://docs.getbifrost.ai/providers/custom-pricing)
+there and TensorX-hosted models show up with correct costs, token limits, and
+capabilities — no maintenance on your side.
 
-The script fetches the live model catalogue from `https://sys.tensorx.ai/api/models`
-and rewrites each entry into the Bifrost datasheet schema: a flat JSON object keyed
-by model id, with numeric token costs, `mode`, `provider`, `base_model`, token
-limits, capability flags, and metadata notes.
-
-## Requirements
-
-[uv](https://docs.astral.sh/uv/getting-started/installation/) — dependencies
-(`httpx`, `typer`, `rich`) are declared inline in the script and installed automatically.
-
-## Usage
-
-```fish
-uv run tensorx-datasheet.py --output data.json
-uv run tensorx-datasheet.py --output data.json --verbose
-```
-
-| Option | Description |
-| --- | --- |
-| `--output`, `-o` | Path of the JSON datasheet file to write. |
-| `--verbose`, `-v` | Enable verbose (DEBUG) logging. |
-
-## Output format
+## Sample entry
 
 ```json
 {
@@ -53,5 +34,15 @@ uv run tensorx-datasheet.py --output data.json --verbose
 }
 ```
 
-Only fields present in the API response are emitted; capability flags appear only
-when `true`.
+## How it works
+
+A single Python script (`tensorx-datasheet.py`) fetches the live TensorX models API,
+rewrites each entry into the Bifrost datasheet schema, and concats it on top of the
+official [Bifrost datasheet](https://getbifrost.ai/datasheet): all Bifrost models are
+kept, and for models present in both, the TensorX entry wins (fields are merged
+per-model, with TensorX values taking precedence). A daily job regenerates and commits
+`data.json`. To run it manually (requires [uv](https://docs.astral.sh/uv/)):
+
+```fish
+uv run tensorx-datasheet.py --output data.json
+```
