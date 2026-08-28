@@ -1,0 +1,395 @@
+{
+  "deepseek/deepseek-v3.2": {
+    "mode": "chat",
+    "provider": "deepseek",
+    "base_model": "deepseek-v3.2",
+    "max_input_tokens": 163840,
+    "max_output_tokens": 163840,
+    "max_tokens": 163840,
+    "input_cost_per_token": 3e-07,
+    "output_cost_per_token": 5e-07,
+    "cache_read_input_token_cost": 7.5e-08,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "metadata": {
+      "notes": "Well-rounded DeepSeek model for everyday reasoning, coding, and chat."
+    }
+  },
+  "deepseek/deepseek-v4-flash-0731": {
+    "mode": "chat",
+    "provider": "deepseek",
+    "base_model": "deepseek-v4-flash-0731",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 64000,
+    "max_tokens": 1048576,
+    "input_cost_per_token": 2.5e-07,
+    "output_cost_per_token": 3e-07,
+    "cache_read_input_token_cost": 6.25e-08,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "metadata": {
+      "notes": "Top-3 open model: frontier reasoning at flash speed and price."
+    }
+  },
+  "deepseek/deepseek-v4-pro": {
+    "mode": "chat",
+    "provider": "deepseek",
+    "base_model": "deepseek-v4-pro",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 64000,
+    "max_tokens": 1048576,
+    "input_cost_per_token": 1.75e-06,
+    "output_cost_per_token": 3.5e-06,
+    "cache_read_input_token_cost": 4.375e-07,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "metadata": {
+      "notes": "DeepSeek's most capable model for complex reasoning, coding, and agentic workflows."
+    }
+  },
+  "minimax/minimax-m2.5": {
+    "mode": "chat",
+    "provider": "minimax",
+    "base_model": "minimax-m2.5",
+    "max_input_tokens": 196608,
+    "max_output_tokens": 65536,
+    "max_tokens": 65536,
+    "input_cost_per_token": 3e-07,
+    "output_cost_per_token": 1.2e-06,
+    "cache_read_input_token_cost": 7.5e-08,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "metadata": {
+      "notes": "Strong general-purpose model from MiniMax, well suited to reasoning and long-context chat."
+    }
+  },
+  "minimax/minimax-m3": {
+    "mode": "chat",
+    "provider": "minimax",
+    "base_model": "minimax-m3",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 64000,
+    "max_tokens": 1048576,
+    "input_cost_per_token": 4e-07,
+    "output_cost_per_token": 2e-06,
+    "cache_read_input_token_cost": 1e-07,
+    "supports_vision": true,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "metadata": {
+      "notes": "Open-weight model built for coding, long-context agent work and multimodal input."
+    }
+  },
+  "moonshotai/kimi-k2.5": {
+    "mode": "chat",
+    "provider": "moonshotai",
+    "base_model": "kimi-k2.5",
+    "max_input_tokens": 262144,
+    "max_output_tokens": 262144,
+    "max_tokens": 262144,
+    "input_cost_per_token": 5e-07,
+    "output_cost_per_token": 2.8e-06,
+    "cache_read_input_token_cost": 1.25e-07,
+    "supports_vision": true,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "metadata": {
+      "notes": "Capable Moonshot Kimi model for general assistant, reasoning, and long-context tasks."
+    }
+  },
+  "moonshotai/kimi-k2.6": {
+    "mode": "chat",
+    "provider": "moonshotai",
+    "base_model": "kimi-k2.6",
+    "max_input_tokens": 262144,
+    "max_output_tokens": 64000,
+    "max_tokens": 262144,
+    "input_cost_per_token": 1e-06,
+    "output_cost_per_token": 4e-06,
+    "cache_read_input_token_cost": 2.5e-07,
+    "supports_vision": true,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "metadata": {
+      "notes": "Latest Moonshot Kimi model with strong reasoning and agentic tool use."
+    }
+  },
+  "moonshotai/kimi-k2.7-code": {
+    "mode": "chat",
+    "provider": "moonshotai",
+    "base_model": "kimi-k2.7-code",
+    "max_input_tokens": 262144,
+    "max_output_tokens": 64000,
+    "max_tokens": 262144,
+    "input_cost_per_token": 1.25e-06,
+    "output_cost_per_token": 4.5e-06,
+    "cache_read_input_token_cost": 3.125e-07,
+    "supports_vision": true,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "metadata": {
+      "notes": "Open-weight model built for end-to-end coding and multi-step agent workflows."
+    }
+  },
+  "moonshotai/kimi-k3": {
+    "mode": "chat",
+    "provider": "moonshotai",
+    "base_model": "kimi-k3",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 64000,
+    "max_tokens": 1048576,
+    "input_cost_per_token": 3e-06,
+    "output_cost_per_token": 1.5e-05,
+    "cache_read_input_token_cost": 7.5e-07,
+    "supports_vision": true,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "metadata": {
+      "notes": "Moonshot's flagship open model: frontier coding, agents, multimodal, 1M context."
+    }
+  },
+  "qwen/qwen3-235b-a22b-2507": {
+    "mode": "chat",
+    "provider": "qwen",
+    "base_model": "qwen3-235b-a22b-2507",
+    "max_input_tokens": 131000,
+    "max_output_tokens": 262144,
+    "max_tokens": 131000,
+    "input_cost_per_token": 7.2e-08,
+    "output_cost_per_token": 4.64e-07,
+    "cache_read_input_token_cost": 1.8e-08,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "metadata": {
+      "notes": "Large Qwen mixture-of-experts model for advanced reasoning, coding, and multilingual tasks."
+    }
+  },
+  "qwen/qwen3.5-122b-a10b": {
+    "mode": "chat",
+    "provider": "qwen",
+    "base_model": "qwen3.5-122b-a10b",
+    "max_input_tokens": 262144,
+    "max_output_tokens": 262144,
+    "max_tokens": 262144,
+    "input_cost_per_token": 5e-07,
+    "output_cost_per_token": 3.5e-06,
+    "cache_read_input_token_cost": 1.25e-07,
+    "supports_vision": true,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "metadata": {
+      "notes": "Large Qwen mixture-of-experts model for demanding reasoning, coding, and multilingual work."
+    }
+  },
+  "qwen/qwen3.5-9b": {
+    "mode": "chat",
+    "provider": "qwen",
+    "base_model": "qwen3.5-9b",
+    "max_input_tokens": 262144,
+    "max_output_tokens": 262144,
+    "max_tokens": 262144,
+    "input_cost_per_token": 1.5e-07,
+    "output_cost_per_token": 2e-07,
+    "cache_read_input_token_cost": 3.75e-08,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "metadata": {
+      "notes": "Compact, cost-effective Qwen model for fast, high-volume general tasks."
+    }
+  },
+  "qwen/qwen3.8-2.4t-a95b": {
+    "mode": "chat",
+    "provider": "qwen",
+    "base_model": "qwen3.8-2.4t-a95b",
+    "max_input_tokens": 262144,
+    "max_output_tokens": 64000,
+    "max_tokens": 262144,
+    "input_cost_per_token": 2.5e-06,
+    "output_cost_per_token": 6e-06,
+    "cache_read_input_token_cost": 6.25e-07,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "metadata": {
+      "notes": "World's second-strongest open model: 2.4T Alibaba flagship, frontier reasoning, EU-sovereign."
+    }
+  },
+  "qwen/qwen3.8-27b": {
+    "mode": "chat",
+    "provider": "qwen",
+    "base_model": "qwen3.8-27b",
+    "max_input_tokens": 262144,
+    "max_output_tokens": 32768,
+    "max_tokens": 262144,
+    "input_cost_per_token": 4e-07,
+    "output_cost_per_token": 2.4e-06,
+    "cache_read_input_token_cost": 1e-07,
+    "supports_vision": true,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "metadata": {
+      "notes": "Compact 27B open sibling of Qwen3.8 Max: efficient reasoning, EU-sovereign."
+    }
+  },
+  "qwen/qwen3.8-flash-next": {
+    "mode": "chat",
+    "provider": "qwen",
+    "base_model": "qwen3.8-flash-next",
+    "max_input_tokens": 262144,
+    "max_output_tokens": 64000,
+    "max_tokens": 262144,
+    "input_cost_per_token": 2e-07,
+    "output_cost_per_token": 5e-07,
+    "cache_read_input_token_cost": 5e-08,
+    "supports_vision": true,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "metadata": {
+      "notes": "Ultra-efficient multimodal model with elite coding from 6B active parameters."
+    }
+  },
+  "qwen/qwen3-embedding-8b": {
+    "mode": "chat",
+    "provider": "qwen",
+    "base_model": "qwen3-embedding-8b",
+    "max_input_tokens": 40960,
+    "max_tokens": 40960,
+    "input_cost_per_token": 2e-08,
+    "metadata": {
+      "notes": "Qwen embedding model for semantic search, retrieval, and RAG pipelines."
+    }
+  },
+  "z-ai/glm-5": {
+    "mode": "chat",
+    "provider": "z-ai",
+    "base_model": "glm-5",
+    "max_input_tokens": 202752,
+    "max_output_tokens": 202752,
+    "max_tokens": 202752,
+    "input_cost_per_token": 1e-06,
+    "output_cost_per_token": 3.2e-06,
+    "cache_read_input_token_cost": 2.5e-07,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "metadata": {
+      "notes": "Z.ai's flagship GLM model for advanced reasoning, coding, and agentic applications."
+    }
+  },
+  "z-ai/glm-5.1": {
+    "mode": "chat",
+    "provider": "z-ai",
+    "base_model": "glm-5.1",
+    "max_input_tokens": 202752,
+    "max_output_tokens": 64000,
+    "max_tokens": 202752,
+    "input_cost_per_token": 1.4e-06,
+    "output_cost_per_token": 4.4e-06,
+    "cache_read_input_token_cost": 3.5e-07,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "metadata": {
+      "notes": "Enhanced GLM-5 release with improved reasoning and tool-use performance."
+    }
+  },
+  "z-ai/glm-5.2": {
+    "mode": "chat",
+    "provider": "z-ai",
+    "base_model": "glm-5.2",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 64000,
+    "max_tokens": 1048576,
+    "input_cost_per_token": 1.5e-06,
+    "output_cost_per_token": 4.5e-06,
+    "cache_read_input_token_cost": 3.75e-07,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "metadata": {
+      "notes": "Open-weight frontier model with strong coding, agentic performance and a 1M context window."
+    }
+  },
+  "z-ai/glm-5.3-flash": {
+    "mode": "chat",
+    "provider": "z-ai",
+    "base_model": "glm-5.3-flash",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 64000,
+    "max_tokens": 1048576,
+    "input_cost_per_token": 2e-07,
+    "output_cost_per_token": 5e-07,
+    "cache_read_input_token_cost": 5e-08,
+    "supports_vision": true,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "metadata": {
+      "notes": "Fast, low-cost multimodal model with 1M context and frontier reasoning."
+    }
+  },
+  "z-ai/glm-5-turbo": {
+    "mode": "chat",
+    "provider": "z-ai",
+    "base_model": "glm-5-turbo",
+    "max_input_tokens": 202752,
+    "max_output_tokens": 131072,
+    "max_tokens": 202752,
+    "input_cost_per_token": 1.2e-06,
+    "output_cost_per_token": 4e-06,
+    "cache_read_input_token_cost": 3e-07,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "metadata": {
+      "notes": "Faster, lower-cost GLM-5 variant tuned for real-time, high-throughput workloads."
+    }
+  },
+  "z-ai/glm-5v-turbo": {
+    "mode": "chat",
+    "provider": "z-ai",
+    "base_model": "glm-5v-turbo",
+    "max_input_tokens": 202752,
+    "max_output_tokens": 131072,
+    "max_tokens": 202752,
+    "input_cost_per_token": 1.2e-06,
+    "output_cost_per_token": 4e-06,
+    "cache_read_input_token_cost": 3e-07,
+    "supports_vision": true,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "metadata": {
+      "notes": "Multimodal GLM model that handles vision and text for fast, image-aware tasks."
+    }
+  },
+  "deepseek/deepseek-r1-0528": {
+    "mode": "chat",
+    "provider": "deepseek",
+    "base_model": "deepseek-r1-0528",
+    "max_input_tokens": 164000,
+    "max_output_tokens": 8192,
+    "max_tokens": 164000,
+    "input_cost_per_token": 6.6e-07,
+    "output_cost_per_token": 2.6e-06,
+    "cache_read_input_token_cost": 1.65e-07,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "metadata": {
+      "notes": "DeepSeek R1 reasoning model built for step-by-step problem solving and maths."
+    }
+  }
+}
