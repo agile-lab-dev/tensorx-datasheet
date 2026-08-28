@@ -17,7 +17,7 @@ jobs:
       - uses: astral-sh/setup-uv@v6
 
       - name: Regenerate data.json
-        run: uv run tensorx-datasheet.py --output data.json
+        run: uv run tensorx-datasheet.py --output data.json --prefix ""
 
       - name: Commit and push if changed
         run: |
