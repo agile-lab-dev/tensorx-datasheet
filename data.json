@@ -34114,13 +34114,13 @@
     "supports_response_schema": true
   },
   "openrouter/deepseek/deepseek-v4-pro": {
-    "input_cost_per_token": 8.7e-07,
+    "input_cost_per_token": 6.90954e-07,
     "input_cost_per_token_cache_hit": 4.4e-08,
     "max_input_tokens": 1024000,
     "max_output_tokens": 384000,
     "max_tokens": 384000,
     "mode": "chat",
-    "output_cost_per_token": 1.74e-06,
+    "output_cost_per_token": 1.381908e-06,
     "source": "https://openrouter.ai/deepseek/deepseek-v4-pro",
     "supports_function_calling": true,
     "supports_prompt_caching": true,
@@ -34129,7 +34129,7 @@
     "supports_tool_choice": true,
     "provider": "openrouter",
     "base_model": "deepseek-v4-pro",
-    "cache_read_input_token_cost": 7.25e-08
+    "cache_read_input_token_cost": 5.75795e-08
   },
   "openrouter/deepseek/deepseek-v4-pro-0813": {
     "input_cost_per_token": 6.6e-07,
@@ -34658,19 +34658,19 @@
     "supports_prompt_caching": true
   },
   "openrouter/nvidia/nemotron-3.5-lightning": {
-    "input_cost_per_token": 1e-07,
+    "input_cost_per_token": 8e-08,
     "max_input_tokens": 262144,
     "mode": "chat",
-    "output_cost_per_token": 2.5e-07,
+    "output_cost_per_token": 2e-07,
     "source": "https://openrouter.ai/nvidia/nemotron-3.5-lightning",
     "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_tool_choice": true,
     "provider": "openrouter",
     "base_model": "nemotron-3.5-lightning",
-    "cache_read_input_token_cost": 5e-08,
-    "max_output_tokens": 235929,
-    "max_tokens": 235929,
+    "cache_read_input_token_cost": 4e-08,
+    "max_output_tokens": 131072,
+    "max_tokens": 131072,
     "supports_response_schema": true,
     "supports_prompt_caching": true
   },
@@ -34752,11 +34752,11 @@
     "supports_pdf_input": true
   },
   "openrouter/openai/gpt-4.1-nano": {
-    "cache_read_input_token_cost": 2.5e-08,
+    "cache_read_input_token_cost": 3e-08,
     "input_cost_per_token": 1e-07,
     "max_input_tokens": 1047576,
-    "max_output_tokens": 32768,
-    "max_tokens": 32768,
+    "max_output_tokens": 942818,
+    "max_tokens": 942818,
     "mode": "chat",
     "output_cost_per_token": 4e-07,
     "supports_function_calling": true,
@@ -35256,12 +35256,12 @@
     "supports_response_schema": true
   },
   "openrouter/qwen/qwen3.5-122b-a10b": {
-    "input_cost_per_token": 2.6e-07,
+    "input_cost_per_token": 2.9e-07,
     "max_input_tokens": 262144,
-    "max_output_tokens": 235929,
-    "max_tokens": 235929,
+    "max_output_tokens": 81920,
+    "max_tokens": 81920,
     "mode": "chat",
-    "output_cost_per_token": 2.08e-06,
+    "output_cost_per_token": 2.4e-06,
     "source": "https://openrouter.ai/qwen/qwen3.5-122b-a10b",
     "supports_function_calling": true,
     "supports_reasoning": true,
@@ -51828,14 +51828,14 @@
   },
   "deepseek/deepseek-v4-pro": {
     "cache_creation_input_token_cost": 0,
-    "cache_read_input_token_cost": 4.375e-07,
-    "input_cost_per_token": 1.75e-06,
+    "cache_read_input_token_cost": 4.4e-08,
+    "input_cost_per_token": 1.32e-06,
     "input_cost_per_token_cache_hit": 4.4e-08,
-    "max_input_tokens": 1048576,
-    "max_output_tokens": 64000,
-    "max_tokens": 1048576,
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 393216,
+    "max_tokens": 393216,
     "mode": "chat",
-    "output_cost_per_token": 3.5e-06,
+    "output_cost_per_token": 3.96e-06,
     "source": "https://api-docs.deepseek.com/quick_start/pricing",
     "supported_endpoints": [
       "/v1/chat/completions"
@@ -51850,7 +51850,7 @@
     "supports_system_messages": true,
     "supports_tool_choice": true,
     "supports_vision": false,
-    "provider": "tensorx",
+    "provider": "deepseek",
     "base_model": "deepseek-v4-pro",
     "peak_hours": {
       "timezone": "UTC",
@@ -51879,10 +51879,7 @@
         }
       ]
     },
-    "off_peak_cost_multiplier": 0.5,
-    "metadata": {
-      "notes": "DeepSeek's most capable model for complex reasoning, coding, and agentic workflows."
-    }
+    "off_peak_cost_multiplier": 0.5
   },
   "tencent/deepseek-v4-pro": {
     "cache_creation_input_token_cost": 0,
@@ -55592,6 +55589,22 @@
     "output_cost_per_image_above_1024_and_1792_pixels_standard_quality": 0.079988,
     "output_cost_per_image_above_1792_and_1024_pixels_standard_quality": 0.079988
   },
+  "openrouter/tencent/hy4-preview": {
+    "provider": "openrouter",
+    "base_model": "hy4-preview",
+    "mode": "chat",
+    "input_cost_per_token": 8.34e-07,
+    "output_cost_per_token": 2.501e-06,
+    "cache_read_input_token_cost": 4.2e-08,
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 64000,
+    "max_tokens": 64000,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_prompt_caching": true
+  },
   "openrouter/qwen/qwen3.8-flash": {
     "provider": "openrouter",
     "base_model": "qwen3.8-flash",
@@ -55620,6 +55633,23 @@
     "max_input_tokens": 1048576,
     "max_output_tokens": 131072,
     "max_tokens": 131072,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_vision": true,
+    "supports_prompt_caching": true
+  },
+  "openrouter/z-ai/glm-5.3-flash:batch": {
+    "provider": "openrouter",
+    "base_model": "glm-5.3-flash:batch",
+    "mode": "chat",
+    "input_cost_per_token": 1.5e-07,
+    "output_cost_per_token": 5e-07,
+    "cache_read_input_token_cost": 3e-08,
+    "max_input_tokens": 1048575,
+    "max_output_tokens": 943717,
+    "max_tokens": 943717,
     "supports_function_calling": true,
     "supports_tool_choice": true,
     "supports_reasoning": true,
@@ -55688,12 +55718,12 @@
     "provider": "openrouter",
     "base_model": "glm-latest",
     "mode": "chat",
-    "input_cost_per_token": 1.4e-06,
-    "output_cost_per_token": 4.4e-06,
-    "cache_read_input_token_cost": 2.6e-07,
+    "input_cost_per_token": 1.2e-06,
+    "output_cost_per_token": 4e-06,
+    "cache_read_input_token_cost": 2.4e-07,
     "max_input_tokens": 1048576,
-    "max_output_tokens": 131072,
-    "max_tokens": 131072,
+    "max_output_tokens": 943718,
+    "max_tokens": 943718,
     "supports_function_calling": true,
     "supports_tool_choice": true,
     "supports_reasoning": true,
@@ -55782,11 +55812,11 @@
     "provider": "openrouter",
     "base_model": "gemini-3.7-flash",
     "mode": "chat",
-    "input_cost_per_token": 3.75e-07,
-    "output_cost_per_token": 1.875e-06,
-    "cache_read_input_token_cost": 3.75e-08,
-    "cache_creation_input_token_cost": 2.08333333333333e-08,
-    "output_cost_per_image": 3.75e-07,
+    "input_cost_per_token": 7.5e-07,
+    "output_cost_per_token": 3.75e-06,
+    "cache_read_input_token_cost": 7.5e-08,
+    "cache_creation_input_token_cost": 4.16666666666667e-08,
+    "output_cost_per_image": 7.5e-07,
     "max_input_tokens": 1048576,
     "max_output_tokens": 65536,
     "max_tokens": 65536,
@@ -55882,6 +55912,22 @@
     "supports_response_schema": true,
     "supports_prompt_caching": true
   },
+  "openrouter/qwen/qwen3.8-2.4t-a95b:batch": {
+    "provider": "openrouter",
+    "base_model": "qwen3.8-2.4t-a95b:batch",
+    "mode": "chat",
+    "input_cost_per_token": 2.5e-06,
+    "output_cost_per_token": 6.25e-06,
+    "cache_read_input_token_cost": 5e-07,
+    "max_input_tokens": 1010000,
+    "max_output_tokens": 909000,
+    "max_tokens": 909000,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_prompt_caching": true
+  },
   "openrouter/bytedance-seed/seed-2.0-code": {
     "provider": "openrouter",
     "base_model": "seed-2.0-code",
@@ -55896,6 +55942,22 @@
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_vision": true
+  },
+  "openrouter/deepseek/deepseek-v4-pro-0813:batch": {
+    "provider": "openrouter",
+    "base_model": "deepseek-v4-pro-0813:batch",
+    "mode": "chat",
+    "input_cost_per_token": 1.32e-06,
+    "output_cost_per_token": 3.96e-06,
+    "cache_read_input_token_cost": 1.3e-07,
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 943718,
+    "max_tokens": 943718,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_prompt_caching": true
   },
   "openrouter/x-ai/grok-4.6": {
     "provider": "openrouter",
@@ -55952,6 +56014,23 @@
   "openrouter/meta/muse-glimmer-30b": {
     "provider": "openrouter",
     "base_model": "muse-glimmer-30b",
+    "mode": "chat",
+    "input_cost_per_token": 3e-07,
+    "output_cost_per_token": 1.2e-06,
+    "cache_read_input_token_cost": 4e-08,
+    "max_input_tokens": 131072,
+    "max_output_tokens": 16384,
+    "max_tokens": 16384,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_vision": true,
+    "supports_prompt_caching": true
+  },
+  "openrouter/meta/muse-glimmer-30b:batch": {
+    "provider": "openrouter",
+    "base_model": "muse-glimmer-30b:batch",
     "mode": "chat",
     "input_cost_per_token": 3.5e-07,
     "output_cost_per_token": 1.5e-06,
@@ -56034,9 +56113,25 @@
     "provider": "openrouter",
     "base_model": "deepseek-v4-flash-0731",
     "mode": "chat",
-    "input_cost_per_token": 6e-08,
-    "output_cost_per_token": 1.2e-07,
-    "cache_read_input_token_cost": 1.2e-08,
+    "input_cost_per_token": 4.5e-08,
+    "output_cost_per_token": 9e-08,
+    "cache_read_input_token_cost": 9e-09,
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 943718,
+    "max_tokens": 943718,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_prompt_caching": true
+  },
+  "openrouter/deepseek/deepseek-v4-flash-0731:batch": {
+    "provider": "openrouter",
+    "base_model": "deepseek-v4-flash-0731:batch",
+    "mode": "chat",
+    "input_cost_per_token": 1.4e-07,
+    "output_cost_per_token": 2.8e-07,
+    "cache_read_input_token_cost": 3e-08,
     "max_input_tokens": 1048576,
     "max_output_tokens": 943718,
     "max_tokens": 943718,
@@ -56056,6 +56151,23 @@
     "max_input_tokens": 524288,
     "max_output_tokens": 262144,
     "max_tokens": 262144,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "supports_vision": true,
+    "supports_audio_input": true,
+    "supports_prompt_caching": true
+  },
+  "openrouter/thinkingmachines/inkling-small:batch": {
+    "provider": "openrouter",
+    "base_model": "inkling-small:batch",
+    "mode": "chat",
+    "input_cost_per_token": 5e-07,
+    "output_cost_per_token": 1.2e-06,
+    "cache_read_input_token_cost": 1e-07,
+    "max_input_tokens": 524288,
+    "max_output_tokens": 471859,
+    "max_tokens": 471859,
     "supports_function_calling": true,
     "supports_tool_choice": true,
     "supports_reasoning": true,
@@ -56435,6 +56547,23 @@
   "openrouter/moonshotai/kimi-k3": {
     "provider": "openrouter",
     "base_model": "kimi-k3",
+    "mode": "chat",
+    "input_cost_per_token": 3e-06,
+    "output_cost_per_token": 1.5e-05,
+    "cache_read_input_token_cost": 3e-07,
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 943718,
+    "max_tokens": 943718,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_vision": true,
+    "supports_prompt_caching": true
+  },
+  "openrouter/moonshotai/kimi-k3:batch": {
+    "provider": "openrouter",
+    "base_model": "kimi-k3:batch",
     "mode": "chat",
     "input_cost_per_token": 3e-06,
     "output_cost_per_token": 1.5e-05,
@@ -57509,6 +57638,22 @@
     "supports_vision": true,
     "supports_pdf_input": true
   },
+  "openrouter/mistralai/mistral-medium-3-5:batch": {
+    "provider": "openrouter",
+    "base_model": "mistral-medium-3-5:batch",
+    "mode": "chat",
+    "input_cost_per_token": 7.5e-07,
+    "output_cost_per_token": 3.75e-06,
+    "max_input_tokens": 262144,
+    "max_output_tokens": 209715,
+    "max_tokens": 209715,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_vision": true,
+    "supports_pdf_input": true
+  },
   "openrouter/openai/whisper-1": {
     "provider": "openrouter",
     "base_model": "whisper-1",
@@ -57611,11 +57756,11 @@
     "provider": "openrouter",
     "base_model": "gemini-flash-latest",
     "mode": "chat",
-    "input_cost_per_token": 3.75e-07,
-    "output_cost_per_token": 1.875e-06,
-    "cache_read_input_token_cost": 3.75e-08,
-    "cache_creation_input_token_cost": 2.08333333333333e-08,
-    "output_cost_per_image": 3.75e-07,
+    "input_cost_per_token": 7.5e-07,
+    "output_cost_per_token": 3.75e-06,
+    "cache_read_input_token_cost": 7.5e-08,
+    "cache_creation_input_token_cost": 4.16666666666667e-08,
+    "output_cost_per_image": 7.5e-07,
     "max_input_tokens": 1048576,
     "max_output_tokens": 65536,
     "max_tokens": 65536,
@@ -57737,16 +57882,18 @@
     "provider": "openrouter",
     "base_model": "qwen3.6-27b",
     "mode": "chat",
-    "input_cost_per_token": 3.2e-07,
-    "output_cost_per_token": 3.2e-06,
+    "input_cost_per_token": 6e-07,
+    "output_cost_per_token": 3.6e-06,
+    "cache_read_input_token_cost": 1.2e-07,
     "max_input_tokens": 262144,
-    "max_output_tokens": 81920,
-    "max_tokens": 81920,
+    "max_output_tokens": 235929,
+    "max_tokens": 235929,
     "supports_function_calling": true,
     "supports_tool_choice": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "supports_prompt_caching": true
   },
   "openrouter/openai/gpt-5.5-pro": {
     "provider": "openrouter",
@@ -57786,9 +57933,9 @@
     "provider": "openrouter",
     "base_model": "deepseek-v4-flash",
     "mode": "chat",
-    "input_cost_per_token": 8.8606e-08,
-    "output_cost_per_token": 1.77212e-07,
-    "cache_read_input_token_cost": 1.77212e-08,
+    "input_cost_per_token": 8.512e-08,
+    "output_cost_per_token": 1.7024e-07,
+    "cache_read_input_token_cost": 1.7024e-08,
     "max_input_tokens": 1024000,
     "max_output_tokens": 384000,
     "max_tokens": 384000,
@@ -57992,6 +58139,21 @@
     "supports_vision": true,
     "supports_prompt_caching": true
   },
+  "openrouter/google/gemma-4-31b-it:batch": {
+    "provider": "openrouter",
+    "base_model": "gemma-4-31b-it:batch",
+    "mode": "chat",
+    "input_cost_per_token": 3.9e-07,
+    "output_cost_per_token": 9.7e-07,
+    "max_input_tokens": 262144,
+    "max_output_tokens": 235929,
+    "max_tokens": 235929,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_vision": true
+  },
   "openrouter/z-ai/glm-5v-turbo": {
     "provider": "openrouter",
     "base_model": "glm-5v-turbo",
@@ -58159,6 +58321,23 @@
     "supports_vision": true,
     "supports_prompt_caching": true
   },
+  "openrouter/mistralai/mistral-small-2603:batch": {
+    "provider": "openrouter",
+    "base_model": "mistral-small-2603:batch",
+    "mode": "chat",
+    "input_cost_per_token": 1.5e-07,
+    "output_cost_per_token": 6e-07,
+    "cache_read_input_token_cost": 1.5e-08,
+    "max_input_tokens": 262144,
+    "max_output_tokens": 209715,
+    "max_tokens": 209715,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_vision": true,
+    "supports_prompt_caching": true
+  },
   "openrouter/perplexity/pplx-embed-v1-4b": {
     "provider": "openrouter",
     "base_model": "pplx-embed-v1-4b",
@@ -58228,6 +58407,21 @@
     "mode": "chat",
     "input_cost_per_token": 1e-07,
     "output_cost_per_token": 1.5e-07,
+    "max_input_tokens": 262144,
+    "max_output_tokens": 235929,
+    "max_tokens": 235929,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_vision": true
+  },
+  "openrouter/qwen/qwen3.5-9b:batch": {
+    "provider": "openrouter",
+    "base_model": "qwen3.5-9b:batch",
+    "mode": "chat",
+    "input_cost_per_token": 1.7e-07,
+    "output_cost_per_token": 2.5e-07,
     "max_input_tokens": 262144,
     "max_output_tokens": 235929,
     "max_tokens": 235929,
@@ -58647,6 +58841,39 @@
     "supports_vision": true,
     "supports_pdf_input": true
   },
+  "openrouter/mistralai/ministral-8b-2512:batch": {
+    "provider": "openrouter",
+    "base_model": "ministral-8b-2512:batch",
+    "mode": "chat",
+    "input_cost_per_token": 1.5e-07,
+    "output_cost_per_token": 1.5e-07,
+    "cache_read_input_token_cost": 1.5e-08,
+    "max_input_tokens": 262144,
+    "max_output_tokens": 209715,
+    "max_tokens": 209715,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_response_schema": true,
+    "supports_vision": true,
+    "supports_prompt_caching": true
+  },
+  "openrouter/mistralai/mistral-large-2512:batch": {
+    "provider": "openrouter",
+    "base_model": "mistral-large-2512:batch",
+    "mode": "chat",
+    "input_cost_per_token": 5e-07,
+    "output_cost_per_token": 1.5e-06,
+    "cache_read_input_token_cost": 5e-08,
+    "max_input_tokens": 262144,
+    "max_output_tokens": 209715,
+    "max_tokens": 209715,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_response_schema": true,
+    "supports_vision": true,
+    "supports_pdf_input": true,
+    "supports_prompt_caching": true
+  },
   "openrouter/anthropic/claude-opus-4.5:batch": {
     "provider": "openrouter",
     "base_model": "claude-opus-4.5:batch",
@@ -58665,18 +58892,6 @@
     "supports_vision": true,
     "supports_pdf_input": true,
     "supports_prompt_caching": true
-  },
-  "openrouter/allenai/olmo-3-32b-think": {
-    "provider": "openrouter",
-    "base_model": "olmo-3-32b-think",
-    "mode": "chat",
-    "input_cost_per_token": 1.5e-07,
-    "output_cost_per_token": 5e-07,
-    "max_input_tokens": 65536,
-    "max_output_tokens": 58982,
-    "max_tokens": 58982,
-    "supports_reasoning": true,
-    "supports_response_schema": true
   },
   "openrouter/google/gemini-3-pro-image-preview": {
     "provider": "openrouter",
@@ -58987,9 +59202,9 @@
     "input_cost_per_token": 1e-07,
     "output_cost_per_token": 3e-07,
     "cache_read_input_token_cost": 1e-08,
-    "max_input_tokens": 32000,
-    "max_output_tokens": 25600,
-    "max_tokens": 25600,
+    "max_input_tokens": 32768,
+    "max_output_tokens": 26214,
+    "max_tokens": 26214,
     "supports_function_calling": true,
     "supports_tool_choice": true,
     "supports_response_schema": true,
@@ -59173,11 +59388,11 @@
     "provider": "openrouter",
     "base_model": "qwen3-vl-30b-a3b-instruct",
     "mode": "chat",
-    "input_cost_per_token": 1.3e-07,
-    "output_cost_per_token": 5.2e-07,
-    "max_input_tokens": 131072,
-    "max_output_tokens": 32768,
-    "max_tokens": 32768,
+    "input_cost_per_token": 1.5e-07,
+    "output_cost_per_token": 6e-07,
+    "max_input_tokens": 262144,
+    "max_output_tokens": 16384,
+    "max_tokens": 16384,
     "supports_function_calling": true,
     "supports_tool_choice": true,
     "supports_response_schema": true,
@@ -59430,6 +59645,23 @@
     "supports_pdf_input": true,
     "supports_prompt_caching": true
   },
+  "openrouter/mistralai/mistral-medium-3.1:batch": {
+    "provider": "openrouter",
+    "base_model": "mistral-medium-3.1:batch",
+    "mode": "chat",
+    "input_cost_per_token": 4e-07,
+    "output_cost_per_token": 2e-06,
+    "cache_read_input_token_cost": 4e-08,
+    "max_input_tokens": 131072,
+    "max_output_tokens": 104857,
+    "max_tokens": 104857,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_response_schema": true,
+    "supports_vision": true,
+    "supports_pdf_input": true,
+    "supports_prompt_caching": true
+  },
   "openrouter/z-ai/glm-4.5v": {
     "provider": "openrouter",
     "base_model": "glm-4.5v",
@@ -59446,6 +59678,32 @@
     "supports_response_schema": true,
     "supports_vision": true,
     "supports_prompt_caching": true
+  },
+  "openrouter/openai/gpt-oss-120b:batch": {
+    "provider": "openrouter",
+    "base_model": "gpt-oss-120b:batch",
+    "mode": "chat",
+    "input_cost_per_token": 1.5e-07,
+    "output_cost_per_token": 6e-07,
+    "max_input_tokens": 131072,
+    "max_output_tokens": 117964,
+    "max_tokens": 117964,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true
+  },
+  "openrouter/openai/gpt-oss-20b:batch": {
+    "provider": "openrouter",
+    "base_model": "gpt-oss-20b:batch",
+    "mode": "chat",
+    "input_cost_per_token": 5e-08,
+    "output_cost_per_token": 2e-07,
+    "max_input_tokens": 131072,
+    "max_output_tokens": 117964,
+    "max_tokens": 117964,
+    "supports_reasoning": true,
+    "supports_response_schema": true
   },
   "openrouter/anthropic/claude-opus-4.1:batch": {
     "provider": "openrouter",
@@ -59469,6 +59727,22 @@
   "openrouter/mistralai/codestral-2508": {
     "provider": "openrouter",
     "base_model": "codestral-2508",
+    "mode": "chat",
+    "input_cost_per_token": 3e-07,
+    "output_cost_per_token": 9e-07,
+    "cache_read_input_token_cost": 3e-08,
+    "max_input_tokens": 256000,
+    "max_output_tokens": 204800,
+    "max_tokens": 204800,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_response_schema": true,
+    "supports_pdf_input": true,
+    "supports_prompt_caching": true
+  },
+  "openrouter/mistralai/codestral-2508:batch": {
+    "provider": "openrouter",
+    "base_model": "codestral-2508:batch",
     "mode": "chat",
     "input_cost_per_token": 3e-07,
     "output_cost_per_token": 9e-07,
@@ -59775,18 +60049,6 @@
     "supports_audio_input": true,
     "supports_pdf_input": true,
     "supports_prompt_caching": true
-  },
-  "openrouter/arcee-ai/virtuoso-large": {
-    "provider": "openrouter",
-    "base_model": "virtuoso-large",
-    "mode": "chat",
-    "input_cost_per_token": 7.5e-07,
-    "output_cost_per_token": 1.2e-06,
-    "max_input_tokens": 131072,
-    "max_output_tokens": 64000,
-    "max_tokens": 64000,
-    "supports_function_calling": true,
-    "supports_tool_choice": true
   },
   "openrouter/meta-llama/llama-guard-4-12b": {
     "provider": "openrouter",
@@ -60791,6 +61053,36 @@
     "mode": "audio_transcription",
     "source": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
     "output_cost_per_second": 7.55e-06
+  },
+  "cloudflare/workers-ai/@cf/zai-org/glm-5.3": {
+    "provider": "cloudflare",
+    "base_model": "@cf/zai-org/glm-5.3",
+    "mode": "chat",
+    "source": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
+    "input_cost_per_token": 1.4e-06,
+    "output_cost_per_token": 4.4e-06,
+    "cache_read_input_token_cost": 2.6e-07,
+    "supports_prompt_caching": true,
+    "max_input_tokens": 1310720,
+    "max_tokens": 1310720,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true
+  },
+  "workers-ai/workers-ai/@cf/zai-org/glm-5.3": {
+    "provider": "workers-ai",
+    "base_model": "@cf/zai-org/glm-5.3",
+    "mode": "chat",
+    "source": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
+    "input_cost_per_token": 1.4e-06,
+    "output_cost_per_token": 4.4e-06,
+    "cache_read_input_token_cost": 2.6e-07,
+    "supports_prompt_caching": true,
+    "max_input_tokens": 1310720,
+    "max_tokens": 1310720,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true
   },
   "cloudflare/workers-ai/@cf/pfnet/plamo-embedding-1b": {
     "provider": "cloudflare",
@@ -62516,14 +62808,14 @@
   },
   "deepseek/deepseek-v4-pro-0813": {
     "cache_creation_input_token_cost": 0,
-    "cache_read_input_token_cost": 4.4e-08,
-    "input_cost_per_token": 1.32e-06,
+    "cache_read_input_token_cost": 5e-07,
+    "input_cost_per_token": 2e-06,
     "input_cost_per_token_cache_hit": 4.4e-08,
-    "max_input_tokens": 1000000,
-    "max_output_tokens": 393216,
-    "max_tokens": 393216,
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 64000,
+    "max_tokens": 1048576,
     "mode": "chat",
-    "output_cost_per_token": 3.96e-06,
+    "output_cost_per_token": 4e-06,
     "source": "https://api-docs.deepseek.com/quick_start/pricing",
     "supported_endpoints": [
       "/v1/chat/completions"
@@ -62538,7 +62830,7 @@
     "supports_system_messages": true,
     "supports_tool_choice": true,
     "supports_vision": false,
-    "provider": "deepseek",
+    "provider": "tensorx",
     "peak_hours": {
       "timezone": "UTC",
       "windows": [
@@ -62567,7 +62859,10 @@
       ]
     },
     "off_peak_cost_multiplier": 0.5,
-    "base_model": "deepseek-v4-pro"
+    "base_model": "deepseek-v4-pro-0813",
+    "metadata": {
+      "notes": "Efficient 1.6T reasoning model with a lossless 1M-token context window."
+    }
   },
   "deepseek/deepSeek-v4-flash-0731": {
     "cache_creation_input_token_cost": 0,
@@ -63343,8 +63638,7 @@
     "base_model": "gemini-omni-1.1-flash",
     "mode": "video_generation",
     "input_cost_per_token": 1.5e-06,
-    "output_cost_per_token": 9e-06,
-    "cache_read_input_token_cost": 1.5e-06,
+    "output_cost_per_token": 1.75e-05,
     "max_input_tokens": 1000000,
     "max_output_tokens": 64000,
     "max_tokens": 1064000,
@@ -63596,6 +63890,16 @@
     "source": "https://opencode.ai/docs/go/",
     "cache_read_input_token_cost": 5e-08,
     "cache_creation_input_token_cost": 6.25e-07
+  },
+  "opencode-zen/hy4-preview": {
+    "input_cost_per_token": 8.34e-07,
+    "output_cost_per_token": 2.501e-06,
+    "provider": "opencode-zen",
+    "base_model": "hy4-preview",
+    "mode": "chat",
+    "source": "https://opencode.ai/docs/zen/",
+    "cache_read_input_token_cost": 4.2e-08,
+    "cache_creation_input_token_cost": 0
   },
   "opencode-zen/hy3": {
     "input_cost_per_token": 1.4e-07,
@@ -64047,6 +64351,16 @@
     "cache_read_input_token_cost": 0,
     "cache_creation_input_token_cost": 0
   },
+  "opencode-zen/ling-3.0-flash-fin-free": {
+    "input_cost_per_token": 0,
+    "output_cost_per_token": 0,
+    "provider": "opencode-zen",
+    "base_model": "ling-3.0-flash-fin-free",
+    "mode": "chat",
+    "source": "https://opencode.ai/docs/zen/",
+    "cache_read_input_token_cost": 0,
+    "cache_creation_input_token_cost": 0
+  },
   "opencode-zen/nemotron-3-ultra-free": {
     "input_cost_per_token": 0,
     "output_cost_per_token": 0,
@@ -64114,6 +64428,31 @@
     "supports_tool_choice": true,
     "supports_response_schema": true
   },
+  "huggingface/together/zai-org/GLM-5.3": {
+    "provider": "huggingface",
+    "base_model": "GLM-5.3",
+    "mode": "chat",
+    "source": "https://huggingface.co/zai-org/GLM-5.3",
+    "input_cost_per_token": 1.4e-06,
+    "output_cost_per_token": 4.4e-06,
+    "max_input_tokens": 1048575,
+    "max_tokens": 1048575,
+    "supports_function_calling": true,
+    "supports_tool_choice": true
+  },
+  "huggingface/baseten/zai-org/GLM-5.3": {
+    "provider": "huggingface",
+    "base_model": "GLM-5.3",
+    "mode": "chat",
+    "source": "https://huggingface.co/zai-org/GLM-5.3",
+    "input_cost_per_token": 1.4e-06,
+    "output_cost_per_token": 4.4e-06,
+    "max_input_tokens": 1048576,
+    "max_tokens": 1048576,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_response_schema": true
+  },
   "huggingface/deepinfra/Qwen/Qwen3.8-27B": {
     "provider": "huggingface",
     "base_model": "Qwen3.8-27B",
@@ -64151,19 +64490,6 @@
     "max_tokens": 1048576,
     "supports_function_calling": true,
     "supports_tool_choice": true
-  },
-  "huggingface/baseten/deepseek-ai/DeepSeek-V4-Flash-0731": {
-    "provider": "huggingface",
-    "base_model": "DeepSeek-V4-Flash-0731",
-    "mode": "chat",
-    "source": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
-    "input_cost_per_token": 1.3e-07,
-    "output_cost_per_token": 2.6e-07,
-    "max_input_tokens": 1048576,
-    "max_tokens": 1048576,
-    "supports_function_calling": true,
-    "supports_tool_choice": true,
-    "supports_response_schema": true
   },
   "huggingface/deepinfra/deepseek-ai/DeepSeek-V4-Flash-0731": {
     "provider": "huggingface",
@@ -64273,6 +64599,18 @@
     "supports_response_schema": true,
     "supports_vision": true
   },
+  "huggingface/deepinfra/ibm-granite/granite-4.2-3b": {
+    "provider": "huggingface",
+    "base_model": "granite-4.2-3b",
+    "mode": "chat",
+    "source": "https://huggingface.co/ibm-granite/granite-4.2-3b",
+    "input_cost_per_token": 3.0000000000000004e-08,
+    "output_cost_per_token": 1.2000000000000002e-07,
+    "max_input_tokens": 131072,
+    "max_tokens": 131072,
+    "supports_function_calling": true,
+    "supports_tool_choice": true
+  },
   "huggingface/novita/deepseek-ai/DeepSeek-V4-Pro-0813": {
     "provider": "huggingface",
     "base_model": "DeepSeek-V4-Pro-0813",
@@ -64373,18 +64711,6 @@
     "supports_tool_choice": true,
     "supports_response_schema": true
   },
-  "huggingface/deepinfra/ibm-granite/granite-4.2-3b": {
-    "provider": "huggingface",
-    "base_model": "granite-4.2-3b",
-    "mode": "chat",
-    "source": "https://huggingface.co/ibm-granite/granite-4.2-3b",
-    "input_cost_per_token": 3.0000000000000004e-08,
-    "output_cost_per_token": 1.2000000000000002e-07,
-    "max_input_tokens": 131072,
-    "max_tokens": 131072,
-    "supports_function_calling": true,
-    "supports_tool_choice": true
-  },
   "huggingface/novita/zai-org/GLM-5.2": {
     "provider": "huggingface",
     "base_model": "GLM-5.2",
@@ -64395,7 +64721,8 @@
     "max_input_tokens": 1048576,
     "max_tokens": 1048576,
     "supports_function_calling": true,
-    "supports_tool_choice": true
+    "supports_tool_choice": true,
+    "supports_response_schema": true
   },
   "huggingface/together/zai-org/GLM-5.2": {
     "provider": "huggingface",
@@ -64430,7 +64757,8 @@
     "input_cost_per_token": 2.052e-06,
     "output_cost_per_token": 6.269999999999999e-06,
     "supports_function_calling": true,
-    "supports_tool_choice": true
+    "supports_tool_choice": true,
+    "supports_response_schema": true
   },
   "huggingface/baseten/zai-org/GLM-5.2": {
     "provider": "huggingface",
@@ -64547,6 +64875,31 @@
     "supports_response_schema": true,
     "supports_vision": true
   },
+  "huggingface/novita/inclusionAI/Ling-3.0-flash": {
+    "provider": "huggingface",
+    "base_model": "Ling-3.0-flash",
+    "mode": "chat",
+    "source": "https://huggingface.co/inclusionAI/Ling-3.0-flash",
+    "input_cost_per_token": 6e-08,
+    "output_cost_per_token": 1.8e-07,
+    "max_input_tokens": 262144,
+    "max_tokens": 262144,
+    "supports_function_calling": true,
+    "supports_tool_choice": true
+  },
+  "huggingface/deepinfra/inclusionAI/Ling-3.0-flash": {
+    "provider": "huggingface",
+    "base_model": "Ling-3.0-flash",
+    "mode": "chat",
+    "source": "https://huggingface.co/inclusionAI/Ling-3.0-flash",
+    "input_cost_per_token": 6.000000000000001e-08,
+    "output_cost_per_token": 1.8e-07,
+    "max_input_tokens": 131072,
+    "max_tokens": 131072,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_response_schema": true
+  },
   "huggingface/novita/google/gemma-4-26B-A4B-it": {
     "provider": "huggingface",
     "base_model": "gemma-4-26B-A4B-it",
@@ -64558,6 +64911,7 @@
     "max_tokens": 262144,
     "supports_function_calling": true,
     "supports_tool_choice": true,
+    "supports_response_schema": true,
     "supports_vision": true
   },
   "huggingface/scaleway/google/gemma-4-26B-A4B-it": {
@@ -64585,31 +64939,6 @@
     "supports_tool_choice": true,
     "supports_response_schema": true,
     "supports_vision": true
-  },
-  "huggingface/novita/inclusionAI/Ling-3.0-flash": {
-    "provider": "huggingface",
-    "base_model": "Ling-3.0-flash",
-    "mode": "chat",
-    "source": "https://huggingface.co/inclusionAI/Ling-3.0-flash",
-    "input_cost_per_token": 6e-08,
-    "output_cost_per_token": 1.8e-07,
-    "max_input_tokens": 262144,
-    "max_tokens": 262144,
-    "supports_function_calling": true,
-    "supports_tool_choice": true
-  },
-  "huggingface/deepinfra/inclusionAI/Ling-3.0-flash": {
-    "provider": "huggingface",
-    "base_model": "Ling-3.0-flash",
-    "mode": "chat",
-    "source": "https://huggingface.co/inclusionAI/Ling-3.0-flash",
-    "input_cost_per_token": 6.000000000000001e-08,
-    "output_cost_per_token": 1.8e-07,
-    "max_input_tokens": 131072,
-    "max_tokens": 131072,
-    "supports_function_calling": true,
-    "supports_tool_choice": true,
-    "supports_response_schema": true
   },
   "huggingface/groq/openai/gpt-oss-20b": {
     "provider": "huggingface",
@@ -64671,8 +65000,7 @@
     "max_input_tokens": 131072,
     "max_tokens": 131072,
     "supports_function_calling": true,
-    "supports_tool_choice": true,
-    "supports_response_schema": true
+    "supports_tool_choice": true
   },
   "huggingface/deepinfra/openai/gpt-oss-20b": {
     "provider": "huggingface",
@@ -64686,6 +65014,86 @@
     "supports_function_calling": true,
     "supports_tool_choice": true,
     "supports_response_schema": true
+  },
+  "huggingface/together/Qwen/Qwen3.5-9B": {
+    "provider": "huggingface",
+    "base_model": "Qwen3.5-9B",
+    "mode": "chat",
+    "source": "https://huggingface.co/Qwen/Qwen3.5-9B",
+    "input_cost_per_token": 1.7000000000000001e-07,
+    "output_cost_per_token": 2.5e-07,
+    "max_input_tokens": 262144,
+    "max_tokens": 262144,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_response_schema": true,
+    "supports_vision": true
+  },
+  "huggingface/ovhcloud/Qwen/Qwen3.5-9B": {
+    "provider": "huggingface",
+    "base_model": "Qwen3.5-9B",
+    "mode": "chat",
+    "source": "https://huggingface.co/Qwen/Qwen3.5-9B",
+    "input_cost_per_token": 1.2e-07,
+    "output_cost_per_token": 1.8e-07,
+    "max_input_tokens": 262144,
+    "max_tokens": 262144,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_vision": true
+  },
+  "huggingface/deepinfra/Qwen/Qwen3.5-9B": {
+    "provider": "huggingface",
+    "base_model": "Qwen3.5-9B",
+    "mode": "chat",
+    "source": "https://huggingface.co/Qwen/Qwen3.5-9B",
+    "input_cost_per_token": 1e-07,
+    "output_cost_per_token": 1.5e-07,
+    "max_input_tokens": 262144,
+    "max_tokens": 262144,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_response_schema": true,
+    "supports_vision": true
+  },
+  "huggingface/deepinfra/tencent/Hy3": {
+    "provider": "huggingface",
+    "base_model": "Hy3",
+    "mode": "chat",
+    "source": "https://huggingface.co/tencent/Hy3",
+    "input_cost_per_token": 1.4e-07,
+    "output_cost_per_token": 5.8e-07,
+    "max_input_tokens": 262144,
+    "max_tokens": 262144,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_response_schema": true
+  },
+  "huggingface/scaleway/Qwen/Qwen3.6-35B-A3B": {
+    "provider": "huggingface",
+    "base_model": "Qwen3.6-35B-A3B",
+    "mode": "chat",
+    "source": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B",
+    "input_cost_per_token": 2.8499999999999997e-07,
+    "output_cost_per_token": 1.71e-06,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_response_schema": true,
+    "supports_vision": true
+  },
+  "huggingface/deepinfra/Qwen/Qwen3.6-35B-A3B": {
+    "provider": "huggingface",
+    "base_model": "Qwen3.6-35B-A3B",
+    "mode": "chat",
+    "source": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B",
+    "input_cost_per_token": 1e-07,
+    "output_cost_per_token": 9.499999999999999e-07,
+    "max_input_tokens": 262144,
+    "max_tokens": 262144,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_response_schema": true,
+    "supports_vision": true
   },
   "huggingface/novita/deepseek-ai/DeepSeek-V4-Flash": {
     "provider": "huggingface",
@@ -64749,86 +65157,133 @@
     "supports_tool_choice": true,
     "supports_response_schema": true
   },
-  "huggingface/deepinfra/tencent/Hy3": {
+  "huggingface/groq/openai/gpt-oss-120b": {
     "provider": "huggingface",
-    "base_model": "Hy3",
+    "base_model": "gpt-oss-120b",
     "mode": "chat",
-    "source": "https://huggingface.co/tencent/Hy3",
-    "input_cost_per_token": 1.4e-07,
-    "output_cost_per_token": 5.8e-07,
-    "max_input_tokens": 262144,
-    "max_tokens": 262144,
+    "source": "https://huggingface.co/openai/gpt-oss-120b",
+    "input_cost_per_token": 1.5e-07,
+    "output_cost_per_token": 7.5e-07,
+    "max_input_tokens": 131072,
+    "max_tokens": 131072,
     "supports_function_calling": true,
     "supports_tool_choice": true,
     "supports_response_schema": true
   },
-  "huggingface/together/Qwen/Qwen3.5-9B": {
+  "huggingface/novita/openai/gpt-oss-120b": {
     "provider": "huggingface",
-    "base_model": "Qwen3.5-9B",
+    "base_model": "gpt-oss-120b",
     "mode": "chat",
-    "source": "https://huggingface.co/Qwen/Qwen3.5-9B",
-    "input_cost_per_token": 1.7000000000000001e-07,
+    "source": "https://huggingface.co/openai/gpt-oss-120b",
+    "input_cost_per_token": 5e-08,
     "output_cost_per_token": 2.5e-07,
-    "max_input_tokens": 262144,
-    "max_tokens": 262144,
+    "max_input_tokens": 131072,
+    "max_tokens": 131072,
     "supports_function_calling": true,
     "supports_tool_choice": true,
-    "supports_response_schema": true,
-    "supports_vision": true
+    "supports_response_schema": true
   },
-  "huggingface/ovhcloud/Qwen/Qwen3.5-9B": {
+  "huggingface/cerebras/openai/gpt-oss-120b": {
     "provider": "huggingface",
-    "base_model": "Qwen3.5-9B",
+    "base_model": "gpt-oss-120b",
     "mode": "chat",
-    "source": "https://huggingface.co/Qwen/Qwen3.5-9B",
-    "input_cost_per_token": 1.2e-07,
-    "output_cost_per_token": 1.8e-07,
-    "max_input_tokens": 262144,
-    "max_tokens": 262144,
+    "source": "https://huggingface.co/openai/gpt-oss-120b",
+    "input_cost_per_token": 3.5e-07,
+    "output_cost_per_token": 7.5e-07,
+    "max_input_tokens": 131072,
+    "max_tokens": 131072,
     "supports_function_calling": true,
     "supports_tool_choice": true,
-    "supports_response_schema": true,
-    "supports_vision": true
+    "supports_response_schema": true
   },
-  "huggingface/deepinfra/Qwen/Qwen3.5-9B": {
+  "huggingface/nscale/openai/gpt-oss-120b": {
     "provider": "huggingface",
-    "base_model": "Qwen3.5-9B",
+    "base_model": "gpt-oss-120b",
     "mode": "chat",
-    "source": "https://huggingface.co/Qwen/Qwen3.5-9B",
+    "source": "https://huggingface.co/openai/gpt-oss-120b",
     "input_cost_per_token": 1e-07,
-    "output_cost_per_token": 1.5e-07,
-    "max_input_tokens": 262144,
-    "max_tokens": 262144,
+    "output_cost_per_token": 4e-07,
+    "max_input_tokens": 131072,
+    "max_tokens": 131072,
     "supports_function_calling": true,
     "supports_tool_choice": true,
-    "supports_response_schema": true,
-    "supports_vision": true
+    "supports_response_schema": true
   },
-  "huggingface/scaleway/Qwen/Qwen3.6-35B-A3B": {
+  "huggingface/together/openai/gpt-oss-120b": {
     "provider": "huggingface",
-    "base_model": "Qwen3.6-35B-A3B",
+    "base_model": "gpt-oss-120b",
     "mode": "chat",
-    "source": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B",
-    "input_cost_per_token": 2.8499999999999997e-07,
-    "output_cost_per_token": 1.71e-06,
+    "source": "https://huggingface.co/openai/gpt-oss-120b",
+    "input_cost_per_token": 1.5e-07,
+    "output_cost_per_token": 6e-07,
+    "max_input_tokens": 131072,
+    "max_tokens": 131072,
     "supports_function_calling": true,
     "supports_tool_choice": true,
-    "supports_response_schema": true,
-    "supports_vision": true
+    "supports_response_schema": true
   },
-  "huggingface/deepinfra/Qwen/Qwen3.6-35B-A3B": {
+  "huggingface/fireworks-ai/openai/gpt-oss-120b": {
     "provider": "huggingface",
-    "base_model": "Qwen3.6-35B-A3B",
+    "base_model": "gpt-oss-120b",
     "mode": "chat",
-    "source": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B",
+    "source": "https://huggingface.co/openai/gpt-oss-120b",
+    "input_cost_per_token": 1.5e-07,
+    "output_cost_per_token": 6e-07,
+    "max_input_tokens": 131072,
+    "max_tokens": 131072,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_response_schema": true
+  },
+  "huggingface/scaleway/openai/gpt-oss-120b": {
+    "provider": "huggingface",
+    "base_model": "gpt-oss-120b",
+    "mode": "chat",
+    "source": "https://huggingface.co/openai/gpt-oss-120b",
+    "input_cost_per_token": 1.71e-07,
+    "output_cost_per_token": 6.84e-07,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_response_schema": true
+  },
+  "huggingface/baseten/openai/gpt-oss-120b": {
+    "provider": "huggingface",
+    "base_model": "gpt-oss-120b",
+    "mode": "chat",
+    "source": "https://huggingface.co/openai/gpt-oss-120b",
     "input_cost_per_token": 1e-07,
-    "output_cost_per_token": 9.499999999999999e-07,
-    "max_input_tokens": 262144,
-    "max_tokens": 262144,
+    "output_cost_per_token": 5e-07,
+    "max_input_tokens": 128072,
+    "max_tokens": 128072,
     "supports_function_calling": true,
     "supports_tool_choice": true,
-    "supports_response_schema": true,
-    "supports_vision": true
+    "supports_response_schema": true
+  },
+  "huggingface/ovhcloud/openai/gpt-oss-120b": {
+    "provider": "huggingface",
+    "base_model": "gpt-oss-120b",
+    "mode": "chat",
+    "source": "https://huggingface.co/openai/gpt-oss-120b",
+    "input_cost_per_token": 9e-08,
+    "output_cost_per_token": 4.6999999999999995e-07,
+    "max_input_tokens": 131072,
+    "max_tokens": 131072,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_response_schema": true
+  },
+  "huggingface/deepinfra/openai/gpt-oss-120b": {
+    "provider": "huggingface",
+    "base_model": "gpt-oss-120b",
+    "mode": "chat",
+    "source": "https://huggingface.co/openai/gpt-oss-120b",
+    "input_cost_per_token": 3.6999999999999994e-08,
+    "output_cost_per_token": 1.7e-07,
+    "max_input_tokens": 131072,
+    "max_tokens": 131072,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_response_schema": true
   },
   "huggingface/together/thinkingmachines/Inkling-Small": {
     "provider": "huggingface",
@@ -64925,6 +65380,30 @@
     "supports_response_schema": true,
     "supports_vision": true
   },
+  "huggingface/nscale/Qwen/Qwen3-8B": {
+    "provider": "huggingface",
+    "base_model": "Qwen3-8B",
+    "mode": "chat",
+    "source": "https://huggingface.co/Qwen/Qwen3-8B",
+    "input_cost_per_token": 7e-08,
+    "output_cost_per_token": 1.8e-07,
+    "max_input_tokens": 40960,
+    "max_tokens": 40960,
+    "supports_function_calling": true,
+    "supports_tool_choice": true
+  },
+  "huggingface/novita/Qwen/Qwen3-Coder-Next": {
+    "provider": "huggingface",
+    "base_model": "Qwen3-Coder-Next",
+    "mode": "chat",
+    "source": "https://huggingface.co/Qwen/Qwen3-Coder-Next",
+    "input_cost_per_token": 2e-07,
+    "output_cost_per_token": 1.5e-06,
+    "max_input_tokens": 262144,
+    "max_tokens": 262144,
+    "supports_function_calling": true,
+    "supports_tool_choice": true
+  },
   "huggingface/together/thinkingmachines/Inkling": {
     "provider": "huggingface",
     "base_model": "Inkling",
@@ -64952,171 +65431,6 @@
     "supports_tool_choice": true,
     "supports_response_schema": true,
     "supports_vision": true
-  },
-  "huggingface/deepinfra/thinkingmachines/Inkling": {
-    "provider": "huggingface",
-    "base_model": "Inkling",
-    "mode": "chat",
-    "source": "https://huggingface.co/thinkingmachines/Inkling",
-    "input_cost_per_token": 9.499999999999999e-07,
-    "output_cost_per_token": 4.049999999999999e-06,
-    "max_input_tokens": 524288,
-    "max_tokens": 524288,
-    "supports_function_calling": true,
-    "supports_tool_choice": true,
-    "supports_vision": true
-  },
-  "huggingface/groq/openai/gpt-oss-120b": {
-    "provider": "huggingface",
-    "base_model": "gpt-oss-120b",
-    "mode": "chat",
-    "source": "https://huggingface.co/openai/gpt-oss-120b",
-    "input_cost_per_token": 1.5e-07,
-    "output_cost_per_token": 7.5e-07,
-    "max_input_tokens": 131072,
-    "max_tokens": 131072,
-    "supports_function_calling": true,
-    "supports_tool_choice": true,
-    "supports_response_schema": true
-  },
-  "huggingface/novita/openai/gpt-oss-120b": {
-    "provider": "huggingface",
-    "base_model": "gpt-oss-120b",
-    "mode": "chat",
-    "source": "https://huggingface.co/openai/gpt-oss-120b",
-    "input_cost_per_token": 5e-08,
-    "output_cost_per_token": 2.5e-07,
-    "max_input_tokens": 131072,
-    "max_tokens": 131072,
-    "supports_function_calling": true,
-    "supports_tool_choice": true,
-    "supports_response_schema": true
-  },
-  "huggingface/cerebras/openai/gpt-oss-120b": {
-    "provider": "huggingface",
-    "base_model": "gpt-oss-120b",
-    "mode": "chat",
-    "source": "https://huggingface.co/openai/gpt-oss-120b",
-    "input_cost_per_token": 3.5e-07,
-    "output_cost_per_token": 7.5e-07,
-    "max_input_tokens": 131072,
-    "max_tokens": 131072,
-    "supports_function_calling": true,
-    "supports_tool_choice": true,
-    "supports_response_schema": true
-  },
-  "huggingface/nscale/openai/gpt-oss-120b": {
-    "provider": "huggingface",
-    "base_model": "gpt-oss-120b",
-    "mode": "chat",
-    "source": "https://huggingface.co/openai/gpt-oss-120b",
-    "input_cost_per_token": 1e-07,
-    "output_cost_per_token": 4e-07,
-    "max_input_tokens": 131072,
-    "max_tokens": 131072,
-    "supports_function_calling": true,
-    "supports_tool_choice": true
-  },
-  "huggingface/together/openai/gpt-oss-120b": {
-    "provider": "huggingface",
-    "base_model": "gpt-oss-120b",
-    "mode": "chat",
-    "source": "https://huggingface.co/openai/gpt-oss-120b",
-    "input_cost_per_token": 1.5e-07,
-    "output_cost_per_token": 6e-07,
-    "max_input_tokens": 131072,
-    "max_tokens": 131072,
-    "supports_function_calling": true,
-    "supports_tool_choice": true,
-    "supports_response_schema": true
-  },
-  "huggingface/fireworks-ai/openai/gpt-oss-120b": {
-    "provider": "huggingface",
-    "base_model": "gpt-oss-120b",
-    "mode": "chat",
-    "source": "https://huggingface.co/openai/gpt-oss-120b",
-    "input_cost_per_token": 1.5e-07,
-    "output_cost_per_token": 6e-07,
-    "max_input_tokens": 131072,
-    "max_tokens": 131072,
-    "supports_function_calling": true,
-    "supports_tool_choice": true,
-    "supports_response_schema": true
-  },
-  "huggingface/scaleway/openai/gpt-oss-120b": {
-    "provider": "huggingface",
-    "base_model": "gpt-oss-120b",
-    "mode": "chat",
-    "source": "https://huggingface.co/openai/gpt-oss-120b",
-    "input_cost_per_token": 1.71e-07,
-    "output_cost_per_token": 6.84e-07,
-    "supports_function_calling": true,
-    "supports_tool_choice": true,
-    "supports_response_schema": true
-  },
-  "huggingface/baseten/openai/gpt-oss-120b": {
-    "provider": "huggingface",
-    "base_model": "gpt-oss-120b",
-    "mode": "chat",
-    "source": "https://huggingface.co/openai/gpt-oss-120b",
-    "input_cost_per_token": 1e-07,
-    "output_cost_per_token": 5e-07,
-    "max_input_tokens": 128072,
-    "max_tokens": 128072,
-    "supports_function_calling": true,
-    "supports_tool_choice": true,
-    "supports_response_schema": true
-  },
-  "huggingface/ovhcloud/openai/gpt-oss-120b": {
-    "provider": "huggingface",
-    "base_model": "gpt-oss-120b",
-    "mode": "chat",
-    "source": "https://huggingface.co/openai/gpt-oss-120b",
-    "input_cost_per_token": 9e-08,
-    "output_cost_per_token": 4.6999999999999995e-07,
-    "max_input_tokens": 131072,
-    "max_tokens": 131072,
-    "supports_function_calling": true,
-    "supports_tool_choice": true,
-    "supports_response_schema": true
-  },
-  "huggingface/deepinfra/openai/gpt-oss-120b": {
-    "provider": "huggingface",
-    "base_model": "gpt-oss-120b",
-    "mode": "chat",
-    "source": "https://huggingface.co/openai/gpt-oss-120b",
-    "input_cost_per_token": 3.6999999999999994e-08,
-    "output_cost_per_token": 1.7e-07,
-    "max_input_tokens": 131072,
-    "max_tokens": 131072,
-    "supports_function_calling": true,
-    "supports_tool_choice": true,
-    "supports_response_schema": true
-  },
-  "huggingface/nscale/Qwen/Qwen3-8B": {
-    "provider": "huggingface",
-    "base_model": "Qwen3-8B",
-    "mode": "chat",
-    "source": "https://huggingface.co/Qwen/Qwen3-8B",
-    "input_cost_per_token": 7e-08,
-    "output_cost_per_token": 1.8e-07,
-    "max_input_tokens": 40960,
-    "max_tokens": 40960,
-    "supports_function_calling": true,
-    "supports_tool_choice": true,
-    "supports_response_schema": true
-  },
-  "huggingface/novita/Qwen/Qwen3-Coder-Next": {
-    "provider": "huggingface",
-    "base_model": "Qwen3-Coder-Next",
-    "mode": "chat",
-    "source": "https://huggingface.co/Qwen/Qwen3-Coder-Next",
-    "input_cost_per_token": 2e-07,
-    "output_cost_per_token": 1.5e-06,
-    "max_input_tokens": 262144,
-    "max_tokens": 262144,
-    "supports_function_calling": true,
-    "supports_tool_choice": true
   },
   "huggingface/novita/moonshotai/Kimi-K2.7-Code": {
     "provider": "huggingface",
@@ -65172,6 +65486,30 @@
     "supports_function_calling": true,
     "supports_tool_choice": true,
     "supports_vision": true
+  },
+  "huggingface/novita/zai-org/GLM-4.7-Flash": {
+    "provider": "huggingface",
+    "base_model": "GLM-4.7-Flash",
+    "mode": "chat",
+    "source": "https://huggingface.co/zai-org/GLM-4.7-Flash",
+    "input_cost_per_token": 7e-08,
+    "output_cost_per_token": 4e-07,
+    "max_input_tokens": 200000,
+    "max_tokens": 200000,
+    "supports_function_calling": true,
+    "supports_tool_choice": true
+  },
+  "huggingface/deepinfra/zai-org/GLM-4.7-Flash": {
+    "provider": "huggingface",
+    "base_model": "GLM-4.7-Flash",
+    "mode": "chat",
+    "source": "https://huggingface.co/zai-org/GLM-4.7-Flash",
+    "input_cost_per_token": 6.000000000000001e-08,
+    "output_cost_per_token": 4e-07,
+    "max_input_tokens": 202752,
+    "max_tokens": 202752,
+    "supports_function_calling": true,
+    "supports_tool_choice": true
   },
   "huggingface/nscale/Qwen/Qwen2.5-Coder-7B-Instruct": {
     "provider": "huggingface",
@@ -65233,6 +65571,17 @@
     "supports_tool_choice": true,
     "supports_response_schema": true
   },
+  "huggingface/scaleway/Qwen/Qwen3-Coder-30B-A3B-Instruct": {
+    "provider": "huggingface",
+    "base_model": "Qwen3-Coder-30B-A3B-Instruct",
+    "mode": "chat",
+    "source": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct",
+    "input_cost_per_token": 2.28e-07,
+    "output_cost_per_token": 9.12e-07,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_response_schema": true
+  },
   "huggingface/fireworks-ai/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4": {
     "provider": "huggingface",
     "base_model": "NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4",
@@ -65259,16 +65608,32 @@
     "supports_tool_choice": true,
     "supports_response_schema": true
   },
-  "huggingface/scaleway/Qwen/Qwen3-Coder-30B-A3B-Instruct": {
+  "huggingface/novita/deepseek-ai/DeepSeek-R1": {
     "provider": "huggingface",
-    "base_model": "Qwen3-Coder-30B-A3B-Instruct",
+    "base_model": "DeepSeek-R1",
     "mode": "chat",
-    "source": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct",
-    "input_cost_per_token": 2.28e-07,
-    "output_cost_per_token": 9.12e-07,
+    "source": "https://huggingface.co/deepseek-ai/DeepSeek-R1",
+    "input_cost_per_token": 7e-07,
+    "output_cost_per_token": 2.4999999999999998e-06,
+    "max_input_tokens": 64000,
+    "max_tokens": 64000,
     "supports_function_calling": true,
     "supports_tool_choice": true,
     "supports_response_schema": true
+  },
+  "huggingface/deepinfra/google/gemma-3-4b-it": {
+    "provider": "huggingface",
+    "base_model": "gemma-3-4b-it",
+    "mode": "chat",
+    "source": "https://huggingface.co/google/gemma-3-4b-it",
+    "input_cost_per_token": 5e-08,
+    "output_cost_per_token": 1e-07,
+    "max_input_tokens": 131072,
+    "max_tokens": 131072,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_response_schema": true,
+    "supports_vision": true
   },
   "huggingface/novita/Qwen/Qwen3.5-35B-A3B": {
     "provider": "huggingface",
@@ -65297,55 +65662,6 @@
     "supports_response_schema": true,
     "supports_vision": true
   },
-  "huggingface/nscale/Qwen/Qwen2.5-Coder-32B-Instruct": {
-    "provider": "huggingface",
-    "base_model": "Qwen2.5-Coder-32B-Instruct",
-    "mode": "chat",
-    "source": "https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct",
-    "input_cost_per_token": 6e-08,
-    "output_cost_per_token": 2e-07,
-    "max_input_tokens": 131072,
-    "max_tokens": 131072,
-    "supports_response_schema": true
-  },
-  "huggingface/deepinfra/google/gemma-3-4b-it": {
-    "provider": "huggingface",
-    "base_model": "gemma-3-4b-it",
-    "mode": "chat",
-    "source": "https://huggingface.co/google/gemma-3-4b-it",
-    "input_cost_per_token": 5e-08,
-    "output_cost_per_token": 1e-07,
-    "max_input_tokens": 131072,
-    "max_tokens": 131072,
-    "supports_function_calling": true,
-    "supports_tool_choice": true,
-    "supports_response_schema": true,
-    "supports_vision": true
-  },
-  "huggingface/novita/zai-org/GLM-4.7-Flash": {
-    "provider": "huggingface",
-    "base_model": "GLM-4.7-Flash",
-    "mode": "chat",
-    "source": "https://huggingface.co/zai-org/GLM-4.7-Flash",
-    "input_cost_per_token": 7e-08,
-    "output_cost_per_token": 4e-07,
-    "max_input_tokens": 200000,
-    "max_tokens": 200000,
-    "supports_function_calling": true,
-    "supports_tool_choice": true
-  },
-  "huggingface/deepinfra/zai-org/GLM-4.7-Flash": {
-    "provider": "huggingface",
-    "base_model": "GLM-4.7-Flash",
-    "mode": "chat",
-    "source": "https://huggingface.co/zai-org/GLM-4.7-Flash",
-    "input_cost_per_token": 6.000000000000001e-08,
-    "output_cost_per_token": 4e-07,
-    "max_input_tokens": 202752,
-    "max_tokens": 202752,
-    "supports_function_calling": true,
-    "supports_tool_choice": true
-  },
   "huggingface/novita/Qwen/Qwen3-Next-80B-A3B-Instruct": {
     "provider": "huggingface",
     "base_model": "Qwen3-Next-80B-A3B-Instruct",
@@ -65371,58 +65687,16 @@
     "supports_tool_choice": true,
     "supports_response_schema": true
   },
-  "huggingface/nscale/Qwen/Qwen3-32B": {
+  "huggingface/nscale/Qwen/Qwen2.5-Coder-32B-Instruct": {
     "provider": "huggingface",
-    "base_model": "Qwen3-32B",
+    "base_model": "Qwen2.5-Coder-32B-Instruct",
     "mode": "chat",
-    "source": "https://huggingface.co/Qwen/Qwen3-32B",
-    "input_cost_per_token": 8e-08,
-    "output_cost_per_token": 2.5e-07,
-    "max_input_tokens": 40960,
-    "max_tokens": 40960,
-    "supports_function_calling": true,
-    "supports_tool_choice": true,
+    "source": "https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct",
+    "input_cost_per_token": 6e-08,
+    "output_cost_per_token": 2e-07,
+    "max_input_tokens": 131072,
+    "max_tokens": 131072,
     "supports_response_schema": true
-  },
-  "huggingface/deepinfra/Qwen/Qwen3-32B": {
-    "provider": "huggingface",
-    "base_model": "Qwen3-32B",
-    "mode": "chat",
-    "source": "https://huggingface.co/Qwen/Qwen3-32B",
-    "input_cost_per_token": 8e-08,
-    "output_cost_per_token": 2.8e-07,
-    "max_input_tokens": 40960,
-    "max_tokens": 40960,
-    "supports_function_calling": true,
-    "supports_tool_choice": true
-  },
-  "huggingface/ovhcloud/Qwen/Qwen3.6-27B": {
-    "provider": "huggingface",
-    "base_model": "Qwen3.6-27B",
-    "mode": "chat",
-    "source": "https://huggingface.co/Qwen/Qwen3.6-27B",
-    "input_cost_per_token": 4.6999999999999995e-07,
-    "output_cost_per_token": 3.19e-06,
-    "max_input_tokens": 262144,
-    "max_tokens": 262144,
-    "supports_function_calling": true,
-    "supports_tool_choice": true,
-    "supports_response_schema": true,
-    "supports_vision": true
-  },
-  "huggingface/deepinfra/Qwen/Qwen3.6-27B": {
-    "provider": "huggingface",
-    "base_model": "Qwen3.6-27B",
-    "mode": "chat",
-    "source": "https://huggingface.co/Qwen/Qwen3.6-27B",
-    "input_cost_per_token": 3.2e-07,
-    "output_cost_per_token": 3.2e-06,
-    "max_input_tokens": 262144,
-    "max_tokens": 262144,
-    "supports_function_calling": true,
-    "supports_tool_choice": true,
-    "supports_response_schema": true,
-    "supports_vision": true
   },
   "huggingface/novita/moonshotai/Kimi-K2.6": {
     "provider": "huggingface",
@@ -65480,43 +65754,6 @@
     "supports_response_schema": true,
     "supports_vision": true
   },
-  "huggingface/novita/zai-org/GLM-4.5-Air": {
-    "provider": "huggingface",
-    "base_model": "GLM-4.5-Air",
-    "mode": "chat",
-    "source": "https://huggingface.co/zai-org/GLM-4.5-Air",
-    "input_cost_per_token": 1.3e-07,
-    "output_cost_per_token": 8.499999999999999e-07,
-    "max_input_tokens": 131072,
-    "max_tokens": 131072,
-    "supports_function_calling": true,
-    "supports_tool_choice": true
-  },
-  "huggingface/novita/Qwen/Qwen2.5-72B-Instruct": {
-    "provider": "huggingface",
-    "base_model": "Qwen2.5-72B-Instruct",
-    "mode": "chat",
-    "source": "https://huggingface.co/Qwen/Qwen2.5-72B-Instruct",
-    "input_cost_per_token": 3.7999999999999996e-07,
-    "output_cost_per_token": 4e-07,
-    "max_input_tokens": 32000,
-    "max_tokens": 32000,
-    "supports_function_calling": true,
-    "supports_tool_choice": true
-  },
-  "huggingface/deepinfra/Qwen/Qwen2.5-72B-Instruct": {
-    "provider": "huggingface",
-    "base_model": "Qwen2.5-72B-Instruct",
-    "mode": "chat",
-    "source": "https://huggingface.co/Qwen/Qwen2.5-72B-Instruct",
-    "input_cost_per_token": 3.6e-07,
-    "output_cost_per_token": 4e-07,
-    "max_input_tokens": 32768,
-    "max_tokens": 32768,
-    "supports_function_calling": true,
-    "supports_tool_choice": true,
-    "supports_response_schema": true
-  },
   "huggingface/novita/deepseek-ai/DeepSeek-V3.2": {
     "provider": "huggingface",
     "base_model": "DeepSeek-V3.2",
@@ -65542,6 +65779,60 @@
     "supports_function_calling": true,
     "supports_tool_choice": true,
     "supports_response_schema": true
+  },
+  "huggingface/deepinfra/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16": {
+    "provider": "huggingface",
+    "base_model": "NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+    "mode": "chat",
+    "source": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+    "input_cost_per_token": 1e-06,
+    "output_cost_per_token": 4.9999999999999996e-06,
+    "max_input_tokens": 262144,
+    "max_tokens": 262144,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_response_schema": true
+  },
+  "huggingface/ovhcloud/Qwen/Qwen3.6-27B": {
+    "provider": "huggingface",
+    "base_model": "Qwen3.6-27B",
+    "mode": "chat",
+    "source": "https://huggingface.co/Qwen/Qwen3.6-27B",
+    "input_cost_per_token": 4.6999999999999995e-07,
+    "output_cost_per_token": 3.19e-06,
+    "max_input_tokens": 262144,
+    "max_tokens": 262144,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_response_schema": true,
+    "supports_vision": true
+  },
+  "huggingface/deepinfra/Qwen/Qwen3.6-27B": {
+    "provider": "huggingface",
+    "base_model": "Qwen3.6-27B",
+    "mode": "chat",
+    "source": "https://huggingface.co/Qwen/Qwen3.6-27B",
+    "input_cost_per_token": 3.2e-07,
+    "output_cost_per_token": 3.2e-06,
+    "max_input_tokens": 262144,
+    "max_tokens": 262144,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_response_schema": true,
+    "supports_vision": true
+  },
+  "huggingface/deepinfra/stepfun-ai/Step-3.7-Flash": {
+    "provider": "huggingface",
+    "base_model": "Step-3.7-Flash",
+    "mode": "chat",
+    "source": "https://huggingface.co/stepfun-ai/Step-3.7-Flash",
+    "input_cost_per_token": 2e-07,
+    "output_cost_per_token": 1.1499999999999998e-06,
+    "max_input_tokens": 262144,
+    "max_tokens": 262144,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_vision": true
   },
   "huggingface/novita/Qwen/Qwen3.5-27B": {
     "provider": "huggingface",
@@ -65570,79 +65861,61 @@
     "supports_response_schema": true,
     "supports_vision": true
   },
-  "huggingface/deepinfra/stepfun-ai/Step-3.7-Flash": {
+  "huggingface/nscale/Qwen/Qwen3-32B": {
     "provider": "huggingface",
-    "base_model": "Step-3.7-Flash",
+    "base_model": "Qwen3-32B",
     "mode": "chat",
-    "source": "https://huggingface.co/stepfun-ai/Step-3.7-Flash",
-    "input_cost_per_token": 2e-07,
-    "output_cost_per_token": 1.1499999999999998e-06,
-    "max_input_tokens": 262144,
-    "max_tokens": 262144,
-    "supports_function_calling": true,
-    "supports_tool_choice": true,
-    "supports_vision": true
-  },
-  "huggingface/novita/deepseek-ai/DeepSeek-R1": {
-    "provider": "huggingface",
-    "base_model": "DeepSeek-R1",
-    "mode": "chat",
-    "source": "https://huggingface.co/deepseek-ai/DeepSeek-R1",
-    "input_cost_per_token": 7e-07,
-    "output_cost_per_token": 2.4999999999999998e-06,
-    "max_input_tokens": 64000,
-    "max_tokens": 64000,
-    "supports_function_calling": true,
-    "supports_tool_choice": true,
-    "supports_response_schema": true
-  },
-  "huggingface/novita/XiaomiMiMo/MiMo-V2.5": {
-    "provider": "huggingface",
-    "base_model": "MiMo-V2.5",
-    "mode": "chat",
-    "source": "https://huggingface.co/XiaomiMiMo/MiMo-V2.5",
-    "input_cost_per_token": 1.68e-07,
-    "output_cost_per_token": 3.36e-07,
-    "max_input_tokens": 1048576,
-    "max_tokens": 1048576,
+    "source": "https://huggingface.co/Qwen/Qwen3-32B",
+    "input_cost_per_token": 8e-08,
+    "output_cost_per_token": 2.5e-07,
+    "max_input_tokens": 40960,
+    "max_tokens": 40960,
     "supports_function_calling": true,
     "supports_tool_choice": true
   },
-  "huggingface/deepinfra/XiaomiMiMo/MiMo-V2.5": {
+  "huggingface/deepinfra/Qwen/Qwen3-32B": {
     "provider": "huggingface",
-    "base_model": "MiMo-V2.5",
+    "base_model": "Qwen3-32B",
     "mode": "chat",
-    "source": "https://huggingface.co/XiaomiMiMo/MiMo-V2.5",
-    "input_cost_per_token": 4e-07,
-    "output_cost_per_token": 2e-06,
-    "max_input_tokens": 262144,
-    "max_tokens": 262144,
+    "source": "https://huggingface.co/Qwen/Qwen3-32B",
+    "input_cost_per_token": 8e-08,
+    "output_cost_per_token": 2.8e-07,
+    "max_input_tokens": 40960,
+    "max_tokens": 40960,
     "supports_function_calling": true,
-    "supports_tool_choice": true,
-    "supports_response_schema": true
+    "supports_tool_choice": true
   },
-  "huggingface/novita/deepseek-ai/DeepSeek-V3.2-Exp": {
+  "huggingface/novita/Sao10K/L3-8B-Stheno-v3.2": {
     "provider": "huggingface",
-    "base_model": "DeepSeek-V3.2-Exp",
+    "base_model": "L3-8B-Stheno-v3.2",
     "mode": "chat",
-    "source": "https://huggingface.co/deepseek-ai/DeepSeek-V3.2-Exp",
-    "input_cost_per_token": 2.7e-07,
-    "output_cost_per_token": 4.0999999999999994e-07,
-    "max_input_tokens": 163840,
-    "max_tokens": 163840,
+    "source": "https://huggingface.co/Sao10K/L3-8B-Stheno-v3.2",
+    "input_cost_per_token": 5e-08,
+    "output_cost_per_token": 5e-08,
+    "max_input_tokens": 8192,
+    "max_tokens": 8192
+  },
+  "huggingface/novita/Qwen/Qwen2.5-72B-Instruct": {
+    "provider": "huggingface",
+    "base_model": "Qwen2.5-72B-Instruct",
+    "mode": "chat",
+    "source": "https://huggingface.co/Qwen/Qwen2.5-72B-Instruct",
+    "input_cost_per_token": 3.7999999999999996e-07,
+    "output_cost_per_token": 4e-07,
+    "max_input_tokens": 32000,
+    "max_tokens": 32000,
     "supports_function_calling": true,
-    "supports_tool_choice": true,
-    "supports_response_schema": true
+    "supports_tool_choice": true
   },
-  "huggingface/deepinfra/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16": {
+  "huggingface/deepinfra/Qwen/Qwen2.5-72B-Instruct": {
     "provider": "huggingface",
-    "base_model": "NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+    "base_model": "Qwen2.5-72B-Instruct",
     "mode": "chat",
-    "source": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
-    "input_cost_per_token": 1e-06,
-    "output_cost_per_token": 4.9999999999999996e-06,
-    "max_input_tokens": 262144,
-    "max_tokens": 262144,
+    "source": "https://huggingface.co/Qwen/Qwen2.5-72B-Instruct",
+    "input_cost_per_token": 3.6e-07,
+    "output_cost_per_token": 4e-07,
+    "max_input_tokens": 32768,
+    "max_tokens": 32768,
     "supports_function_calling": true,
     "supports_tool_choice": true,
     "supports_response_schema": true
@@ -65686,52 +65959,6 @@
     "supports_response_schema": true,
     "supports_vision": true
   },
-  "huggingface/publicai/swiss-ai/Apertus-8B-Instruct-2509": {
-    "provider": "huggingface",
-    "base_model": "Apertus-8B-Instruct-2509",
-    "mode": "chat",
-    "source": "https://huggingface.co/swiss-ai/Apertus-8B-Instruct-2509",
-    "input_cost_per_token": 8.199999999999999e-07,
-    "output_cost_per_token": 2.92e-06,
-    "supports_function_calling": true,
-    "supports_tool_choice": true,
-    "supports_response_schema": true
-  },
-  "huggingface/nscale/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B": {
-    "provider": "huggingface",
-    "base_model": "DeepSeek-R1-Distill-Qwen-7B",
-    "mode": "chat",
-    "source": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
-    "input_cost_per_token": 1.5e-07,
-    "output_cost_per_token": 1.5e-07,
-    "max_input_tokens": 131072,
-    "max_tokens": 131072
-  },
-  "huggingface/nscale/Qwen/Qwen3-14B": {
-    "provider": "huggingface",
-    "base_model": "Qwen3-14B",
-    "mode": "chat",
-    "source": "https://huggingface.co/Qwen/Qwen3-14B",
-    "input_cost_per_token": 7e-08,
-    "output_cost_per_token": 2e-07,
-    "max_input_tokens": 40960,
-    "max_tokens": 40960,
-    "supports_function_calling": true,
-    "supports_tool_choice": true,
-    "supports_response_schema": true
-  },
-  "huggingface/deepinfra/Qwen/Qwen3-14B": {
-    "provider": "huggingface",
-    "base_model": "Qwen3-14B",
-    "mode": "chat",
-    "source": "https://huggingface.co/Qwen/Qwen3-14B",
-    "input_cost_per_token": 1.2000000000000002e-07,
-    "output_cost_per_token": 2.4000000000000003e-07,
-    "max_input_tokens": 40960,
-    "max_tokens": 40960,
-    "supports_function_calling": true,
-    "supports_tool_choice": true
-  },
   "huggingface/publicai/swiss-ai/Apertus-v1.5-8B": {
     "provider": "huggingface",
     "base_model": "Apertus-v1.5-8B",
@@ -65743,6 +65970,18 @@
     "supports_tool_choice": true,
     "supports_response_schema": true,
     "supports_vision": true
+  },
+  "huggingface/novita/moonshotai/Kimi-K2-Instruct": {
+    "provider": "huggingface",
+    "base_model": "Kimi-K2-Instruct",
+    "mode": "chat",
+    "source": "https://huggingface.co/moonshotai/Kimi-K2-Instruct",
+    "input_cost_per_token": 5.699999999999999e-07,
+    "output_cost_per_token": 2.2999999999999996e-06,
+    "max_input_tokens": 131072,
+    "max_tokens": 131072,
+    "supports_function_calling": true,
+    "supports_tool_choice": true
   },
   "huggingface/novita/Qwen/Qwen3.5-122B-A10B": {
     "provider": "huggingface",
@@ -65770,122 +66009,39 @@
     "supports_tool_choice": true,
     "supports_vision": true
   },
-  "huggingface/novita/Sao10K/L3-8B-Stheno-v3.2": {
+  "huggingface/publicai/swiss-ai/Apertus-8B-Instruct-2509": {
     "provider": "huggingface",
-    "base_model": "L3-8B-Stheno-v3.2",
+    "base_model": "Apertus-8B-Instruct-2509",
     "mode": "chat",
-    "source": "https://huggingface.co/Sao10K/L3-8B-Stheno-v3.2",
-    "input_cost_per_token": 5e-08,
-    "output_cost_per_token": 5e-08,
-    "max_input_tokens": 8192,
-    "max_tokens": 8192
-  },
-  "huggingface/novita/MiniMaxAI/MiniMax-M2.7": {
-    "provider": "huggingface",
-    "base_model": "MiniMax-M2.7",
-    "mode": "chat",
-    "source": "https://huggingface.co/MiniMaxAI/MiniMax-M2.7",
-    "input_cost_per_token": 3e-07,
-    "output_cost_per_token": 1.2e-06,
-    "max_input_tokens": 204800,
-    "max_tokens": 204800,
-    "supports_function_calling": true,
-    "supports_tool_choice": true
-  },
-  "huggingface/deepinfra/MiniMaxAI/MiniMax-M2.7": {
-    "provider": "huggingface",
-    "base_model": "MiniMax-M2.7",
-    "mode": "chat",
-    "source": "https://huggingface.co/MiniMaxAI/MiniMax-M2.7",
-    "input_cost_per_token": 2.5e-07,
-    "output_cost_per_token": 1e-06,
-    "max_input_tokens": 196608,
-    "max_tokens": 196608,
-    "supports_function_calling": true,
-    "supports_tool_choice": true
-  },
-  "huggingface/novita/moonshotai/Kimi-K2-Instruct": {
-    "provider": "huggingface",
-    "base_model": "Kimi-K2-Instruct",
-    "mode": "chat",
-    "source": "https://huggingface.co/moonshotai/Kimi-K2-Instruct",
-    "input_cost_per_token": 5.699999999999999e-07,
-    "output_cost_per_token": 2.2999999999999996e-06,
-    "max_input_tokens": 131072,
-    "max_tokens": 131072,
-    "supports_function_calling": true,
-    "supports_tool_choice": true
-  },
-  "huggingface/novita/XiaomiMiMo/MiMo-V2.5-Pro": {
-    "provider": "huggingface",
-    "base_model": "MiMo-V2.5-Pro",
-    "mode": "chat",
-    "source": "https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro",
-    "input_cost_per_token": 5.22e-07,
-    "output_cost_per_token": 1.044e-06,
-    "max_input_tokens": 1048576,
-    "max_tokens": 1048576,
-    "supports_function_calling": true,
-    "supports_tool_choice": true
-  },
-  "huggingface/deepinfra/XiaomiMiMo/MiMo-V2.5-Pro": {
-    "provider": "huggingface",
-    "base_model": "MiMo-V2.5-Pro",
-    "mode": "chat",
-    "source": "https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro",
-    "input_cost_per_token": 1e-06,
-    "output_cost_per_token": 2.9999999999999992e-06,
-    "max_input_tokens": 1048576,
-    "max_tokens": 1048576,
+    "source": "https://huggingface.co/swiss-ai/Apertus-8B-Instruct-2509",
+    "input_cost_per_token": 8.199999999999999e-07,
+    "output_cost_per_token": 2.92e-06,
     "supports_function_calling": true,
     "supports_tool_choice": true,
     "supports_response_schema": true
   },
-  "huggingface/novita/Qwen/Qwen3-Coder-480B-A35B-Instruct": {
+  "huggingface/nscale/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B": {
     "provider": "huggingface",
-    "base_model": "Qwen3-Coder-480B-A35B-Instruct",
+    "base_model": "DeepSeek-R1-Distill-Qwen-7B",
     "mode": "chat",
-    "source": "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct",
-    "input_cost_per_token": 3.7999999999999996e-07,
-    "output_cost_per_token": 1.55e-06,
-    "max_input_tokens": 262144,
-    "max_tokens": 262144,
-    "supports_function_calling": true,
-    "supports_tool_choice": true
-  },
-  "huggingface/novita/MiniMaxAI/MiniMax-M2.5": {
-    "provider": "huggingface",
-    "base_model": "MiniMax-M2.5",
-    "mode": "chat",
-    "source": "https://huggingface.co/MiniMaxAI/MiniMax-M2.5",
-    "input_cost_per_token": 3e-07,
-    "output_cost_per_token": 1.2e-06,
-    "max_input_tokens": 204800,
-    "max_tokens": 204800,
-    "supports_function_calling": true,
-    "supports_tool_choice": true
-  },
-  "huggingface/ovhcloud/Qwen/Qwen2.5-VL-72B-Instruct": {
-    "provider": "huggingface",
-    "base_model": "Qwen2.5-VL-72B-Instruct",
-    "mode": "chat",
-    "source": "https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct",
-    "input_cost_per_token": 1.0099999999999999e-06,
-    "output_cost_per_token": 1.0099999999999999e-06,
-    "max_input_tokens": 32768,
-    "max_tokens": 32768,
-    "supports_response_schema": true,
-    "supports_vision": true
-  },
-  "huggingface/deepinfra/NousResearch/Hermes-3-Llama-3.1-70B": {
-    "provider": "huggingface",
-    "base_model": "Hermes-3-Llama-3.1-70B",
-    "mode": "chat",
-    "source": "https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-70B",
-    "input_cost_per_token": 7e-07,
-    "output_cost_per_token": 7e-07,
+    "source": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "input_cost_per_token": 1.5e-07,
+    "output_cost_per_token": 1.5e-07,
     "max_input_tokens": 131072,
     "max_tokens": 131072,
+    "supports_response_schema": true
+  },
+  "huggingface/novita/deepseek-ai/DeepSeek-V3.2-Exp": {
+    "provider": "huggingface",
+    "base_model": "DeepSeek-V3.2-Exp",
+    "mode": "chat",
+    "source": "https://huggingface.co/deepseek-ai/DeepSeek-V3.2-Exp",
+    "input_cost_per_token": 2.7e-07,
+    "output_cost_per_token": 4.0999999999999994e-07,
+    "max_input_tokens": 163840,
+    "max_tokens": 163840,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
     "supports_response_schema": true
   },
   "huggingface/novita/moonshotai/Kimi-K2.5": {
@@ -65915,52 +66071,49 @@
     "supports_tool_choice": true,
     "supports_vision": true
   },
-  "huggingface/novita/deepseek-ai/DeepSeek-V3-0324": {
+  "huggingface/deepinfra/NousResearch/Hermes-3-Llama-3.1-70B": {
     "provider": "huggingface",
-    "base_model": "DeepSeek-V3-0324",
+    "base_model": "Hermes-3-Llama-3.1-70B",
     "mode": "chat",
-    "source": "https://huggingface.co/deepseek-ai/DeepSeek-V3-0324",
-    "input_cost_per_token": 2.7e-07,
-    "output_cost_per_token": 1.12e-06,
-    "max_input_tokens": 163840,
-    "max_tokens": 163840,
-    "supports_function_calling": true,
-    "supports_tool_choice": true
-  },
-  "huggingface/deepinfra/deepseek-ai/DeepSeek-V3-0324": {
-    "provider": "huggingface",
-    "base_model": "DeepSeek-V3-0324",
-    "mode": "chat",
-    "source": "https://huggingface.co/deepseek-ai/DeepSeek-V3-0324",
-    "input_cost_per_token": 2.4000000000000003e-07,
-    "output_cost_per_token": 9e-07,
-    "max_input_tokens": 163840,
-    "max_tokens": 163840,
-    "supports_function_calling": true,
-    "supports_tool_choice": true,
+    "source": "https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-70B",
+    "input_cost_per_token": 7e-07,
+    "output_cost_per_token": 7e-07,
+    "max_input_tokens": 131072,
+    "max_tokens": 131072,
     "supports_response_schema": true
   },
-  "huggingface/novita/zai-org/GLM-4.6": {
+  "huggingface/nscale/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B": {
     "provider": "huggingface",
-    "base_model": "GLM-4.6",
+    "base_model": "DeepSeek-R1-Distill-Qwen-14B",
     "mode": "chat",
-    "source": "https://huggingface.co/zai-org/GLM-4.6",
-    "input_cost_per_token": 5.5e-07,
-    "output_cost_per_token": 2.2e-06,
-    "max_input_tokens": 204800,
-    "max_tokens": 204800,
+    "source": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+    "input_cost_per_token": 2e-07,
+    "output_cost_per_token": 2e-07,
+    "max_input_tokens": 131072,
+    "max_tokens": 131072,
+    "supports_response_schema": true
+  },
+  "huggingface/novita/deepseek-ai/DeepSeek-V3": {
+    "provider": "huggingface",
+    "base_model": "DeepSeek-V3",
+    "mode": "chat",
+    "source": "https://huggingface.co/deepseek-ai/DeepSeek-V3",
+    "input_cost_per_token": 4e-07,
+    "output_cost_per_token": 1.3e-06,
+    "max_input_tokens": 64000,
+    "max_tokens": 64000,
     "supports_function_calling": true,
     "supports_tool_choice": true
   },
-  "huggingface/deepinfra/zai-org/GLM-4.6": {
+  "huggingface/deepinfra/deepseek-ai/DeepSeek-V3": {
     "provider": "huggingface",
-    "base_model": "GLM-4.6",
+    "base_model": "DeepSeek-V3",
     "mode": "chat",
-    "source": "https://huggingface.co/zai-org/GLM-4.6",
-    "input_cost_per_token": 5e-07,
-    "output_cost_per_token": 2e-06,
-    "max_input_tokens": 202752,
-    "max_tokens": 202752,
+    "source": "https://huggingface.co/deepseek-ai/DeepSeek-V3",
+    "input_cost_per_token": 3.2e-07,
+    "output_cost_per_token": 8.899999999999998e-07,
+    "max_input_tokens": 163840,
+    "max_tokens": 163840,
     "supports_function_calling": true,
     "supports_tool_choice": true,
     "supports_response_schema": true
@@ -65974,6 +66127,80 @@
     "output_cost_per_token": 1.4e-07,
     "max_input_tokens": 16384,
     "max_tokens": 16384,
+    "supports_response_schema": true
+  },
+  "huggingface/nscale/Qwen/Qwen3-14B": {
+    "provider": "huggingface",
+    "base_model": "Qwen3-14B",
+    "mode": "chat",
+    "source": "https://huggingface.co/Qwen/Qwen3-14B",
+    "input_cost_per_token": 7e-08,
+    "output_cost_per_token": 2e-07,
+    "max_input_tokens": 40960,
+    "max_tokens": 40960,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_response_schema": true
+  },
+  "huggingface/deepinfra/Qwen/Qwen3-14B": {
+    "provider": "huggingface",
+    "base_model": "Qwen3-14B",
+    "mode": "chat",
+    "source": "https://huggingface.co/Qwen/Qwen3-14B",
+    "input_cost_per_token": 1.2000000000000002e-07,
+    "output_cost_per_token": 2.4000000000000003e-07,
+    "max_input_tokens": 40960,
+    "max_tokens": 40960,
+    "supports_function_calling": true,
+    "supports_tool_choice": true
+  },
+  "huggingface/novita/Qwen/Qwen3-235B-A22B": {
+    "provider": "huggingface",
+    "base_model": "Qwen3-235B-A22B",
+    "mode": "chat",
+    "source": "https://huggingface.co/Qwen/Qwen3-235B-A22B",
+    "input_cost_per_token": 2e-07,
+    "output_cost_per_token": 8e-07,
+    "max_input_tokens": 40960,
+    "max_tokens": 40960
+  },
+  "huggingface/nscale/Qwen/Qwen3-235B-A22B": {
+    "provider": "huggingface",
+    "base_model": "Qwen3-235B-A22B",
+    "mode": "chat",
+    "source": "https://huggingface.co/Qwen/Qwen3-235B-A22B",
+    "input_cost_per_token": 2e-07,
+    "output_cost_per_token": 6e-07,
+    "max_input_tokens": 32000,
+    "max_tokens": 32000,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_response_schema": true
+  },
+  "huggingface/deepinfra/Qwen/Qwen3-30B-A3B": {
+    "provider": "huggingface",
+    "base_model": "Qwen3-30B-A3B",
+    "mode": "chat",
+    "source": "https://huggingface.co/Qwen/Qwen3-30B-A3B",
+    "input_cost_per_token": 1.2000000000000002e-07,
+    "output_cost_per_token": 5e-07,
+    "max_input_tokens": 40960,
+    "max_tokens": 40960,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_response_schema": true
+  },
+  "huggingface/nscale/Qwen/Qwen3-4B-Thinking-2507": {
+    "provider": "huggingface",
+    "base_model": "Qwen3-4B-Thinking-2507",
+    "mode": "chat",
+    "source": "https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507",
+    "input_cost_per_token": 1e-08,
+    "output_cost_per_token": 3e-08,
+    "max_input_tokens": 262144,
+    "max_tokens": 262144,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
     "supports_response_schema": true
   },
   "huggingface/novita/deepseek-ai/DeepSeek-R1-0528": {
@@ -65997,42 +66224,7 @@
     "input_cost_per_token": 5e-07,
     "output_cost_per_token": 2.1499999999999997e-06,
     "max_input_tokens": 163840,
-    "max_tokens": 163840
-  },
-  "huggingface/novita/zai-org/GLM-5": {
-    "provider": "huggingface",
-    "base_model": "GLM-5",
-    "mode": "chat",
-    "source": "https://huggingface.co/zai-org/GLM-5",
-    "input_cost_per_token": 1e-06,
-    "output_cost_per_token": 3.2e-06,
-    "max_input_tokens": 202800,
-    "max_tokens": 202800,
-    "supports_function_calling": true,
-    "supports_tool_choice": true
-  },
-  "huggingface/deepinfra/zai-org/GLM-5": {
-    "provider": "huggingface",
-    "base_model": "GLM-5",
-    "mode": "chat",
-    "source": "https://huggingface.co/zai-org/GLM-5",
-    "input_cost_per_token": 6e-07,
-    "output_cost_per_token": 2.08e-06,
-    "max_input_tokens": 202752,
-    "max_tokens": 202752,
-    "supports_function_calling": true,
-    "supports_tool_choice": true,
-    "supports_response_schema": true
-  },
-  "huggingface/deepinfra/Qwen/Qwen3-30B-A3B": {
-    "provider": "huggingface",
-    "base_model": "Qwen3-30B-A3B",
-    "mode": "chat",
-    "source": "https://huggingface.co/Qwen/Qwen3-30B-A3B",
-    "input_cost_per_token": 1.2000000000000002e-07,
-    "output_cost_per_token": 5e-07,
-    "max_input_tokens": 40960,
-    "max_tokens": 40960,
+    "max_tokens": 163840,
     "supports_function_calling": true,
     "supports_tool_choice": true
   },
@@ -66061,17 +66253,141 @@
     "supports_tool_choice": true,
     "supports_response_schema": true
   },
-  "huggingface/novita/MiniMaxAI/MiniMax-M2": {
+  "huggingface/ovhcloud/Qwen/Qwen2.5-VL-72B-Instruct": {
     "provider": "huggingface",
-    "base_model": "MiniMax-M2",
+    "base_model": "Qwen2.5-VL-72B-Instruct",
     "mode": "chat",
-    "source": "https://huggingface.co/MiniMaxAI/MiniMax-M2",
+    "source": "https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct",
+    "input_cost_per_token": 1.0099999999999999e-06,
+    "output_cost_per_token": 1.0099999999999999e-06,
+    "max_input_tokens": 32768,
+    "max_tokens": 32768,
+    "supports_response_schema": true,
+    "supports_vision": true
+  },
+  "huggingface/novita/zai-org/GLM-4.6": {
+    "provider": "huggingface",
+    "base_model": "GLM-4.6",
+    "mode": "chat",
+    "source": "https://huggingface.co/zai-org/GLM-4.6",
+    "input_cost_per_token": 5.5e-07,
+    "output_cost_per_token": 2.2e-06,
+    "max_input_tokens": 204800,
+    "max_tokens": 204800,
+    "supports_function_calling": true,
+    "supports_tool_choice": true
+  },
+  "huggingface/deepinfra/zai-org/GLM-4.6": {
+    "provider": "huggingface",
+    "base_model": "GLM-4.6",
+    "mode": "chat",
+    "source": "https://huggingface.co/zai-org/GLM-4.6",
+    "input_cost_per_token": 5e-07,
+    "output_cost_per_token": 2e-06,
+    "max_input_tokens": 202752,
+    "max_tokens": 202752,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_response_schema": true
+  },
+  "huggingface/novita/Qwen/Qwen3-Coder-480B-A35B-Instruct": {
+    "provider": "huggingface",
+    "base_model": "Qwen3-Coder-480B-A35B-Instruct",
+    "mode": "chat",
+    "source": "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct",
+    "input_cost_per_token": 3.7999999999999996e-07,
+    "output_cost_per_token": 1.55e-06,
+    "max_input_tokens": 262144,
+    "max_tokens": 262144,
+    "supports_function_calling": true,
+    "supports_tool_choice": true
+  },
+  "huggingface/novita/MiniMaxAI/MiniMax-M2.5": {
+    "provider": "huggingface",
+    "base_model": "MiniMax-M2.5",
+    "mode": "chat",
+    "source": "https://huggingface.co/MiniMaxAI/MiniMax-M2.5",
     "input_cost_per_token": 3e-07,
     "output_cost_per_token": 1.2e-06,
     "max_input_tokens": 204800,
     "max_tokens": 204800,
     "supports_function_calling": true,
     "supports_tool_choice": true
+  },
+  "huggingface/novita/zai-org/GLM-5": {
+    "provider": "huggingface",
+    "base_model": "GLM-5",
+    "mode": "chat",
+    "source": "https://huggingface.co/zai-org/GLM-5",
+    "input_cost_per_token": 1e-06,
+    "output_cost_per_token": 3.2e-06,
+    "max_input_tokens": 202800,
+    "max_tokens": 202800,
+    "supports_function_calling": true,
+    "supports_tool_choice": true
+  },
+  "huggingface/deepinfra/zai-org/GLM-5": {
+    "provider": "huggingface",
+    "base_model": "GLM-5",
+    "mode": "chat",
+    "source": "https://huggingface.co/zai-org/GLM-5",
+    "input_cost_per_token": 6e-07,
+    "output_cost_per_token": 2.08e-06,
+    "max_input_tokens": 202752,
+    "max_tokens": 202752,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_response_schema": true
+  },
+  "huggingface/novita/XiaomiMiMo/MiMo-V2.5-Pro": {
+    "provider": "huggingface",
+    "base_model": "MiMo-V2.5-Pro",
+    "mode": "chat",
+    "source": "https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro",
+    "input_cost_per_token": 5.22e-07,
+    "output_cost_per_token": 1.044e-06,
+    "max_input_tokens": 1048576,
+    "max_tokens": 1048576,
+    "supports_function_calling": true,
+    "supports_tool_choice": true
+  },
+  "huggingface/deepinfra/XiaomiMiMo/MiMo-V2.5-Pro": {
+    "provider": "huggingface",
+    "base_model": "MiMo-V2.5-Pro",
+    "mode": "chat",
+    "source": "https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro",
+    "input_cost_per_token": 1e-06,
+    "output_cost_per_token": 2.9999999999999992e-06,
+    "max_input_tokens": 1048576,
+    "max_tokens": 1048576,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_response_schema": true
+  },
+  "huggingface/novita/XiaomiMiMo/MiMo-V2.5": {
+    "provider": "huggingface",
+    "base_model": "MiMo-V2.5",
+    "mode": "chat",
+    "source": "https://huggingface.co/XiaomiMiMo/MiMo-V2.5",
+    "input_cost_per_token": 1.68e-07,
+    "output_cost_per_token": 3.36e-07,
+    "max_input_tokens": 1048576,
+    "max_tokens": 1048576,
+    "supports_function_calling": true,
+    "supports_tool_choice": true
+  },
+  "huggingface/deepinfra/XiaomiMiMo/MiMo-V2.5": {
+    "provider": "huggingface",
+    "base_model": "MiMo-V2.5",
+    "mode": "chat",
+    "source": "https://huggingface.co/XiaomiMiMo/MiMo-V2.5",
+    "input_cost_per_token": 4e-07,
+    "output_cost_per_token": 2e-06,
+    "max_input_tokens": 262144,
+    "max_tokens": 262144,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_response_schema": true
   },
   "huggingface/novita/Qwen/Qwen3.5-397B-A17B": {
     "provider": "huggingface",
@@ -66125,75 +66441,6 @@
     "supports_response_schema": true,
     "supports_vision": true
   },
-  "huggingface/deepinfra/google/gemma-3-27b-it": {
-    "provider": "huggingface",
-    "base_model": "gemma-3-27b-it",
-    "mode": "chat",
-    "source": "https://huggingface.co/google/gemma-3-27b-it",
-    "input_cost_per_token": 8e-08,
-    "output_cost_per_token": 1.6e-07,
-    "max_input_tokens": 131072,
-    "max_tokens": 131072,
-    "supports_function_calling": true,
-    "supports_tool_choice": true,
-    "supports_vision": true
-  },
-  "huggingface/nscale/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B": {
-    "provider": "huggingface",
-    "base_model": "DeepSeek-R1-Distill-Qwen-14B",
-    "mode": "chat",
-    "source": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
-    "input_cost_per_token": 2e-07,
-    "output_cost_per_token": 2e-07,
-    "max_input_tokens": 131072,
-    "max_tokens": 131072,
-    "supports_response_schema": true
-  },
-  "huggingface/deepinfra/meta-llama/Llama-Guard-4-12B": {
-    "provider": "huggingface",
-    "base_model": "Llama-Guard-4-12B",
-    "mode": "chat",
-    "source": "https://huggingface.co/meta-llama/Llama-Guard-4-12B",
-    "input_cost_per_token": 1.8e-07,
-    "output_cost_per_token": 1.8e-07,
-    "max_input_tokens": 163840,
-    "max_tokens": 163840,
-    "supports_vision": true
-  },
-  "huggingface/nscale/Qwen/Qwen3-4B-Thinking-2507": {
-    "provider": "huggingface",
-    "base_model": "Qwen3-4B-Thinking-2507",
-    "mode": "chat",
-    "source": "https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507",
-    "input_cost_per_token": 1e-08,
-    "output_cost_per_token": 3e-08,
-    "max_input_tokens": 262144,
-    "max_tokens": 262144,
-    "supports_function_calling": true,
-    "supports_tool_choice": true,
-    "supports_response_schema": true
-  },
-  "huggingface/novita/meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8": {
-    "provider": "huggingface",
-    "base_model": "Llama-4-Maverick-17B-128E-Instruct-FP8",
-    "mode": "chat",
-    "source": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
-    "input_cost_per_token": 2.7e-07,
-    "output_cost_per_token": 8.499999999999999e-07,
-    "max_input_tokens": 1048576,
-    "max_tokens": 1048576,
-    "supports_response_schema": true,
-    "supports_vision": true
-  },
-  "huggingface/publicai/aisingapore/Gemma-SEA-LION-v4-27B-IT": {
-    "provider": "huggingface",
-    "base_model": "Gemma-SEA-LION-v4-27B-IT",
-    "mode": "chat",
-    "source": "https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B-IT",
-    "input_cost_per_token": 2e-07,
-    "output_cost_per_token": 4e-07,
-    "supports_response_schema": true
-  },
   "huggingface/deepinfra/google/gemma-3-12b-it": {
     "provider": "huggingface",
     "base_model": "gemma-3-12b-it",
@@ -66208,209 +66455,16 @@
     "supports_response_schema": true,
     "supports_vision": true
   },
-  "huggingface/nscale/Qwen/Qwen2.5-Coder-3B-Instruct": {
+  "huggingface/deepinfra/meta-llama/Llama-Guard-4-12B": {
     "provider": "huggingface",
-    "base_model": "Qwen2.5-Coder-3B-Instruct",
+    "base_model": "Llama-Guard-4-12B",
     "mode": "chat",
-    "source": "https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct",
-    "input_cost_per_token": 1e-08,
-    "output_cost_per_token": 3e-08,
-    "max_input_tokens": 32768,
-    "max_tokens": 32768,
-    "supports_response_schema": true
-  },
-  "huggingface/novita/baidu/ERNIE-4.5-VL-424B-A47B-Base-PT": {
-    "provider": "huggingface",
-    "base_model": "ERNIE-4.5-VL-424B-A47B-Base-PT",
-    "mode": "chat",
-    "source": "https://huggingface.co/baidu/ERNIE-4.5-VL-424B-A47B-Base-PT",
-    "input_cost_per_token": 4.1999999999999995e-07,
-    "output_cost_per_token": 1.2499999999999999e-06,
-    "max_input_tokens": 123000,
-    "max_tokens": 123000,
+    "source": "https://huggingface.co/meta-llama/Llama-Guard-4-12B",
+    "input_cost_per_token": 1.8e-07,
+    "output_cost_per_token": 1.8e-07,
+    "max_input_tokens": 163840,
+    "max_tokens": 163840,
     "supports_vision": true
-  },
-  "huggingface/publicai/swiss-ai/Apertus-70B-Instruct-2509": {
-    "provider": "huggingface",
-    "base_model": "Apertus-70B-Instruct-2509",
-    "mode": "chat",
-    "source": "https://huggingface.co/swiss-ai/Apertus-70B-Instruct-2509",
-    "input_cost_per_token": 8.199999999999999e-07,
-    "output_cost_per_token": 2.92e-06,
-    "supports_function_calling": true,
-    "supports_tool_choice": true
-  },
-  "huggingface/novita/Qwen/Qwen3-VL-235B-A22B-Instruct": {
-    "provider": "huggingface",
-    "base_model": "Qwen3-VL-235B-A22B-Instruct",
-    "mode": "chat",
-    "source": "https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct",
-    "input_cost_per_token": 3e-07,
-    "output_cost_per_token": 1.5e-06,
-    "max_input_tokens": 131072,
-    "max_tokens": 131072,
-    "supports_function_calling": true,
-    "supports_tool_choice": true,
-    "supports_response_schema": true,
-    "supports_vision": true
-  },
-  "huggingface/deepinfra/Qwen/Qwen3-VL-235B-A22B-Instruct": {
-    "provider": "huggingface",
-    "base_model": "Qwen3-VL-235B-A22B-Instruct",
-    "mode": "chat",
-    "source": "https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct",
-    "input_cost_per_token": 2e-07,
-    "output_cost_per_token": 8.799999999999998e-07,
-    "max_input_tokens": 262144,
-    "max_tokens": 262144,
-    "supports_function_calling": true,
-    "supports_tool_choice": true,
-    "supports_response_schema": true,
-    "supports_vision": true
-  },
-  "huggingface/nscale/deepseek-ai/DeepSeek-R1-Distill-Llama-8B": {
-    "provider": "huggingface",
-    "base_model": "DeepSeek-R1-Distill-Llama-8B",
-    "mode": "chat",
-    "source": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
-    "input_cost_per_token": 5e-08,
-    "output_cost_per_token": 5e-08,
-    "max_input_tokens": 131072,
-    "max_tokens": 131072
-  },
-  "huggingface/novita/zai-org/GLM-4.5V": {
-    "provider": "huggingface",
-    "base_model": "GLM-4.5V",
-    "mode": "chat",
-    "source": "https://huggingface.co/zai-org/GLM-4.5V",
-    "input_cost_per_token": 6e-07,
-    "output_cost_per_token": 1.8e-06,
-    "max_input_tokens": 65536,
-    "max_tokens": 65536,
-    "supports_function_calling": true,
-    "supports_tool_choice": true,
-    "supports_vision": true
-  },
-  "huggingface/publicai/aisingapore/Qwen-SEA-LION-v4-32B-IT": {
-    "provider": "huggingface",
-    "base_model": "Qwen-SEA-LION-v4-32B-IT",
-    "mode": "chat",
-    "source": "https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-32B-IT",
-    "input_cost_per_token": 2.5e-07,
-    "output_cost_per_token": 5e-07,
-    "supports_function_calling": true,
-    "supports_tool_choice": true,
-    "supports_response_schema": true
-  },
-  "huggingface/novita/Qwen/Qwen3-VL-30B-A3B-Instruct": {
-    "provider": "huggingface",
-    "base_model": "Qwen3-VL-30B-A3B-Instruct",
-    "mode": "chat",
-    "source": "https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Instruct",
-    "input_cost_per_token": 2e-07,
-    "output_cost_per_token": 7e-07,
-    "max_input_tokens": 131072,
-    "max_tokens": 131072,
-    "supports_function_calling": true,
-    "supports_tool_choice": true,
-    "supports_response_schema": true,
-    "supports_vision": true
-  },
-  "huggingface/deepinfra/Qwen/Qwen3-VL-30B-A3B-Instruct": {
-    "provider": "huggingface",
-    "base_model": "Qwen3-VL-30B-A3B-Instruct",
-    "mode": "chat",
-    "source": "https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Instruct",
-    "input_cost_per_token": 1.5e-07,
-    "output_cost_per_token": 6e-07,
-    "max_input_tokens": 262144,
-    "max_tokens": 262144,
-    "supports_function_calling": true,
-    "supports_tool_choice": true,
-    "supports_response_schema": true,
-    "supports_vision": true
-  },
-  "huggingface/novita/Qwen/Qwen3-235B-A22B": {
-    "provider": "huggingface",
-    "base_model": "Qwen3-235B-A22B",
-    "mode": "chat",
-    "source": "https://huggingface.co/Qwen/Qwen3-235B-A22B",
-    "input_cost_per_token": 2e-07,
-    "output_cost_per_token": 8e-07,
-    "max_input_tokens": 40960,
-    "max_tokens": 40960
-  },
-  "huggingface/nscale/Qwen/Qwen3-235B-A22B": {
-    "provider": "huggingface",
-    "base_model": "Qwen3-235B-A22B",
-    "mode": "chat",
-    "source": "https://huggingface.co/Qwen/Qwen3-235B-A22B",
-    "input_cost_per_token": 2e-07,
-    "output_cost_per_token": 6e-07,
-    "max_input_tokens": 32000,
-    "max_tokens": 32000,
-    "supports_function_calling": true,
-    "supports_tool_choice": true
-  },
-  "huggingface/novita/Qwen/Qwen3-VL-235B-A22B-Thinking": {
-    "provider": "huggingface",
-    "base_model": "Qwen3-VL-235B-A22B-Thinking",
-    "mode": "chat",
-    "source": "https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Thinking",
-    "input_cost_per_token": 9.8e-07,
-    "output_cost_per_token": 3.95e-06,
-    "max_input_tokens": 131072,
-    "max_tokens": 131072,
-    "supports_function_calling": true,
-    "supports_tool_choice": true,
-    "supports_vision": true
-  },
-  "huggingface/publicai/speakleash/Bielik-11B-v3.0-Instruct": {
-    "provider": "huggingface",
-    "base_model": "Bielik-11B-v3.0-Instruct",
-    "mode": "chat",
-    "source": "https://huggingface.co/speakleash/Bielik-11B-v3.0-Instruct",
-    "input_cost_per_token": 4e-07,
-    "output_cost_per_token": 4e-07,
-    "supports_function_calling": true,
-    "supports_tool_choice": true
-  },
-  "huggingface/novita/zai-org/GLM-4.7": {
-    "provider": "huggingface",
-    "base_model": "GLM-4.7",
-    "mode": "chat",
-    "source": "https://huggingface.co/zai-org/GLM-4.7",
-    "input_cost_per_token": 6e-07,
-    "output_cost_per_token": 2.2e-06,
-    "max_input_tokens": 204800,
-    "max_tokens": 204800,
-    "supports_function_calling": true,
-    "supports_tool_choice": true
-  },
-  "huggingface/baseten/zai-org/GLM-4.7": {
-    "provider": "huggingface",
-    "base_model": "GLM-4.7",
-    "mode": "chat",
-    "source": "https://huggingface.co/zai-org/GLM-4.7",
-    "input_cost_per_token": 6e-07,
-    "output_cost_per_token": 2.2e-06,
-    "max_input_tokens": 200000,
-    "max_tokens": 200000,
-    "supports_function_calling": true,
-    "supports_tool_choice": true,
-    "supports_response_schema": true
-  },
-  "huggingface/deepinfra/zai-org/GLM-4.7": {
-    "provider": "huggingface",
-    "base_model": "GLM-4.7",
-    "mode": "chat",
-    "source": "https://huggingface.co/zai-org/GLM-4.7",
-    "input_cost_per_token": 4e-07,
-    "output_cost_per_token": 1.75e-06,
-    "max_input_tokens": 202752,
-    "max_tokens": 202752,
-    "supports_function_calling": true,
-    "supports_tool_choice": true
   },
   "huggingface/novita/Qwen/Qwen3-235B-A22B-Instruct-2507": {
     "provider": "huggingface",
@@ -66462,53 +66516,185 @@
     "supports_tool_choice": true,
     "supports_response_schema": true
   },
-  "huggingface/novita/zai-org/GLM-4.6V-Flash": {
+  "huggingface/novita/meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8": {
     "provider": "huggingface",
-    "base_model": "GLM-4.6V-Flash",
+    "base_model": "Llama-4-Maverick-17B-128E-Instruct-FP8",
     "mode": "chat",
-    "source": "https://huggingface.co/zai-org/GLM-4.6V-Flash",
-    "input_cost_per_token": 3e-07,
-    "output_cost_per_token": 9e-07,
+    "source": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
+    "input_cost_per_token": 2.7e-07,
+    "output_cost_per_token": 8.499999999999999e-07,
+    "max_input_tokens": 1048576,
+    "max_tokens": 1048576,
+    "supports_response_schema": true,
+    "supports_vision": true
+  },
+  "huggingface/deepinfra/google/gemma-3-27b-it": {
+    "provider": "huggingface",
+    "base_model": "gemma-3-27b-it",
+    "mode": "chat",
+    "source": "https://huggingface.co/google/gemma-3-27b-it",
+    "input_cost_per_token": 8e-08,
+    "output_cost_per_token": 1.6e-07,
     "max_input_tokens": 131072,
     "max_tokens": 131072,
     "supports_function_calling": true,
     "supports_tool_choice": true,
+    "supports_response_schema": true,
     "supports_vision": true
   },
-  "huggingface/novita/deepseek-ai/DeepSeek-V3": {
+  "huggingface/novita/baidu/ERNIE-4.5-VL-424B-A47B-Base-PT": {
     "provider": "huggingface",
-    "base_model": "DeepSeek-V3",
+    "base_model": "ERNIE-4.5-VL-424B-A47B-Base-PT",
     "mode": "chat",
-    "source": "https://huggingface.co/deepseek-ai/DeepSeek-V3",
-    "input_cost_per_token": 4e-07,
-    "output_cost_per_token": 1.3e-06,
-    "max_input_tokens": 64000,
-    "max_tokens": 64000,
+    "source": "https://huggingface.co/baidu/ERNIE-4.5-VL-424B-A47B-Base-PT",
+    "input_cost_per_token": 4.1999999999999995e-07,
+    "output_cost_per_token": 1.2499999999999999e-06,
+    "max_input_tokens": 123000,
+    "max_tokens": 123000,
+    "supports_vision": true
+  },
+  "huggingface/novita/Qwen/Qwen3-VL-235B-A22B-Instruct": {
+    "provider": "huggingface",
+    "base_model": "Qwen3-VL-235B-A22B-Instruct",
+    "mode": "chat",
+    "source": "https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct",
+    "input_cost_per_token": 3e-07,
+    "output_cost_per_token": 1.5e-06,
+    "max_input_tokens": 131072,
+    "max_tokens": 131072,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_response_schema": true,
+    "supports_vision": true
+  },
+  "huggingface/deepinfra/Qwen/Qwen3-VL-235B-A22B-Instruct": {
+    "provider": "huggingface",
+    "base_model": "Qwen3-VL-235B-A22B-Instruct",
+    "mode": "chat",
+    "source": "https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct",
+    "input_cost_per_token": 2e-07,
+    "output_cost_per_token": 8.799999999999998e-07,
+    "max_input_tokens": 262144,
+    "max_tokens": 262144,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_response_schema": true,
+    "supports_vision": true
+  },
+  "huggingface/novita/zai-org/GLM-4.7": {
+    "provider": "huggingface",
+    "base_model": "GLM-4.7",
+    "mode": "chat",
+    "source": "https://huggingface.co/zai-org/GLM-4.7",
+    "input_cost_per_token": 6e-07,
+    "output_cost_per_token": 2.2e-06,
+    "max_input_tokens": 204800,
+    "max_tokens": 204800,
     "supports_function_calling": true,
     "supports_tool_choice": true
   },
-  "huggingface/deepinfra/deepseek-ai/DeepSeek-V3": {
+  "huggingface/baseten/zai-org/GLM-4.7": {
     "provider": "huggingface",
-    "base_model": "DeepSeek-V3",
+    "base_model": "GLM-4.7",
     "mode": "chat",
-    "source": "https://huggingface.co/deepseek-ai/DeepSeek-V3",
-    "input_cost_per_token": 3.2e-07,
-    "output_cost_per_token": 8.899999999999998e-07,
+    "source": "https://huggingface.co/zai-org/GLM-4.7",
+    "input_cost_per_token": 6e-07,
+    "output_cost_per_token": 2.2e-06,
+    "max_input_tokens": 200000,
+    "max_tokens": 200000,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_response_schema": true
+  },
+  "huggingface/deepinfra/zai-org/GLM-4.7": {
+    "provider": "huggingface",
+    "base_model": "GLM-4.7",
+    "mode": "chat",
+    "source": "https://huggingface.co/zai-org/GLM-4.7",
+    "input_cost_per_token": 4e-07,
+    "output_cost_per_token": 1.75e-06,
+    "max_input_tokens": 202752,
+    "max_tokens": 202752,
+    "supports_function_calling": true,
+    "supports_tool_choice": true
+  },
+  "huggingface/novita/zai-org/GLM-4.5V": {
+    "provider": "huggingface",
+    "base_model": "GLM-4.5V",
+    "mode": "chat",
+    "source": "https://huggingface.co/zai-org/GLM-4.5V",
+    "input_cost_per_token": 6e-07,
+    "output_cost_per_token": 1.8e-06,
+    "max_input_tokens": 65536,
+    "max_tokens": 65536,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_vision": true
+  },
+  "huggingface/novita/Qwen/Qwen3-VL-30B-A3B-Instruct": {
+    "provider": "huggingface",
+    "base_model": "Qwen3-VL-30B-A3B-Instruct",
+    "mode": "chat",
+    "source": "https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Instruct",
+    "input_cost_per_token": 2e-07,
+    "output_cost_per_token": 7e-07,
+    "max_input_tokens": 131072,
+    "max_tokens": 131072,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_response_schema": true,
+    "supports_vision": true
+  },
+  "huggingface/deepinfra/Qwen/Qwen3-VL-30B-A3B-Instruct": {
+    "provider": "huggingface",
+    "base_model": "Qwen3-VL-30B-A3B-Instruct",
+    "mode": "chat",
+    "source": "https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Instruct",
+    "input_cost_per_token": 1.5e-07,
+    "output_cost_per_token": 6e-07,
+    "max_input_tokens": 262144,
+    "max_tokens": 262144,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_response_schema": true,
+    "supports_vision": true
+  },
+  "huggingface/novita/deepseek-ai/DeepSeek-V3-0324": {
+    "provider": "huggingface",
+    "base_model": "DeepSeek-V3-0324",
+    "mode": "chat",
+    "source": "https://huggingface.co/deepseek-ai/DeepSeek-V3-0324",
+    "input_cost_per_token": 2.7e-07,
+    "output_cost_per_token": 1.12e-06,
+    "max_input_tokens": 163840,
+    "max_tokens": 163840,
+    "supports_function_calling": true,
+    "supports_tool_choice": true
+  },
+  "huggingface/deepinfra/deepseek-ai/DeepSeek-V3-0324": {
+    "provider": "huggingface",
+    "base_model": "DeepSeek-V3-0324",
+    "mode": "chat",
+    "source": "https://huggingface.co/deepseek-ai/DeepSeek-V3-0324",
+    "input_cost_per_token": 2.4000000000000003e-07,
+    "output_cost_per_token": 9e-07,
     "max_input_tokens": 163840,
     "max_tokens": 163840,
     "supports_function_calling": true,
     "supports_tool_choice": true,
     "supports_response_schema": true
   },
-  "huggingface/novita/zai-org/AutoGLM-Phone-9B-Multilingual": {
+  "huggingface/novita/Qwen/Qwen3-VL-235B-A22B-Thinking": {
     "provider": "huggingface",
-    "base_model": "AutoGLM-Phone-9B-Multilingual",
+    "base_model": "Qwen3-VL-235B-A22B-Thinking",
     "mode": "chat",
-    "source": "https://huggingface.co/zai-org/AutoGLM-Phone-9B-Multilingual",
-    "input_cost_per_token": 3.5e-08,
-    "output_cost_per_token": 1.3800000000000002e-07,
-    "max_input_tokens": 65536,
-    "max_tokens": 65536,
+    "source": "https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Thinking",
+    "input_cost_per_token": 9.8e-07,
+    "output_cost_per_token": 3.95e-06,
+    "max_input_tokens": 131072,
+    "max_tokens": 131072,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
     "supports_vision": true
   },
   "huggingface/novita/deepseek-ai/DeepSeek-V3.1": {
@@ -66537,15 +66723,18 @@
     "supports_tool_choice": true,
     "supports_response_schema": true
   },
-  "huggingface/novita/alpindale/WizardLM-2-8x22B": {
+  "huggingface/novita/zai-org/GLM-4.6V-Flash": {
     "provider": "huggingface",
-    "base_model": "WizardLM-2-8x22B",
+    "base_model": "GLM-4.6V-Flash",
     "mode": "chat",
-    "source": "https://huggingface.co/alpindale/WizardLM-2-8x22B",
-    "input_cost_per_token": 6.2e-07,
-    "output_cost_per_token": 6.2e-07,
-    "max_input_tokens": 65535,
-    "max_tokens": 65535
+    "source": "https://huggingface.co/zai-org/GLM-4.6V-Flash",
+    "input_cost_per_token": 3e-07,
+    "output_cost_per_token": 9e-07,
+    "max_input_tokens": 131072,
+    "max_tokens": 131072,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_vision": true
   },
   "huggingface/novita/deepseek-ai/DeepSeek-V3.1-Terminus": {
     "provider": "huggingface",
@@ -66573,15 +66762,16 @@
     "supports_tool_choice": true,
     "supports_response_schema": true
   },
-  "huggingface/novita/Sao10K/L3-8B-Lunaris-v1": {
+  "huggingface/novita/zai-org/AutoGLM-Phone-9B-Multilingual": {
     "provider": "huggingface",
-    "base_model": "L3-8B-Lunaris-v1",
+    "base_model": "AutoGLM-Phone-9B-Multilingual",
     "mode": "chat",
-    "source": "https://huggingface.co/Sao10K/L3-8B-Lunaris-v1",
-    "input_cost_per_token": 5e-08,
-    "output_cost_per_token": 5e-08,
-    "max_input_tokens": 8192,
-    "max_tokens": 8192
+    "source": "https://huggingface.co/zai-org/AutoGLM-Phone-9B-Multilingual",
+    "input_cost_per_token": 3.5e-08,
+    "output_cost_per_token": 1.3800000000000002e-07,
+    "max_input_tokens": 65536,
+    "max_tokens": 65536,
+    "supports_vision": true
   },
   "huggingface/deepinfra/stepfun-ai/Step-3.5-Flash": {
     "provider": "huggingface",
@@ -66595,15 +66785,15 @@
     "supports_function_calling": true,
     "supports_tool_choice": true
   },
-  "huggingface/novita/deepseek-ai/DeepSeek-R1-Distill-Llama-70B": {
+  "huggingface/novita/alpindale/WizardLM-2-8x22B": {
     "provider": "huggingface",
-    "base_model": "DeepSeek-R1-Distill-Llama-70B",
+    "base_model": "WizardLM-2-8x22B",
     "mode": "chat",
-    "source": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
-    "input_cost_per_token": 8e-07,
-    "output_cost_per_token": 8e-07,
-    "max_input_tokens": 8192,
-    "max_tokens": 8192
+    "source": "https://huggingface.co/alpindale/WizardLM-2-8x22B",
+    "input_cost_per_token": 6.2e-07,
+    "output_cost_per_token": 6.2e-07,
+    "max_input_tokens": 65535,
+    "max_tokens": 65535
   },
   "huggingface/deepinfra/zai-org/GLM-5.1": {
     "provider": "huggingface",
@@ -66618,6 +66808,62 @@
     "supports_tool_choice": true,
     "supports_response_schema": true
   },
+  "huggingface/novita/Sao10K/L3-8B-Lunaris-v1": {
+    "provider": "huggingface",
+    "base_model": "L3-8B-Lunaris-v1",
+    "mode": "chat",
+    "source": "https://huggingface.co/Sao10K/L3-8B-Lunaris-v1",
+    "input_cost_per_token": 5e-08,
+    "output_cost_per_token": 5e-08,
+    "max_input_tokens": 8192,
+    "max_tokens": 8192
+  },
+  "huggingface/novita/zai-org/GLM-4.5-Air": {
+    "provider": "huggingface",
+    "base_model": "GLM-4.5-Air",
+    "mode": "chat",
+    "source": "https://huggingface.co/zai-org/GLM-4.5-Air",
+    "input_cost_per_token": 1.3e-07,
+    "output_cost_per_token": 8.499999999999999e-07,
+    "max_input_tokens": 131072,
+    "max_tokens": 131072,
+    "supports_function_calling": true,
+    "supports_tool_choice": true
+  },
+  "huggingface/novita/MiniMaxAI/MiniMax-M2.7": {
+    "provider": "huggingface",
+    "base_model": "MiniMax-M2.7",
+    "mode": "chat",
+    "source": "https://huggingface.co/MiniMaxAI/MiniMax-M2.7",
+    "input_cost_per_token": 3e-07,
+    "output_cost_per_token": 1.2e-06,
+    "max_input_tokens": 204800,
+    "max_tokens": 204800,
+    "supports_function_calling": true,
+    "supports_tool_choice": true
+  },
+  "huggingface/deepinfra/MiniMaxAI/MiniMax-M2.7": {
+    "provider": "huggingface",
+    "base_model": "MiniMax-M2.7",
+    "mode": "chat",
+    "source": "https://huggingface.co/MiniMaxAI/MiniMax-M2.7",
+    "input_cost_per_token": 2.5e-07,
+    "output_cost_per_token": 1e-06,
+    "max_input_tokens": 196608,
+    "max_tokens": 196608,
+    "supports_function_calling": true,
+    "supports_tool_choice": true
+  },
+  "huggingface/novita/deepseek-ai/DeepSeek-R1-Distill-Llama-70B": {
+    "provider": "huggingface",
+    "base_model": "DeepSeek-R1-Distill-Llama-70B",
+    "mode": "chat",
+    "source": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
+    "input_cost_per_token": 8e-07,
+    "output_cost_per_token": 8e-07,
+    "max_input_tokens": 8192,
+    "max_tokens": 8192
+  },
   "huggingface/novita/zai-org/GLM-4-32B-0414": {
     "provider": "huggingface",
     "base_model": "GLM-4-32B-0414",
@@ -66627,6 +66873,17 @@
     "output_cost_per_token": 1.6599999999999998e-06,
     "max_input_tokens": 32000,
     "max_tokens": 32000
+  },
+  "huggingface/nscale/Qwen/Qwen2.5-Coder-3B-Instruct": {
+    "provider": "huggingface",
+    "base_model": "Qwen2.5-Coder-3B-Instruct",
+    "mode": "chat",
+    "source": "https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct",
+    "input_cost_per_token": 1e-08,
+    "output_cost_per_token": 3e-08,
+    "max_input_tokens": 32768,
+    "max_tokens": 32768,
+    "supports_response_schema": true
   },
   "huggingface/novita/MiniMaxAI/MiniMax-M1-80k": {
     "provider": "huggingface",
@@ -66639,6 +66896,37 @@
     "max_tokens": 1000000,
     "supports_function_calling": true,
     "supports_tool_choice": true
+  },
+  "huggingface/nscale/deepseek-ai/DeepSeek-R1-Distill-Llama-8B": {
+    "provider": "huggingface",
+    "base_model": "DeepSeek-R1-Distill-Llama-8B",
+    "mode": "chat",
+    "source": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+    "input_cost_per_token": 5e-08,
+    "output_cost_per_token": 5e-08,
+    "max_input_tokens": 131072,
+    "max_tokens": 131072
+  },
+  "huggingface/publicai/swiss-ai/Apertus-v1.5-70B": {
+    "provider": "huggingface",
+    "base_model": "Apertus-v1.5-70B",
+    "mode": "chat",
+    "source": "https://huggingface.co/swiss-ai/Apertus-v1.5-70B",
+    "input_cost_per_token": 8.199999999999999e-07,
+    "output_cost_per_token": 2.92e-06,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_response_schema": true,
+    "supports_vision": true
+  },
+  "huggingface/publicai/aisingapore/Gemma-SEA-LION-v4-27B-IT": {
+    "provider": "huggingface",
+    "base_model": "Gemma-SEA-LION-v4-27B-IT",
+    "mode": "chat",
+    "source": "https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B-IT",
+    "input_cost_per_token": 2e-07,
+    "output_cost_per_token": 4e-07,
+    "supports_response_schema": true
   },
   "huggingface/novita/moonshotai/Kimi-K2-Instruct-0905": {
     "provider": "huggingface",
@@ -66653,17 +66941,39 @@
     "supports_tool_choice": true,
     "supports_response_schema": true
   },
-  "huggingface/publicai/swiss-ai/Apertus-v1.5-70B": {
+  "huggingface/publicai/swiss-ai/Apertus-70B-Instruct-2509": {
     "provider": "huggingface",
-    "base_model": "Apertus-v1.5-70B",
+    "base_model": "Apertus-70B-Instruct-2509",
     "mode": "chat",
-    "source": "https://huggingface.co/swiss-ai/Apertus-v1.5-70B",
+    "source": "https://huggingface.co/swiss-ai/Apertus-70B-Instruct-2509",
     "input_cost_per_token": 8.199999999999999e-07,
     "output_cost_per_token": 2.92e-06,
     "supports_function_calling": true,
     "supports_tool_choice": true,
-    "supports_response_schema": true,
-    "supports_vision": true
+    "supports_response_schema": true
+  },
+  "huggingface/novita/MiniMaxAI/MiniMax-M2": {
+    "provider": "huggingface",
+    "base_model": "MiniMax-M2",
+    "mode": "chat",
+    "source": "https://huggingface.co/MiniMaxAI/MiniMax-M2",
+    "input_cost_per_token": 3e-07,
+    "output_cost_per_token": 1.2e-06,
+    "max_input_tokens": 204800,
+    "max_tokens": 204800,
+    "supports_function_calling": true,
+    "supports_tool_choice": true
+  },
+  "huggingface/publicai/aisingapore/Qwen-SEA-LION-v4-32B-IT": {
+    "provider": "huggingface",
+    "base_model": "Qwen-SEA-LION-v4-32B-IT",
+    "mode": "chat",
+    "source": "https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-32B-IT",
+    "input_cost_per_token": 2.5e-07,
+    "output_cost_per_token": 5e-07,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_response_schema": true
   },
   "huggingface/novita/MiniMaxAI/MiniMax-M2.1": {
     "provider": "huggingface",
@@ -66676,6 +66986,31 @@
     "max_tokens": 204800,
     "supports_function_calling": true,
     "supports_tool_choice": true
+  },
+  "huggingface/publicai/speakleash/Bielik-11B-v3.0-Instruct": {
+    "provider": "huggingface",
+    "base_model": "Bielik-11B-v3.0-Instruct",
+    "mode": "chat",
+    "source": "https://huggingface.co/speakleash/Bielik-11B-v3.0-Instruct",
+    "input_cost_per_token": 4e-07,
+    "output_cost_per_token": 4e-07,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_response_schema": true
+  },
+  "together_ai/zai-org/GLM-5.3": {
+    "provider": "together_ai",
+    "base_model": "glm-5.3",
+    "mode": "chat",
+    "source": "https://docs.together.ai/docs/serverless/models.md",
+    "input_cost_per_token": 1.4e-06,
+    "output_cost_per_token": 4.4e-06,
+    "cache_read_input_token_cost": 2.6e-07,
+    "supports_prompt_caching": true,
+    "max_input_tokens": 1000000,
+    "max_tokens": 1000000,
+    "supports_function_calling": true,
+    "supports_response_schema": true
   },
   "together_ai/google/imagen-4.0-preview": {
     "provider": "together_ai",
@@ -67485,41 +67820,6 @@
       "notes": "Open-weight model built for coding, long-context agent work and multimodal input."
     }
   },
-  "moonshotai/kimi-k2.5": {
-    "mode": "chat",
-    "provider": "tensorx",
-    "base_model": "kimi-k2.5",
-    "max_input_tokens": 262144,
-    "max_output_tokens": 262144,
-    "max_tokens": 262144,
-    "input_cost_per_token": 5e-07,
-    "output_cost_per_token": 2.8e-06,
-    "cache_read_input_token_cost": 1.25e-07,
-    "supports_vision": true,
-    "supports_function_calling": true,
-    "supports_tool_choice": true,
-    "metadata": {
-      "notes": "Capable Moonshot Kimi model for general assistant, reasoning, and long-context tasks."
-    }
-  },
-  "moonshotai/kimi-k2.6": {
-    "mode": "chat",
-    "provider": "tensorx",
-    "base_model": "kimi-k2.6",
-    "max_input_tokens": 262144,
-    "max_output_tokens": 64000,
-    "max_tokens": 262144,
-    "input_cost_per_token": 1e-06,
-    "output_cost_per_token": 4e-06,
-    "cache_read_input_token_cost": 2.5e-07,
-    "supports_vision": true,
-    "supports_function_calling": true,
-    "supports_tool_choice": true,
-    "supports_reasoning": true,
-    "metadata": {
-      "notes": "Latest Moonshot Kimi model with strong reasoning and agentic tool use."
-    }
-  },
   "moonshotai/kimi-k2.7-code": {
     "mode": "chat",
     "provider": "tensorx",
@@ -67570,24 +67870,6 @@
     "supports_tool_choice": true,
     "metadata": {
       "notes": "Large Qwen mixture-of-experts model for advanced reasoning, coding, and multilingual tasks."
-    }
-  },
-  "qwen/qwen3.5-122b-a10b": {
-    "mode": "chat",
-    "provider": "tensorx",
-    "base_model": "qwen3.5-122b-a10b",
-    "max_input_tokens": 262144,
-    "max_output_tokens": 262144,
-    "max_tokens": 262144,
-    "input_cost_per_token": 5e-07,
-    "output_cost_per_token": 3.5e-06,
-    "cache_read_input_token_cost": 1.25e-07,
-    "supports_vision": true,
-    "supports_function_calling": true,
-    "supports_tool_choice": true,
-    "supports_reasoning": true,
-    "metadata": {
-      "notes": "Large Qwen mixture-of-experts model for demanding reasoning, coding, and multilingual work."
     }
   },
   "qwen/qwen3.5-9b": {
@@ -67671,23 +67953,6 @@
       "notes": "Qwen embedding model for semantic search, retrieval, and RAG pipelines."
     }
   },
-  "z-ai/glm-5": {
-    "mode": "chat",
-    "provider": "tensorx",
-    "base_model": "glm-5",
-    "max_input_tokens": 202752,
-    "max_output_tokens": 202752,
-    "max_tokens": 202752,
-    "input_cost_per_token": 1e-06,
-    "output_cost_per_token": 3.2e-06,
-    "cache_read_input_token_cost": 2.5e-07,
-    "supports_function_calling": true,
-    "supports_tool_choice": true,
-    "supports_reasoning": true,
-    "metadata": {
-      "notes": "Z.ai's flagship GLM model for advanced reasoning, coding, and agentic applications."
-    }
-  },
   "z-ai/glm-5.1": {
     "mode": "chat",
     "provider": "tensorx",
@@ -67720,6 +67985,23 @@
     "supports_reasoning": true,
     "metadata": {
       "notes": "Open-weight frontier model with strong coding, agentic performance and a 1M context window."
+    }
+  },
+  "z-ai/glm-5.3": {
+    "mode": "chat",
+    "provider": "tensorx",
+    "base_model": "glm-5.3",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 64000,
+    "max_tokens": 1048576,
+    "input_cost_per_token": 1.75e-06,
+    "output_cost_per_token": 4.5e-06,
+    "cache_read_input_token_cost": 4.375e-07,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "metadata": {
+      "notes": "The world's strongest open-weight model for coding, agents and cyber."
     }
   },
   "z-ai/glm-5.3-flash": {
@@ -67773,23 +68055,6 @@
     "supports_reasoning": true,
     "metadata": {
       "notes": "Multimodal GLM model that handles vision and text for fast, image-aware tasks."
-    }
-  },
-  "deepseek/deepseek-r1-0528": {
-    "mode": "chat",
-    "provider": "tensorx",
-    "base_model": "deepseek-r1-0528",
-    "max_input_tokens": 164000,
-    "max_output_tokens": 8192,
-    "max_tokens": 164000,
-    "input_cost_per_token": 6.6e-07,
-    "output_cost_per_token": 2.6e-06,
-    "cache_read_input_token_cost": 1.65e-07,
-    "supports_function_calling": true,
-    "supports_tool_choice": true,
-    "supports_reasoning": true,
-    "metadata": {
-      "notes": "DeepSeek R1 reasoning model built for step-by-step problem solving and maths."
     }
   }
 }
