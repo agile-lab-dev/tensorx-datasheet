@@ -72720,6 +72720,111 @@
     "provider": "azure",
     "base_model": "gpt-6-astra"
   },
+  "deepseek-flash": {
+    "provider": "deepseek",
+    "base_model": "deepseek-flash",
+    "mode": "chat",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 393216,
+    "max_tokens": 393216,
+    "input_cost_per_token": 3e-07,
+    "cache_read_input_token_cost": 6e-09,
+    "output_cost_per_token": 1.2e-06,
+    "off_peak_cost_multiplier": 0.5,
+    "peak_hours": {
+      "timezone": "UTC",
+      "windows": [
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "01:00",
+          "end": "04:00"
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "06:00",
+          "end": "10:00"
+        }
+      ]
+    },
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/v1/completions",
+      "/v1/responses",
+      "/v1/messages"
+    ],
+    "supports_function_calling": true,
+    "supports_parallel_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_response_schema": true,
+    "supports_reasoning": true,
+    "supports_vision": true,
+    "supports_prompt_caching": true,
+    "supports_assistant_prefill": true,
+    "supports_system_messages": true,
+    "supports_native_streaming": true,
+    "source": "https://api-docs.deepseek.com/quick_start/pricing",
+    "metadata": {
+      "notes": "DeepSeek-V4.1-Flash. Legacy names deepseek-v4-flash and deepseek-v4-flash-vision-exp route here at Flash pricing; deepseek-v4-pro also routes here from 2026-09-14 until V4.1 Pro ships.",
+      "calculation": "Peak: $0.30/M cache-miss input, $0.006/M cache-hit input, $1.20/M output. Off-peak = 0.5x."
+    }
+  },
+  "fireworks_ai/accounts/fireworks/models/deepseek-v4p1-flash": {
+    "provider": "fireworks_ai",
+    "base_model": "deepseek-flash",
+    "mode": "chat",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 393216,
+    "max_tokens": 393216,
+    "input_cost_per_token": 2.2e-07,
+    "cache_read_input_token_cost": 7e-09,
+    "output_cost_per_token": 6.6e-07,
+    "input_cost_per_token_priority": 2.75e-07,
+    "cache_read_input_token_cost_priority": 8.75e-09,
+    "output_cost_per_token_priority": 8.25e-07,
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supported_endpoints": [
+      "/v1/chat/completions"
+    ],
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_response_schema": true,
+    "supports_reasoning": true,
+    "supports_vision": true,
+    "supports_prompt_caching": true,
+    "supports_service_tier": true,
+    "supports_system_messages": true,
+    "supports_native_streaming": true,
+    "source": "https://fireworks.ai/models/fireworks/deepseek-v4p1-flash",
+    "metadata": {
+      "notes": "DeepSeek-V4.1-Flash on Fireworks serverless (552B MoE, 1M context, image input). Priority serving tier is 1.25x Standard across all token types.",
+      "calculation": "Standard: $0.22/M uncached input, $0.007/M cached input, $0.66/M output. Priority: $0.275/M, $0.00875/M, $0.825/M."
+    }
+  },
   "opencode-zen/grok-4.6": {
     "input_cost_per_token": 2e-06,
     "output_cost_per_token": 6e-06,
@@ -76593,23 +76698,6 @@
     "supports_reasoning": true,
     "supports_response_schema": true
   },
-  "wafer/Kimi-K3": {
-    "provider": "wafer",
-    "base_model": "Kimi-K3",
-    "mode": "chat",
-    "source": "https://pass.wafer.ai/v1/models",
-    "input_cost_per_token": 3e-06,
-    "output_cost_per_token": 1.5e-05,
-    "cache_read_input_token_cost": 3e-07,
-    "supports_prompt_caching": true,
-    "max_input_tokens": 1048576,
-    "max_tokens": 1048576,
-    "supports_vision": true,
-    "supports_function_calling": true,
-    "supports_reasoning": true,
-    "supports_response_schema": true,
-    "supports_system_messages": true
-  },
   "wafer/Kimi-K2.6": {
     "provider": "wafer",
     "base_model": "Kimi-K2.6",
@@ -76642,6 +76730,23 @@
     "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true
+  },
+  "wafer/Kimi-K3": {
+    "provider": "wafer",
+    "base_model": "Kimi-K3",
+    "mode": "chat",
+    "source": "https://pass.wafer.ai/v1/models",
+    "input_cost_per_token": 3e-06,
+    "output_cost_per_token": 1.5e-05,
+    "cache_read_input_token_cost": 3e-07,
+    "supports_prompt_caching": true,
+    "max_input_tokens": 1048576,
+    "max_tokens": 1048576,
+    "supports_vision": true,
+    "supports_function_calling": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_system_messages": true
   },
   "wafer/GLM-5.3-Flash": {
     "provider": "wafer",
