@@ -6186,7 +6186,8 @@
     "supports_tool_choice": true,
     "supports_vision": true,
     "provider": "azure",
-    "base_model": "codex-mini"
+    "base_model": "codex-mini",
+    "is_deprecated": true
   },
   "azure/claude-haiku-4-5": {
     "deprecation_date": "2027-03-16",
@@ -79920,7 +79921,8 @@
     "output_cost_per_token": 6.6e-06,
     "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'",
     "provider": "azure",
-    "base_model": "codex-mini"
+    "base_model": "codex-mini",
+    "is_deprecated": true
   },
   "azure/eu/computer-use-preview": {
     "input_cost_per_token": 3.3e-06,
@@ -80752,7 +80754,8 @@
     "output_cost_per_token": 6.6e-06,
     "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'",
     "provider": "azure",
-    "base_model": "codex-mini"
+    "base_model": "codex-mini",
+    "is_deprecated": true
   },
   "azure/us/computer-use-preview": {
     "input_cost_per_token": 3.3e-06,
