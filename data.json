@@ -19791,7 +19791,8 @@
     "base_model": "claude-opus-4-5",
     "web_search_cost_per_request": 0.01,
     "web_search_billing_unit": "per_request",
-    "deprecation_date": "2026-11-24"
+    "deprecation_date": "2026-11-24",
+    "is_deprecated": true
   },
   "claude-opus-4-5": {
     "cache_creation_input_token_cost": 6.25e-06,
@@ -19830,7 +19831,8 @@
     "web_search_cost_per_request": 0.01,
     "web_search_billing_unit": "per_request",
     "deprecation_date": "2026-11-24",
-    "supports_web_search": true
+    "supports_web_search": true,
+    "is_deprecated": true
   },
   "claude-opus-4-6": {
     "cache_creation_input_token_cost": 6.25e-06,
@@ -58707,7 +58709,8 @@
     "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
     "provider": "vertex_ai",
     "base_model": "claude-opus-4-5",
-    "supports_web_search": true
+    "supports_web_search": true,
+    "is_deprecated": true
   },
   "vertex_ai/claude-opus-4-5@20251101": {
     "deprecation_source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/opus-4-5",
@@ -58746,7 +58749,8 @@
     "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
     "provider": "vertex_ai",
     "base_model": "claude-opus-4-5",
-    "supports_web_search": true
+    "supports_web_search": true,
+    "is_deprecated": true
   },
   "vertex_ai/claude-opus-4-6": {
     "cache_creation_input_token_cost": 6.25e-06,
@@ -176527,24 +176531,6 @@
     "supports_function_calling": true,
     "supports_tool_choice": true,
     "supports_reasoning": true
-  },
-  "moonshotai/kimi-k3": {
-    "mode": "chat",
-    "provider": "tensorx",
-    "base_model": "kimi-k3",
-    "max_input_tokens": 1048576,
-    "max_output_tokens": 64000,
-    "max_tokens": 1048576,
-    "input_cost_per_token": 3e-06,
-    "output_cost_per_token": 1.5e-05,
-    "cache_read_input_token_cost": 7.5e-07,
-    "supports_vision": true,
-    "supports_function_calling": true,
-    "supports_tool_choice": true,
-    "supports_reasoning": true,
-    "metadata": {
-      "notes": "Moonshot's flagship open model: frontier coding, agents, multimodal, 1M context."
-    }
   },
   "moonshotai/kimi-k3.1-pro": {
     "mode": "chat",
