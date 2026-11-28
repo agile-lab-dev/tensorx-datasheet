@@ -28498,7 +28498,7 @@
     "max_input_tokens": 8192,
     "max_output_tokens": 8192,
     "input_cost_per_token": 4e-08,
-    "output_cost_per_token": 5.0000000000000004e-08,
+    "output_cost_per_token": 5e-08,
     "mode": "chat",
     "supports_tool_choice": false,
     "provider": "deepinfra",
@@ -28507,8 +28507,8 @@
   "deepinfra/Sao10K/L3.1-70B-Euryale-v2.2": {
     "max_input_tokens": 131072,
     "max_output_tokens": 131072,
-    "input_cost_per_token": 8.500000000000001e-07,
-    "output_cost_per_token": 8.500000000000001e-07,
+    "input_cost_per_token": 8.499999999999999e-07,
+    "output_cost_per_token": 8.499999999999999e-07,
     "mode": "chat",
     "supports_tool_choice": false,
     "source": "https://deepinfra.com/pricing",
@@ -55864,7 +55864,7 @@
   },
   "together_ai/thinkingmachines/inkling": {
     "cache_read_input_token_cost": 1.7e-07,
-    "deprecation_date": "2026-11-06",
+    "deprecation_date": "2026-12-09",
     "deprecation_source": "https://docs.together.ai/docs/deprecations",
     "input_cost_per_token": 1e-06,
     "max_input_tokens": 524288,
@@ -55872,7 +55872,7 @@
     "mode": "chat",
     "output_cost_per_token": 4.049999999999999e-06,
     "source": "https://api.together.ai/v1/models",
-    "successor_model": "together_ai/meta-models/Muse-Spark-Open-816B-A42B",
+    "successor_model": "together_ai/thinkingmachines/Inkling-2-Small",
     "supports_function_calling": true,
     "supports_parallel_function_calling": true,
     "supports_prompt_caching": true,
@@ -55885,8 +55885,7 @@
       "notes": "Audio input, vision and variable reasoning effort documented at https://www.together.ai/models/inkling, read 2026-11-17."
     },
     "provider": "together_ai",
-    "base_model": "thinkingmachines/inkling",
-    "is_deprecated": true
+    "base_model": "thinkingmachines/inkling"
   },
   "together_ai/zai-org/GLM-5.2": {
     "cache_read_input_token_cost": 2.6e-07,
@@ -60434,6 +60433,7 @@
     "output_cost_per_image": 0.039,
     "output_cost_per_image_token": 3e-05,
     "output_cost_per_image_token_batches": 1.5e-05,
+    "output_cost_per_image_token_flex": 1.5e-05,
     "output_cost_per_reasoning_token": 2.5e-06,
     "output_cost_per_token": 2.4999999999999998e-06,
     "output_cost_per_token_batches": 1.25e-06,
@@ -60490,6 +60490,7 @@
     "output_cost_per_image": 0.134,
     "output_cost_per_image_token": 0.00012,
     "output_cost_per_image_token_batches": 6e-05,
+    "output_cost_per_image_token_flex": 6e-05,
     "output_cost_per_image_token_priority": 0.000216,
     "output_cost_per_token": 1.2e-05,
     "output_cost_per_token_batches": 6e-06,
@@ -60599,6 +60600,7 @@
     "output_cost_per_image": 0.0672,
     "output_cost_per_image_token": 6e-05,
     "output_cost_per_image_token_batches": 3e-05,
+    "output_cost_per_image_token_flex": 3e-05,
     "output_cost_per_image_token_priority": 0.000108,
     "output_cost_per_token": 3e-06,
     "output_cost_per_token_batches": 1.5e-06,
@@ -60705,6 +60707,7 @@
     "output_cost_per_image": 0.0336,
     "output_cost_per_image_token": 3e-05,
     "output_cost_per_image_token_batches": 1.5e-05,
+    "output_cost_per_image_token_flex": 1.5e-05,
     "output_cost_per_image_token_priority": 5.4e-05,
     "output_cost_per_token": 1.4999999999999998e-06,
     "output_cost_per_token_batches": 7.5e-07,
@@ -77323,8 +77326,8 @@
   "deepinfra/ByteDance/Seed-2.0-mini": {
     "max_output_tokens": 256000,
     "max_input_tokens": 256000,
-    "input_cost_per_token": 1e-07,
-    "output_cost_per_token": 4e-07,
+    "input_cost_per_token": 1.0000000000000001e-07,
+    "output_cost_per_token": 4.0000000000000003e-07,
     "cache_read_input_token_cost": 2e-08,
     "supports_prompt_caching": true,
     "mode": "chat",
@@ -77456,8 +77459,8 @@
   "deepinfra/ByteDance/Seed-1.8": {
     "max_output_tokens": 256000,
     "max_input_tokens": 256000,
-    "input_cost_per_token": 2.5e-07,
-    "output_cost_per_token": 2e-06,
+    "input_cost_per_token": 2.5000000000000004e-07,
+    "output_cost_per_token": 2.0000000000000003e-06,
     "cache_read_input_token_cost": 5e-08,
     "supports_prompt_caching": true,
     "mode": "chat",
@@ -124260,12 +124263,12 @@
     "base_model": "mai-code-2-flash"
   },
   "openrouter/deepseek/deepseek-v4-pro": {
-    "cache_read_input_token_cost": 2e-07,
-    "input_cost_per_token": 8.7725e-07,
+    "cache_read_input_token_cost": 2.1e-07,
+    "input_cost_per_token": 6.5417e-07,
     "max_input_tokens": 1048576,
     "max_output_tokens": 393216,
     "mode": "chat",
-    "output_cost_per_token": 1.5082e-06,
+    "output_cost_per_token": 1.5651e-06,
     "source": "https://openrouter.ai/api/v1/models?output_modalities=all",
     "supports_function_calling": true,
     "supports_reasoning": true,
@@ -149723,11 +149726,11 @@
   },
   "fireworks_ai/accounts/fireworks/routers/kimi-k3p1-pro-ultrafast": {
     "cache_read_input_token_cost": 5e-07,
-    "input_cost_per_token": 5e-06,
+    "input_cost_per_token": 4.9999999999999996e-06,
     "max_input_tokens": 1048576,
     "max_output_tokens": 131072,
     "mode": "chat",
-    "output_cost_per_token": 2.5e-05,
+    "output_cost_per_token": 2.4999999999999998e-05,
     "reasoning_effort_levels": [
       "low",
       "high",
@@ -150043,6 +150046,34 @@
     "output_cost_per_image_above_1024_and_1792_pixels_standard_quality": 0.088,
     "output_cost_per_image_above_1792_and_1024_pixels_standard_quality": 0.088
   },
+  "openrouter/antdigital/lingdt-decision-fast-1.0:free": {
+    "provider": "openrouter",
+    "base_model": "lingdt-decision-fast-1.0:free",
+    "mode": "decisions",
+    "input_cost_per_token": 0,
+    "output_cost_per_token": 0,
+    "max_input_tokens": 32768,
+    "max_output_tokens": 29491,
+    "max_tokens": 29491,
+    "supports_decisions": true
+  },
+  "openrouter/inclusionai/lingsante-3.1-air-vl": {
+    "provider": "openrouter",
+    "base_model": "lingsante-3.1-air-vl",
+    "mode": "chat",
+    "input_cost_per_token": 6e-08,
+    "output_cost_per_token": 1.8e-07,
+    "cache_read_input_token_cost": 1.2e-08,
+    "max_input_tokens": 131072,
+    "max_output_tokens": 32768,
+    "max_tokens": 32768,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_vision": true,
+    "supports_prompt_caching": true
+  },
   "openrouter/bytedance-seed/seed-tts-3-0": {
     "provider": "openrouter",
     "base_model": "seed-tts-3-0",
@@ -150107,9 +150138,9 @@
     "provider": "openrouter",
     "base_model": "inkling-2-mini",
     "mode": "chat",
-    "input_cost_per_token": 7.5e-08,
-    "output_cost_per_token": 3e-07,
-    "cache_read_input_token_cost": 1.5e-08,
+    "input_cost_per_token": 6e-08,
+    "output_cost_per_token": 2.4e-07,
+    "cache_read_input_token_cost": 1.2e-08,
     "max_input_tokens": 1048576,
     "max_output_tokens": 65536,
     "max_tokens": 65536,
@@ -150541,12 +150572,13 @@
     "max_output_tokens": 3686,
     "max_tokens": 3686
   },
-  "openrouter/inclusionai/ling-3.2-flash:free": {
+  "openrouter/inclusionai/ling-3.2-flash": {
     "provider": "openrouter",
-    "base_model": "ling-3.2-flash:free",
+    "base_model": "ling-3.2-flash",
     "mode": "chat",
-    "input_cost_per_token": 0,
-    "output_cost_per_token": 0,
+    "input_cost_per_token": 3e-07,
+    "output_cost_per_token": 9e-07,
+    "cache_read_input_token_cost": 6e-08,
     "max_input_tokens": 1048576,
     "max_output_tokens": 262144,
     "max_tokens": 262144,
@@ -150554,7 +150586,8 @@
     "supports_tool_choice": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "supports_prompt_caching": true
   },
   "openrouter/heygen/heygen-decision-1-turbo": {
     "provider": "openrouter",
@@ -150803,8 +150836,8 @@
     "provider": "openrouter",
     "base_model": "inkling-2-small",
     "mode": "chat",
-    "input_cost_per_token": 3e-07,
-    "output_cost_per_token": 1e-06,
+    "input_cost_per_token": 1.5e-07,
+    "output_cost_per_token": 5e-07,
     "cache_read_input_token_cost": 3e-08,
     "max_input_tokens": 1048576,
     "max_output_tokens": 943718,
@@ -151175,8 +151208,8 @@
     "output_cost_per_token": 5e-07,
     "cache_read_input_token_cost": 3e-08,
     "max_input_tokens": 1048576,
-    "max_output_tokens": 131072,
-    "max_tokens": 131072,
+    "max_output_tokens": 943718,
+    "max_tokens": 943718,
     "supports_function_calling": true,
     "supports_tool_choice": true,
     "supports_reasoning": true,
@@ -151191,8 +151224,8 @@
     "input_cost_per_token": 0,
     "output_cost_per_token": 0,
     "max_input_tokens": 1048576,
-    "max_output_tokens": 131072,
-    "max_tokens": 131072,
+    "max_output_tokens": 943718,
+    "max_tokens": 943718,
     "supports_function_calling": true,
     "supports_tool_choice": true,
     "supports_reasoning": true,
@@ -151509,9 +151542,9 @@
     "provider": "openrouter",
     "base_model": "minimax-m3.1-flash",
     "mode": "chat",
-    "input_cost_per_token": 1.5e-07,
-    "output_cost_per_token": 6e-07,
-    "cache_read_input_token_cost": 1.5e-08,
+    "input_cost_per_token": 7.5e-08,
+    "output_cost_per_token": 3e-07,
+    "cache_read_input_token_cost": 7.5e-09,
     "max_input_tokens": 1048576,
     "max_output_tokens": 524288,
     "max_tokens": 524288,
@@ -153686,12 +153719,12 @@
     "provider": "openrouter",
     "base_model": "deepseek-pro-latest",
     "mode": "chat",
-    "input_cost_per_token": 1.11e-07,
-    "output_cost_per_token": 4.44e-06,
-    "cache_read_input_token_cost": 9.7e-08,
+    "input_cost_per_token": 9.99e-08,
+    "output_cost_per_token": 5e-06,
+    "cache_read_input_token_cost": 9.99e-08,
     "max_input_tokens": 1048576,
-    "max_output_tokens": 943718,
-    "max_tokens": 943718,
+    "max_output_tokens": 393216,
+    "max_tokens": 393216,
     "supports_function_calling": true,
     "supports_tool_choice": true,
     "supports_reasoning": true,
@@ -153895,12 +153928,12 @@
     "provider": "openrouter",
     "base_model": "deepseek-v4.1-flash",
     "mode": "chat",
-    "input_cost_per_token": 1.4e-07,
-    "output_cost_per_token": 4.2e-07,
-    "cache_read_input_token_cost": 4.2e-09,
+    "input_cost_per_token": 5.1e-08,
+    "output_cost_per_token": 5.67e-07,
+    "cache_read_input_token_cost": 1.8e-08,
     "max_input_tokens": 1048576,
-    "max_output_tokens": 393216,
-    "max_tokens": 393216,
+    "max_output_tokens": 943718,
+    "max_tokens": 943718,
     "supports_function_calling": true,
     "supports_tool_choice": true,
     "supports_reasoning": true,
@@ -154527,9 +154560,9 @@
     "provider": "openrouter",
     "base_model": "hy4-preview",
     "mode": "chat",
-    "input_cost_per_token": 8.34e-07,
-    "output_cost_per_token": 2.501e-06,
-    "cache_read_input_token_cost": 4.2e-08,
+    "input_cost_per_token": 7.506e-07,
+    "output_cost_per_token": 2.2509e-06,
+    "cache_read_input_token_cost": 3.78e-08,
     "max_input_tokens": 1048576,
     "max_output_tokens": 64000,
     "max_tokens": 64000,
@@ -154732,12 +154765,12 @@
     "provider": "openrouter",
     "base_model": "deepseek-v4-flash-vision-exp",
     "mode": "chat",
-    "input_cost_per_token": 4.4e-07,
-    "output_cost_per_token": 1.32e-06,
-    "cache_read_input_token_cost": 2.8e-08,
+    "input_cost_per_token": 2.156e-07,
+    "output_cost_per_token": 6.468e-07,
+    "cache_read_input_token_cost": 6.86e-09,
     "max_input_tokens": 1048576,
-    "max_output_tokens": 393216,
-    "max_tokens": 393216,
+    "max_output_tokens": 262144,
+    "max_tokens": 262144,
     "supports_function_calling": true,
     "supports_tool_choice": true,
     "supports_reasoning": true,
@@ -155066,12 +155099,12 @@
     "provider": "openrouter",
     "base_model": "deepseek-v4-pro-0813",
     "mode": "chat",
-    "input_cost_per_token": 1.11e-07,
-    "output_cost_per_token": 4.44e-06,
-    "cache_read_input_token_cost": 9.7e-08,
+    "input_cost_per_token": 9.99e-08,
+    "output_cost_per_token": 5e-06,
+    "cache_read_input_token_cost": 9.99e-08,
     "max_input_tokens": 1048576,
-    "max_output_tokens": 943718,
-    "max_tokens": 943718,
+    "max_output_tokens": 393216,
+    "max_tokens": 393216,
     "supports_function_calling": true,
     "supports_tool_choice": true,
     "supports_reasoning": true,
@@ -155194,12 +155227,12 @@
     "provider": "openrouter",
     "base_model": "muse-glimmer-30b",
     "mode": "chat",
-    "input_cost_per_token": 3.5e-07,
-    "output_cost_per_token": 1.5e-06,
+    "input_cost_per_token": 3e-07,
+    "output_cost_per_token": 1.2e-06,
     "cache_read_input_token_cost": 4e-08,
     "max_input_tokens": 131072,
-    "max_output_tokens": 117964,
-    "max_tokens": 117964,
+    "max_output_tokens": 16384,
+    "max_tokens": 16384,
     "supports_function_calling": true,
     "supports_tool_choice": true,
     "supports_reasoning": true,
@@ -155322,12 +155355,12 @@
     "provider": "openrouter",
     "base_model": "deepseek-v4-flash-latest",
     "mode": "chat",
-    "input_cost_per_token": 4.7e-08,
-    "output_cost_per_token": 3e-07,
-    "cache_read_input_token_cost": 3.5e-08,
+    "input_cost_per_token": 4.532e-08,
+    "output_cost_per_token": 1.3596e-07,
+    "cache_read_input_token_cost": 1.442e-09,
     "max_input_tokens": 1048576,
-    "max_output_tokens": 943718,
-    "max_tokens": 943718,
+    "max_output_tokens": 131072,
+    "max_tokens": 131072,
     "supports_function_calling": true,
     "supports_tool_choice": true,
     "supports_reasoning": true,
@@ -155338,7 +155371,7 @@
     "provider": "openrouter",
     "base_model": "deepseek-v4-flash-0731",
     "mode": "chat",
-    "input_cost_per_token": 4.7e-08,
+    "input_cost_per_token": 4.56e-08,
     "output_cost_per_token": 3e-07,
     "cache_read_input_token_cost": 3.5e-08,
     "max_input_tokens": 1048576,
@@ -155601,17 +155634,6 @@
     "supports_vision": true,
     "supports_pdf_input": true,
     "supports_prompt_caching": true
-  },
-  "openrouter/microsoft/mai-image-2.5-pro": {
-    "provider": "openrouter",
-    "base_model": "mai-image-2.5-pro",
-    "mode": "image_generation",
-    "input_cost_per_token": 5e-06,
-    "output_cost_per_token": 0,
-    "max_input_tokens": 4096,
-    "max_output_tokens": 1024,
-    "max_tokens": 1024,
-    "supports_vision": true
   },
   "openrouter/microsoft/mai-voice-2-flash": {
     "provider": "openrouter",
@@ -156211,9 +156233,9 @@
     "provider": "openrouter",
     "base_model": "hy3",
     "mode": "chat",
-    "input_cost_per_token": 1.32e-07,
-    "output_cost_per_token": 5.28e-07,
-    "cache_read_input_token_cost": 3.3e-08,
+    "input_cost_per_token": 8.25e-08,
+    "output_cost_per_token": 3.3e-07,
+    "cache_read_input_token_cost": 2.0625e-08,
     "max_input_tokens": 262144,
     "max_output_tokens": 128000,
     "max_tokens": 128000,
@@ -156613,17 +156635,6 @@
     "max_output_tokens": 0,
     "max_tokens": 0,
     "supports_audio_input": true
-  },
-  "openrouter/microsoft/mai-image-2.5": {
-    "provider": "openrouter",
-    "base_model": "mai-image-2.5",
-    "mode": "image_generation",
-    "input_cost_per_token": 5e-06,
-    "output_cost_per_token": 0,
-    "max_input_tokens": 4096,
-    "max_output_tokens": 1024,
-    "max_tokens": 1024,
-    "supports_vision": true
   },
   "openrouter/minimax/minimax-m3": {
     "provider": "openrouter",
@@ -157699,9 +157710,9 @@
     "provider": "openrouter",
     "base_model": "gemma-4-26b-a4b-it",
     "mode": "chat",
-    "input_cost_per_token": 9e-08,
-    "output_cost_per_token": 3e-07,
-    "cache_read_input_token_cost": 5e-08,
+    "input_cost_per_token": 6.75e-08,
+    "output_cost_per_token": 2.25e-07,
+    "cache_read_input_token_cost": 3.75e-08,
     "max_input_tokens": 262144,
     "max_output_tokens": 235929,
     "max_tokens": 235929,
@@ -158534,18 +158545,16 @@
     "provider": "openrouter",
     "base_model": "kimi-k2.5",
     "mode": "chat",
-    "input_cost_per_token": 5e-07,
-    "output_cost_per_token": 2.5e-06,
-    "cache_read_input_token_cost": 1.5e-07,
+    "input_cost_per_token": 6e-07,
+    "output_cost_per_token": 3e-06,
     "max_input_tokens": 262144,
-    "max_output_tokens": 235929,
-    "max_tokens": 235929,
+    "max_output_tokens": 131072,
+    "max_tokens": 131072,
     "supports_function_calling": true,
     "supports_tool_choice": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
-    "supports_vision": true,
-    "supports_prompt_caching": true
+    "supports_vision": true
   },
   "openrouter/writer/palmyra-x5": {
     "provider": "openrouter",
@@ -159755,6 +159764,19 @@
     "supports_response_schema": true,
     "supports_prompt_caching": true
   },
+  "openrouter/moonshotai/kimi-k2-0905": {
+    "provider": "openrouter",
+    "base_model": "kimi-k2-0905",
+    "mode": "chat",
+    "input_cost_per_token": 6e-07,
+    "output_cost_per_token": 2.5e-06,
+    "max_input_tokens": 262144,
+    "max_output_tokens": 98304,
+    "max_tokens": 98304,
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_response_schema": true
+  },
   "openrouter/nousresearch/hermes-4-405b": {
     "provider": "openrouter",
     "base_model": "hermes-4-405b",
@@ -160175,6 +160197,18 @@
     "supports_tool_choice": true,
     "supports_response_schema": true,
     "supports_prompt_caching": true
+  },
+  "openrouter/moonshotai/kimi-k2": {
+    "provider": "openrouter",
+    "base_model": "kimi-k2",
+    "mode": "chat",
+    "input_cost_per_token": 5.7e-07,
+    "output_cost_per_token": 2.3e-06,
+    "max_input_tokens": 131072,
+    "max_output_tokens": 98304,
+    "max_tokens": 98304,
+    "supports_function_calling": true,
+    "supports_tool_choice": true
   },
   "openrouter/cognitivecomputations/dolphin-mistral-24b-venice-edition": {
     "provider": "openrouter",
@@ -160621,15 +160655,13 @@
     "provider": "openrouter",
     "base_model": "gemma-3-4b-it",
     "mode": "chat",
-    "input_cost_per_token": 4e-08,
-    "output_cost_per_token": 5e-08,
-    "cache_read_input_token_cost": 2e-08,
+    "input_cost_per_token": 5e-08,
+    "output_cost_per_token": 1e-07,
     "max_input_tokens": 131072,
-    "max_output_tokens": 117964,
-    "max_tokens": 117964,
+    "max_output_tokens": 16384,
+    "max_tokens": 16384,
     "supports_response_schema": true,
-    "supports_vision": true,
-    "supports_prompt_caching": true
+    "supports_vision": true
   },
   "openrouter/google/gemma-3-12b-it": {
     "provider": "openrouter",
@@ -160675,16 +160707,14 @@
     "base_model": "gemma-3-27b-it",
     "mode": "chat",
     "input_cost_per_token": 8e-08,
-    "output_cost_per_token": 4.5e-07,
-    "cache_read_input_token_cost": 4e-08,
+    "output_cost_per_token": 1.6e-07,
     "max_input_tokens": 131072,
-    "max_output_tokens": 117964,
-    "max_tokens": 117964,
+    "max_output_tokens": 16384,
+    "max_tokens": 16384,
     "supports_function_calling": true,
     "supports_tool_choice": true,
     "supports_response_schema": true,
-    "supports_vision": true,
-    "supports_prompt_caching": true
+    "supports_vision": true
   },
   "openrouter/thedrummer/skyfall-36b-v2": {
     "provider": "openrouter",
@@ -160869,12 +160899,12 @@
     "provider": "openrouter",
     "base_model": "llama-3.3-70b-instruct",
     "mode": "chat",
-    "input_cost_per_token": 7.1e-07,
-    "output_cost_per_token": 7.1e-07,
-    "cache_read_input_token_cost": 7.1e-07,
-    "max_input_tokens": 128000,
-    "max_output_tokens": 115200,
-    "max_tokens": 115200,
+    "input_cost_per_token": 5.9e-07,
+    "output_cost_per_token": 7.9e-07,
+    "cache_read_input_token_cost": 2.95e-07,
+    "max_input_tokens": 131072,
+    "max_output_tokens": 32768,
+    "max_tokens": 32768,
     "supports_function_calling": true,
     "supports_tool_choice": true,
     "supports_response_schema": true,
@@ -171042,15 +171072,41 @@
       "mx-central-1"
     ]
   },
-  "cloudflare/workers-ai/@cf/daily-co/phonellm-mini-alpha-2": {
+  "vertex_ai/deepseek-ai/deepseek-v4.1-flash-1017-maas": {
+    "base_model": "deepseek-v4.1-flash",
+    "mode": "chat",
+    "input_cost_per_token": 3e-07,
+    "output_cost_per_token": 1.2e-06,
+    "source": "https://models.dev/api.json",
+    "cache_read_input_token_cost": 6e-09,
+    "supports_prompt_caching": true,
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 384000,
+    "max_tokens": 384000,
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_vision": true,
+    "supports_function_calling": true,
+    "supports_response_schema": true,
+    "supports_reasoning": true,
+    "provider": "vertex_ai"
+  },
+  "cloudflare/workers-ai/@cf/zai-org/glm-5.3": {
     "base_model": "cloudflare/workers-ai/",
     "mode": "chat",
-    "input_cost_per_token": 6e-08,
-    "output_cost_per_token": 2.4e-07,
+    "input_cost_per_token": 1.4e-06,
+    "output_cost_per_token": 4.4e-06,
     "source": "https://models.dev/api.json",
-    "max_input_tokens": 262140,
-    "max_output_tokens": 262140,
-    "max_tokens": 262140,
+    "cache_read_input_token_cost": 2.6e-07,
+    "supports_prompt_caching": true,
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 1048576,
+    "max_tokens": 1048576,
     "supported_modalities": [
       "text"
     ],
@@ -171058,25 +171114,211 @@
       "text"
     ],
     "supports_function_calling": true,
+    "supports_response_schema": true,
+    "supports_reasoning": true,
+    "reasoning_effort_levels": [
+      "low",
+      "high",
+      "max"
+    ],
+    "provider": "cloudflare"
+  },
+  "workers-ai/workers-ai/@cf/zai-org/glm-5.3": {
+    "base_model": "cloudflare/workers-ai/",
+    "mode": "chat",
+    "input_cost_per_token": 1.4e-06,
+    "output_cost_per_token": 4.4e-06,
+    "source": "https://models.dev/api.json",
+    "cache_read_input_token_cost": 2.6e-07,
+    "supports_prompt_caching": true,
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 1048576,
+    "max_tokens": 1048576,
+    "supported_modalities": [
+      "text"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_function_calling": true,
+    "supports_response_schema": true,
+    "supports_reasoning": true,
+    "reasoning_effort_levels": [
+      "low",
+      "high",
+      "max"
+    ],
+    "provider": "workers-ai"
+  },
+  "cloudflare/workers-ai/@cf/zai-org/glm-4.7-flash": {
+    "base_model": "cloudflare/workers-ai/",
+    "mode": "chat",
+    "input_cost_per_token": 6.05e-08,
+    "output_cost_per_token": 4e-07,
+    "source": "https://models.dev/api.json",
+    "max_input_tokens": 131072,
+    "max_output_tokens": 131072,
+    "max_tokens": 131072,
+    "supported_modalities": [
+      "text"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_function_calling": true,
+    "supports_response_schema": true,
+    "supports_reasoning": true,
+    "provider": "cloudflare"
+  },
+  "workers-ai/workers-ai/@cf/zai-org/glm-4.7-flash": {
+    "base_model": "cloudflare/workers-ai/",
+    "mode": "chat",
+    "input_cost_per_token": 6.05e-08,
+    "output_cost_per_token": 4e-07,
+    "source": "https://models.dev/api.json",
+    "max_input_tokens": 131072,
+    "max_output_tokens": 131072,
+    "max_tokens": 131072,
+    "supported_modalities": [
+      "text"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_function_calling": true,
+    "supports_response_schema": true,
+    "supports_reasoning": true,
+    "provider": "workers-ai"
+  },
+  "cloudflare/workers-ai/@cf/aisingapore/gemma-sea-lion-v4-27b-it": {
+    "base_model": "cloudflare/workers-ai/",
+    "mode": "chat",
+    "input_cost_per_token": 3.51e-07,
+    "output_cost_per_token": 5.55e-07,
+    "source": "https://models.dev/api.json",
+    "max_input_tokens": 128000,
+    "max_output_tokens": 128000,
+    "max_tokens": 128000,
+    "supported_modalities": [
+      "text"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_function_calling": false,
+    "supports_response_schema": false,
     "supports_reasoning": false,
     "provider": "cloudflare"
   },
-  "workers-ai/workers-ai/@cf/daily-co/phonellm-mini-alpha-2": {
+  "workers-ai/workers-ai/@cf/aisingapore/gemma-sea-lion-v4-27b-it": {
     "base_model": "cloudflare/workers-ai/",
     "mode": "chat",
-    "input_cost_per_token": 6e-08,
-    "output_cost_per_token": 2.4e-07,
+    "input_cost_per_token": 3.51e-07,
+    "output_cost_per_token": 5.55e-07,
     "source": "https://models.dev/api.json",
-    "max_input_tokens": 262140,
-    "max_output_tokens": 262140,
-    "max_tokens": 262140,
+    "max_input_tokens": 128000,
+    "max_output_tokens": 128000,
+    "max_tokens": 128000,
     "supported_modalities": [
       "text"
     ],
     "supported_output_modalities": [
       "text"
     ],
+    "supports_function_calling": false,
+    "supports_response_schema": false,
+    "supports_reasoning": false,
+    "provider": "workers-ai"
+  },
+  "cloudflare/workers-ai/@cf/google/gemma-4-26b-a4b-it": {
+    "base_model": "cloudflare/workers-ai/",
+    "mode": "chat",
+    "input_cost_per_token": 1e-07,
+    "output_cost_per_token": 3e-07,
+    "source": "https://models.dev/api.json",
+    "cache_read_input_token_cost": 5e-08,
+    "supports_prompt_caching": true,
+    "max_input_tokens": 256000,
+    "max_output_tokens": 16384,
+    "max_tokens": 16384,
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_vision": true,
     "supports_function_calling": true,
+    "supports_response_schema": true,
+    "supports_reasoning": true,
+    "provider": "cloudflare"
+  },
+  "workers-ai/workers-ai/@cf/google/gemma-4-26b-a4b-it": {
+    "base_model": "cloudflare/workers-ai/",
+    "mode": "chat",
+    "input_cost_per_token": 1e-07,
+    "output_cost_per_token": 3e-07,
+    "source": "https://models.dev/api.json",
+    "cache_read_input_token_cost": 5e-08,
+    "supports_prompt_caching": true,
+    "max_input_tokens": 256000,
+    "max_output_tokens": 16384,
+    "max_tokens": 16384,
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_vision": true,
+    "supports_function_calling": true,
+    "supports_response_schema": true,
+    "supports_reasoning": true,
+    "provider": "workers-ai"
+  },
+  "cloudflare/workers-ai/@cf/meta/llama-4-scout-17b-16e-instruct": {
+    "base_model": "cloudflare/workers-ai/",
+    "mode": "chat",
+    "input_cost_per_token": 2.7e-07,
+    "output_cost_per_token": 8.5e-07,
+    "source": "https://models.dev/api.json",
+    "max_input_tokens": 131000,
+    "max_output_tokens": 16384,
+    "max_tokens": 16384,
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_vision": true,
+    "supports_function_calling": true,
+    "supports_response_schema": false,
+    "supports_reasoning": false,
+    "provider": "cloudflare"
+  },
+  "workers-ai/workers-ai/@cf/meta/llama-4-scout-17b-16e-instruct": {
+    "base_model": "cloudflare/workers-ai/",
+    "mode": "chat",
+    "input_cost_per_token": 2.7e-07,
+    "output_cost_per_token": 8.5e-07,
+    "source": "https://models.dev/api.json",
+    "max_input_tokens": 131000,
+    "max_output_tokens": 16384,
+    "max_tokens": 16384,
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_vision": true,
+    "supports_function_calling": true,
+    "supports_response_schema": false,
     "supports_reasoning": false,
     "provider": "workers-ai"
   },
@@ -171204,48 +171446,104 @@
     "supports_reasoning": false,
     "provider": "workers-ai"
   },
-  "cloudflare/workers-ai/@cf/meta/llama-4-scout-17b-16e-instruct": {
+  "cloudflare/workers-ai/@cf/openai/gpt-oss-20b": {
     "base_model": "cloudflare/workers-ai/",
     "mode": "chat",
-    "input_cost_per_token": 2.7e-07,
-    "output_cost_per_token": 8.5e-07,
+    "input_cost_per_token": 2e-07,
+    "output_cost_per_token": 3e-07,
     "source": "https://models.dev/api.json",
-    "max_input_tokens": 131000,
+    "max_input_tokens": 128000,
     "max_output_tokens": 16384,
     "max_tokens": 16384,
     "supported_modalities": [
-      "text",
-      "image"
+      "text"
     ],
     "supported_output_modalities": [
       "text"
     ],
-    "supports_vision": true,
     "supports_function_calling": true,
-    "supports_response_schema": false,
-    "supports_reasoning": false,
+    "supports_response_schema": true,
+    "supports_reasoning": true,
+    "reasoning_effort_levels": [
+      "low",
+      "medium",
+      "high"
+    ],
     "provider": "cloudflare"
   },
-  "workers-ai/workers-ai/@cf/meta/llama-4-scout-17b-16e-instruct": {
+  "workers-ai/workers-ai/@cf/openai/gpt-oss-20b": {
     "base_model": "cloudflare/workers-ai/",
     "mode": "chat",
-    "input_cost_per_token": 2.7e-07,
-    "output_cost_per_token": 8.5e-07,
+    "input_cost_per_token": 2e-07,
+    "output_cost_per_token": 3e-07,
     "source": "https://models.dev/api.json",
-    "max_input_tokens": 131000,
+    "max_input_tokens": 128000,
     "max_output_tokens": 16384,
     "max_tokens": 16384,
     "supported_modalities": [
-      "text",
-      "image"
+      "text"
     ],
     "supported_output_modalities": [
       "text"
     ],
-    "supports_vision": true,
     "supports_function_calling": true,
-    "supports_response_schema": false,
-    "supports_reasoning": false,
+    "supports_response_schema": true,
+    "supports_reasoning": true,
+    "reasoning_effort_levels": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "provider": "workers-ai"
+  },
+  "cloudflare/workers-ai/@cf/openai/gpt-oss-120b": {
+    "base_model": "cloudflare/workers-ai/",
+    "mode": "chat",
+    "input_cost_per_token": 3.5e-07,
+    "output_cost_per_token": 7.5e-07,
+    "source": "https://models.dev/api.json",
+    "max_input_tokens": 128000,
+    "max_output_tokens": 16384,
+    "max_tokens": 16384,
+    "supported_modalities": [
+      "text"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_function_calling": true,
+    "supports_response_schema": true,
+    "supports_reasoning": true,
+    "reasoning_effort_levels": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "provider": "cloudflare"
+  },
+  "workers-ai/workers-ai/@cf/openai/gpt-oss-120b": {
+    "base_model": "cloudflare/workers-ai/",
+    "mode": "chat",
+    "input_cost_per_token": 3.5e-07,
+    "output_cost_per_token": 7.5e-07,
+    "source": "https://models.dev/api.json",
+    "max_input_tokens": 128000,
+    "max_output_tokens": 16384,
+    "max_tokens": 16384,
+    "supported_modalities": [
+      "text"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_function_calling": true,
+    "supports_response_schema": true,
+    "supports_reasoning": true,
+    "reasoning_effort_levels": [
+      "low",
+      "medium",
+      "high"
+    ],
     "provider": "workers-ai"
   },
   "cloudflare/workers-ai/@cf/qwen/qwen2.5-coder-32b-instruct": {
@@ -171346,334 +171644,6 @@
     ],
     "provider": "workers-ai"
   },
-  "cloudflare/workers-ai/@cf/aisingapore/gemma-sea-lion-v4-27b-it": {
-    "base_model": "cloudflare/workers-ai/",
-    "mode": "chat",
-    "input_cost_per_token": 3.51e-07,
-    "output_cost_per_token": 5.55e-07,
-    "source": "https://models.dev/api.json",
-    "max_input_tokens": 128000,
-    "max_output_tokens": 128000,
-    "max_tokens": 128000,
-    "supported_modalities": [
-      "text"
-    ],
-    "supported_output_modalities": [
-      "text"
-    ],
-    "supports_function_calling": false,
-    "supports_response_schema": false,
-    "supports_reasoning": false,
-    "provider": "cloudflare"
-  },
-  "workers-ai/workers-ai/@cf/aisingapore/gemma-sea-lion-v4-27b-it": {
-    "base_model": "cloudflare/workers-ai/",
-    "mode": "chat",
-    "input_cost_per_token": 3.51e-07,
-    "output_cost_per_token": 5.55e-07,
-    "source": "https://models.dev/api.json",
-    "max_input_tokens": 128000,
-    "max_output_tokens": 128000,
-    "max_tokens": 128000,
-    "supported_modalities": [
-      "text"
-    ],
-    "supported_output_modalities": [
-      "text"
-    ],
-    "supports_function_calling": false,
-    "supports_response_schema": false,
-    "supports_reasoning": false,
-    "provider": "workers-ai"
-  },
-  "cloudflare/workers-ai/@cf/cloudflare/clairic-flash": {
-    "base_model": "cloudflare/workers-ai/",
-    "mode": "chat",
-    "input_cost_per_token": 1e-07,
-    "output_cost_per_token": 0,
-    "source": "https://models.dev/api.json",
-    "max_input_tokens": 65536,
-    "max_output_tokens": 65536,
-    "max_tokens": 65536,
-    "supported_modalities": [
-      "text",
-      "image"
-    ],
-    "supported_output_modalities": [
-      "text"
-    ],
-    "supports_vision": true,
-    "supports_function_calling": false,
-    "supports_response_schema": true,
-    "supports_reasoning": false,
-    "provider": "cloudflare"
-  },
-  "workers-ai/workers-ai/@cf/cloudflare/clairic-flash": {
-    "base_model": "cloudflare/workers-ai/",
-    "mode": "chat",
-    "input_cost_per_token": 1e-07,
-    "output_cost_per_token": 0,
-    "source": "https://models.dev/api.json",
-    "max_input_tokens": 65536,
-    "max_output_tokens": 65536,
-    "max_tokens": 65536,
-    "supported_modalities": [
-      "text",
-      "image"
-    ],
-    "supported_output_modalities": [
-      "text"
-    ],
-    "supports_vision": true,
-    "supports_function_calling": false,
-    "supports_response_schema": true,
-    "supports_reasoning": false,
-    "provider": "workers-ai"
-  },
-  "cloudflare/workers-ai/@cf/ibm-granite/granite-4.0-h-micro": {
-    "base_model": "cloudflare/workers-ai/",
-    "mode": "chat",
-    "input_cost_per_token": 1.7e-08,
-    "output_cost_per_token": 1.12e-07,
-    "source": "https://models.dev/api.json",
-    "max_input_tokens": 131000,
-    "max_output_tokens": 131000,
-    "max_tokens": 131000,
-    "supported_modalities": [
-      "text"
-    ],
-    "supported_output_modalities": [
-      "text"
-    ],
-    "supports_function_calling": true,
-    "supports_response_schema": false,
-    "supports_reasoning": false,
-    "provider": "cloudflare"
-  },
-  "workers-ai/workers-ai/@cf/ibm-granite/granite-4.0-h-micro": {
-    "base_model": "cloudflare/workers-ai/",
-    "mode": "chat",
-    "input_cost_per_token": 1.7e-08,
-    "output_cost_per_token": 1.12e-07,
-    "source": "https://models.dev/api.json",
-    "max_input_tokens": 131000,
-    "max_output_tokens": 131000,
-    "max_tokens": 131000,
-    "supported_modalities": [
-      "text"
-    ],
-    "supported_output_modalities": [
-      "text"
-    ],
-    "supports_function_calling": true,
-    "supports_response_schema": false,
-    "supports_reasoning": false,
-    "provider": "workers-ai"
-  },
-  "cloudflare/workers-ai/@cf/openai/gpt-oss-120b": {
-    "base_model": "cloudflare/workers-ai/",
-    "mode": "chat",
-    "input_cost_per_token": 3.5e-07,
-    "output_cost_per_token": 7.5e-07,
-    "source": "https://models.dev/api.json",
-    "max_input_tokens": 128000,
-    "max_output_tokens": 16384,
-    "max_tokens": 16384,
-    "supported_modalities": [
-      "text"
-    ],
-    "supported_output_modalities": [
-      "text"
-    ],
-    "supports_function_calling": true,
-    "supports_response_schema": true,
-    "supports_reasoning": true,
-    "reasoning_effort_levels": [
-      "low",
-      "medium",
-      "high"
-    ],
-    "provider": "cloudflare"
-  },
-  "workers-ai/workers-ai/@cf/openai/gpt-oss-120b": {
-    "base_model": "cloudflare/workers-ai/",
-    "mode": "chat",
-    "input_cost_per_token": 3.5e-07,
-    "output_cost_per_token": 7.5e-07,
-    "source": "https://models.dev/api.json",
-    "max_input_tokens": 128000,
-    "max_output_tokens": 16384,
-    "max_tokens": 16384,
-    "supported_modalities": [
-      "text"
-    ],
-    "supported_output_modalities": [
-      "text"
-    ],
-    "supports_function_calling": true,
-    "supports_response_schema": true,
-    "supports_reasoning": true,
-    "reasoning_effort_levels": [
-      "low",
-      "medium",
-      "high"
-    ],
-    "provider": "workers-ai"
-  },
-  "cloudflare/workers-ai/@cf/openai/gpt-oss-20b": {
-    "base_model": "cloudflare/workers-ai/",
-    "mode": "chat",
-    "input_cost_per_token": 2e-07,
-    "output_cost_per_token": 3e-07,
-    "source": "https://models.dev/api.json",
-    "max_input_tokens": 128000,
-    "max_output_tokens": 16384,
-    "max_tokens": 16384,
-    "supported_modalities": [
-      "text"
-    ],
-    "supported_output_modalities": [
-      "text"
-    ],
-    "supports_function_calling": true,
-    "supports_response_schema": true,
-    "supports_reasoning": true,
-    "reasoning_effort_levels": [
-      "low",
-      "medium",
-      "high"
-    ],
-    "provider": "cloudflare"
-  },
-  "workers-ai/workers-ai/@cf/openai/gpt-oss-20b": {
-    "base_model": "cloudflare/workers-ai/",
-    "mode": "chat",
-    "input_cost_per_token": 2e-07,
-    "output_cost_per_token": 3e-07,
-    "source": "https://models.dev/api.json",
-    "max_input_tokens": 128000,
-    "max_output_tokens": 16384,
-    "max_tokens": 16384,
-    "supported_modalities": [
-      "text"
-    ],
-    "supported_output_modalities": [
-      "text"
-    ],
-    "supports_function_calling": true,
-    "supports_response_schema": true,
-    "supports_reasoning": true,
-    "reasoning_effort_levels": [
-      "low",
-      "medium",
-      "high"
-    ],
-    "provider": "workers-ai"
-  },
-  "cloudflare/workers-ai/@cf/mistralai/mistral-small-3.1-24b-instruct": {
-    "base_model": "cloudflare/workers-ai/",
-    "mode": "chat",
-    "input_cost_per_token": 3.51e-07,
-    "output_cost_per_token": 5.55e-07,
-    "source": "https://models.dev/api.json",
-    "max_input_tokens": 128000,
-    "max_output_tokens": 128000,
-    "max_tokens": 128000,
-    "supported_modalities": [
-      "text",
-      "image"
-    ],
-    "supported_output_modalities": [
-      "text"
-    ],
-    "supports_vision": true,
-    "supports_function_calling": true,
-    "supports_response_schema": false,
-    "supports_reasoning": false,
-    "provider": "cloudflare"
-  },
-  "workers-ai/workers-ai/@cf/mistralai/mistral-small-3.1-24b-instruct": {
-    "base_model": "cloudflare/workers-ai/",
-    "mode": "chat",
-    "input_cost_per_token": 3.51e-07,
-    "output_cost_per_token": 5.55e-07,
-    "source": "https://models.dev/api.json",
-    "max_input_tokens": 128000,
-    "max_output_tokens": 128000,
-    "max_tokens": 128000,
-    "supported_modalities": [
-      "text",
-      "image"
-    ],
-    "supported_output_modalities": [
-      "text"
-    ],
-    "supports_vision": true,
-    "supports_function_calling": true,
-    "supports_response_schema": false,
-    "supports_reasoning": false,
-    "provider": "workers-ai"
-  },
-  "cloudflare/workers-ai/@cf/deepseek-ai/deepseek-v4.1-flash-1017": {
-    "base_model": "cloudflare/workers-ai/",
-    "mode": "chat",
-    "input_cost_per_token": 3e-07,
-    "output_cost_per_token": 1.2e-06,
-    "source": "https://models.dev/api.json",
-    "cache_read_input_token_cost": 6e-09,
-    "supports_prompt_caching": true,
-    "max_input_tokens": 1048576,
-    "max_output_tokens": 1048576,
-    "max_tokens": 1048576,
-    "supported_modalities": [
-      "text",
-      "image"
-    ],
-    "supported_output_modalities": [
-      "text"
-    ],
-    "supports_vision": true,
-    "supports_function_calling": true,
-    "supports_response_schema": true,
-    "supports_reasoning": true,
-    "reasoning_effort_levels": [
-      "none",
-      "low",
-      "high",
-      "max"
-    ],
-    "provider": "cloudflare"
-  },
-  "workers-ai/workers-ai/@cf/deepseek-ai/deepseek-v4.1-flash-1017": {
-    "base_model": "cloudflare/workers-ai/",
-    "mode": "chat",
-    "input_cost_per_token": 3e-07,
-    "output_cost_per_token": 1.2e-06,
-    "source": "https://models.dev/api.json",
-    "cache_read_input_token_cost": 6e-09,
-    "supports_prompt_caching": true,
-    "max_input_tokens": 1048576,
-    "max_output_tokens": 1048576,
-    "max_tokens": 1048576,
-    "supported_modalities": [
-      "text",
-      "image"
-    ],
-    "supported_output_modalities": [
-      "text"
-    ],
-    "supports_vision": true,
-    "supports_function_calling": true,
-    "supports_response_schema": true,
-    "supports_reasoning": true,
-    "reasoning_effort_levels": [
-      "none",
-      "low",
-      "high",
-      "max"
-    ],
-    "provider": "workers-ai"
-  },
   "cloudflare/workers-ai/@cf/thinkingmachines/inkling-2-small": {
     "base_model": "cloudflare/workers-ai/",
     "mode": "chat",
@@ -171738,69 +171708,59 @@
     ],
     "provider": "workers-ai"
   },
-  "cloudflare/workers-ai/@cf/zai-org/glm-5.3": {
+  "cloudflare/workers-ai/@cf/mistralai/mistral-small-3.1-24b-instruct": {
     "base_model": "cloudflare/workers-ai/",
     "mode": "chat",
-    "input_cost_per_token": 1.4e-06,
-    "output_cost_per_token": 4.4e-06,
+    "input_cost_per_token": 3.51e-07,
+    "output_cost_per_token": 5.55e-07,
     "source": "https://models.dev/api.json",
-    "cache_read_input_token_cost": 2.6e-07,
-    "supports_prompt_caching": true,
-    "max_input_tokens": 1048576,
-    "max_output_tokens": 1048576,
-    "max_tokens": 1048576,
+    "max_input_tokens": 128000,
+    "max_output_tokens": 128000,
+    "max_tokens": 128000,
     "supported_modalities": [
-      "text"
+      "text",
+      "image"
     ],
     "supported_output_modalities": [
       "text"
     ],
+    "supports_vision": true,
     "supports_function_calling": true,
-    "supports_response_schema": true,
-    "supports_reasoning": true,
-    "reasoning_effort_levels": [
-      "low",
-      "high",
-      "max"
-    ],
+    "supports_response_schema": false,
+    "supports_reasoning": false,
     "provider": "cloudflare"
   },
-  "workers-ai/workers-ai/@cf/zai-org/glm-5.3": {
+  "workers-ai/workers-ai/@cf/mistralai/mistral-small-3.1-24b-instruct": {
     "base_model": "cloudflare/workers-ai/",
     "mode": "chat",
-    "input_cost_per_token": 1.4e-06,
-    "output_cost_per_token": 4.4e-06,
+    "input_cost_per_token": 3.51e-07,
+    "output_cost_per_token": 5.55e-07,
     "source": "https://models.dev/api.json",
-    "cache_read_input_token_cost": 2.6e-07,
-    "supports_prompt_caching": true,
-    "max_input_tokens": 1048576,
-    "max_output_tokens": 1048576,
-    "max_tokens": 1048576,
+    "max_input_tokens": 128000,
+    "max_output_tokens": 128000,
+    "max_tokens": 128000,
     "supported_modalities": [
-      "text"
+      "text",
+      "image"
     ],
     "supported_output_modalities": [
       "text"
     ],
+    "supports_vision": true,
     "supports_function_calling": true,
-    "supports_response_schema": true,
-    "supports_reasoning": true,
-    "reasoning_effort_levels": [
-      "low",
-      "high",
-      "max"
-    ],
+    "supports_response_schema": false,
+    "supports_reasoning": false,
     "provider": "workers-ai"
   },
-  "cloudflare/workers-ai/@cf/zai-org/glm-4.7-flash": {
+  "cloudflare/workers-ai/@cf/daily-co/phonellm-mini-alpha-2": {
     "base_model": "cloudflare/workers-ai/",
     "mode": "chat",
-    "input_cost_per_token": 6.05e-08,
-    "output_cost_per_token": 4e-07,
+    "input_cost_per_token": 6e-08,
+    "output_cost_per_token": 2.4e-07,
     "source": "https://models.dev/api.json",
-    "max_input_tokens": 131072,
-    "max_output_tokens": 131072,
-    "max_tokens": 131072,
+    "max_input_tokens": 262140,
+    "max_output_tokens": 262140,
+    "max_tokens": 262140,
     "supported_modalities": [
       "text"
     ],
@@ -171808,19 +171768,18 @@
       "text"
     ],
     "supports_function_calling": true,
-    "supports_response_schema": true,
-    "supports_reasoning": true,
+    "supports_reasoning": false,
     "provider": "cloudflare"
   },
-  "workers-ai/workers-ai/@cf/zai-org/glm-4.7-flash": {
+  "workers-ai/workers-ai/@cf/daily-co/phonellm-mini-alpha-2": {
     "base_model": "cloudflare/workers-ai/",
     "mode": "chat",
-    "input_cost_per_token": 6.05e-08,
-    "output_cost_per_token": 4e-07,
+    "input_cost_per_token": 6e-08,
+    "output_cost_per_token": 2.4e-07,
     "source": "https://models.dev/api.json",
-    "max_input_tokens": 131072,
-    "max_output_tokens": 131072,
-    "max_tokens": 131072,
+    "max_input_tokens": 262140,
+    "max_output_tokens": 262140,
+    "max_tokens": 262140,
     "supported_modalities": [
       "text"
     ],
@@ -171828,21 +171787,64 @@
       "text"
     ],
     "supports_function_calling": true,
-    "supports_response_schema": true,
-    "supports_reasoning": true,
+    "supports_reasoning": false,
     "provider": "workers-ai"
   },
-  "cloudflare/workers-ai/@cf/google/gemma-4-26b-a4b-it": {
+  "cloudflare/workers-ai/@cf/cloudflare/clairic-flash": {
     "base_model": "cloudflare/workers-ai/",
     "mode": "chat",
     "input_cost_per_token": 1e-07,
-    "output_cost_per_token": 3e-07,
+    "output_cost_per_token": 0,
     "source": "https://models.dev/api.json",
-    "cache_read_input_token_cost": 5e-08,
+    "max_input_tokens": 65536,
+    "max_output_tokens": 65536,
+    "max_tokens": 65536,
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_vision": true,
+    "supports_function_calling": false,
+    "supports_response_schema": true,
+    "supports_reasoning": false,
+    "provider": "cloudflare"
+  },
+  "workers-ai/workers-ai/@cf/cloudflare/clairic-flash": {
+    "base_model": "cloudflare/workers-ai/",
+    "mode": "chat",
+    "input_cost_per_token": 1e-07,
+    "output_cost_per_token": 0,
+    "source": "https://models.dev/api.json",
+    "max_input_tokens": 65536,
+    "max_output_tokens": 65536,
+    "max_tokens": 65536,
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_vision": true,
+    "supports_function_calling": false,
+    "supports_response_schema": true,
+    "supports_reasoning": false,
+    "provider": "workers-ai"
+  },
+  "cloudflare/workers-ai/@cf/deepseek-ai/deepseek-v4.1-flash-1017": {
+    "base_model": "cloudflare/workers-ai/",
+    "mode": "chat",
+    "input_cost_per_token": 3e-07,
+    "output_cost_per_token": 1.2e-06,
+    "source": "https://models.dev/api.json",
+    "cache_read_input_token_cost": 6e-09,
     "supports_prompt_caching": true,
-    "max_input_tokens": 256000,
-    "max_output_tokens": 16384,
-    "max_tokens": 16384,
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 1048576,
+    "max_tokens": 1048576,
     "supported_modalities": [
       "text",
       "image"
@@ -171854,19 +171856,25 @@
     "supports_function_calling": true,
     "supports_response_schema": true,
     "supports_reasoning": true,
+    "reasoning_effort_levels": [
+      "none",
+      "low",
+      "high",
+      "max"
+    ],
     "provider": "cloudflare"
   },
-  "workers-ai/workers-ai/@cf/google/gemma-4-26b-a4b-it": {
+  "workers-ai/workers-ai/@cf/deepseek-ai/deepseek-v4.1-flash-1017": {
     "base_model": "cloudflare/workers-ai/",
     "mode": "chat",
-    "input_cost_per_token": 1e-07,
-    "output_cost_per_token": 3e-07,
+    "input_cost_per_token": 3e-07,
+    "output_cost_per_token": 1.2e-06,
     "source": "https://models.dev/api.json",
-    "cache_read_input_token_cost": 5e-08,
+    "cache_read_input_token_cost": 6e-09,
     "supports_prompt_caching": true,
-    "max_input_tokens": 256000,
-    "max_output_tokens": 16384,
-    "max_tokens": 16384,
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 1048576,
+    "max_tokens": 1048576,
     "supported_modalities": [
       "text",
       "image"
@@ -171878,7 +171886,75 @@
     "supports_function_calling": true,
     "supports_response_schema": true,
     "supports_reasoning": true,
+    "reasoning_effort_levels": [
+      "none",
+      "low",
+      "high",
+      "max"
+    ],
     "provider": "workers-ai"
+  },
+  "cloudflare/workers-ai/@cf/ibm-granite/granite-4.0-h-micro": {
+    "base_model": "cloudflare/workers-ai/",
+    "mode": "chat",
+    "input_cost_per_token": 1.7e-08,
+    "output_cost_per_token": 1.12e-07,
+    "source": "https://models.dev/api.json",
+    "max_input_tokens": 131000,
+    "max_output_tokens": 131000,
+    "max_tokens": 131000,
+    "supported_modalities": [
+      "text"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_function_calling": true,
+    "supports_response_schema": false,
+    "supports_reasoning": false,
+    "provider": "cloudflare"
+  },
+  "workers-ai/workers-ai/@cf/ibm-granite/granite-4.0-h-micro": {
+    "base_model": "cloudflare/workers-ai/",
+    "mode": "chat",
+    "input_cost_per_token": 1.7e-08,
+    "output_cost_per_token": 1.12e-07,
+    "source": "https://models.dev/api.json",
+    "max_input_tokens": 131000,
+    "max_output_tokens": 131000,
+    "max_tokens": 131000,
+    "supported_modalities": [
+      "text"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_function_calling": true,
+    "supports_response_schema": false,
+    "supports_reasoning": false,
+    "provider": "workers-ai"
+  },
+  "azure/cohere-embed-v-4-0": {
+    "base_model": "embed-v-4-0",
+    "mode": "embedding",
+    "input_cost_per_token": 1.2e-07,
+    "output_cost_per_token": 0,
+    "source": "https://models.dev/api.json",
+    "max_input_tokens": 128000,
+    "max_output_tokens": 1536,
+    "max_tokens": 1536,
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_vision": true,
+    "supports_function_calling": false,
+    "supports_reasoning": false,
+    "provider": "azure",
+    "input_cost_per_image_token": 4.7e-07
   },
   "azure/fw-kimi-k3.1-pro": {
     "base_model": "fw-kimi-k3.1-pro",
@@ -171909,28 +171985,6 @@
       "max"
     ],
     "provider": "azure"
-  },
-  "azure/cohere-embed-v-4-0": {
-    "base_model": "embed-v-4-0",
-    "mode": "embedding",
-    "input_cost_per_token": 1.2e-07,
-    "output_cost_per_token": 0,
-    "source": "https://models.dev/api.json",
-    "max_input_tokens": 128000,
-    "max_output_tokens": 1536,
-    "max_tokens": 1536,
-    "supported_modalities": [
-      "text",
-      "image"
-    ],
-    "supported_output_modalities": [
-      "text"
-    ],
-    "supports_vision": true,
-    "supports_function_calling": false,
-    "supports_reasoning": false,
-    "provider": "azure",
-    "input_cost_per_image_token": 4.7e-07
   },
   "bedrock_mantle/moonshotai.kimi-k3": {
     "provider": "bedrock_mantle",
